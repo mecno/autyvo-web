@@ -21,6 +21,10 @@ export default defineConfig({
   server: {
     host: true, // Expose sur toutes les interfaces (0.0.0.0)
     port: 5173,
+    // Désactiver le cache pour éviter les problèmes en dev
+    headers: {
+      'Cache-Control': 'no-store',
+    },
   },
   define: {
     // Injecter la version depuis package.json

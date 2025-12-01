@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "title": "Autyvo - Manage and value your vehicle",
+    "description": "Free automotive management app. Track maintenance, organize documents and prove your vehicle's value."
+  },
+  "hero": {
+    "title": "Track your vehicle's maintenance daily and share its history with complete transparency.",
+    "subtitle": "AUTYVO Trace: complete traceability to prove the real condition and history of your vehicle.",
+    "description": "Document every intervention, build a complete history and prove the real value of your vehicle.",
+    "cta": "Download AUTYVO FREE and build your Certified History",
+    "ctaShort": "Download"
+  },
+  "howItWorks": {
+    "title": "How Does It Work?",
+    "subtitle": "Five simple steps to manage your vehicle and enhance its history",
+    "steps": [
+      {
+        "title": "Add your vehicle",
+        "description": "Simply enter your license plate to register it."
+      },
+      {
+        "title": "Scan your documents",
+        "description": "Easily import or scan your invoices, technical inspections, insurance, fuel expenses, etc."
+      },
+      {
+        "title": "Smart planning",
+        "description": "Our engine analyzes your information and automatically generates a maintenance plan with a calendar and notifications for your important deadlines."
+      },
+      {
+        "title": "Your documents organized",
+        "description": "Access all documents related to your vehicle at a glance, classified and centralized."
+      },
+      {
+        "title": "Simple and secure sharing",
+        "description": "Generate your AUTYVO Trace and share the complete history of your vehicle securely."
+      }
+    ]
+  },
+  "benefits": {
+    "title": "AUTYVO Benefits",
+    "subtitle": "A complete solution to manage, maintain and enhance your vehicle",
+    "items": [
+      {
+        "emoji": "🚗",
+        "title": "Simplify your vehicle management",
+        "description": "AUTYVO automatically centralizes all your documents, to end lost papers and oversights."
+      },
+      {
+        "emoji": "🔍",
+        "title": "Organize everything in seconds",
+        "description": "Scan your plate and documents: invoices, insurance, technical inspections... everything is classified and accessible."
+      },
+      {
+        "emoji": "🧠",
+        "title": "Smart planning",
+        "description": "Our intelligent engine creates an automatic maintenance plan and sends you reminders so you don't forget anything."
+      },
+      {
+        "emoji": "🔧",
+        "title": "A more reliable and better maintained vehicle",
+        "description": "Anticipate breakdowns and maximize your vehicle's longevity through rigorous monitoring."
+      },
+      {
+        "emoji": "🔐",
+        "title": "Enhance your car with AUTYVO Trace",
+        "description": "Share a complete, secure and professional history: buyers gain confidence, and you sell better."
+      }
+    ]
+  },
+  "trace": {
+    "title": "AUTYVO Trace",
+    "emoji": "🔐",
+    "subtitle": "Give your vehicle the history it deserves. Share it with pride.",
+    "intro": "Your car has a history. Every service, every invoice, every check... these are proofs of care, attention and seriousness. With AUTYVO Trace, this history finally becomes readable, valued and indisputable.",
+    "description": "This complete report brings together everything: your carefully organized documents, but also official SIV data, to offer a transparent file worthy of an impeccable vehicle.",
+    "benefitsTitle": "When you share your AUTYVO Trace, you transmit much more than information:",
+    "benefitsItems": [
+      "You show that you have taken care of your car.",
+      "You immediately inspire confidence.",
+      "You give your vehicle the value it truly deserves."
+    ],
+    "conclusion": "And at the time of sale, this asset makes all the difference: your car stands out, reassures and sells faster — often better.",
+    "tagline": "AUTYVO Trace: because a well-maintained vehicle deserves to be recognized.",
+    "bonus": {
+      "title": "Exclusive Bonus",
+      "emoji": "🎁",
+      "description": "Download the app today and generate your first AUTYVO Trace report for free!",
+      "cta": "Download AUTYVO App",
+      "emoji2": "👉"
+    }
+  },
+  "verification": {
+    "title": "Verification and Transparency",
+    "subtitle": "A Clear Standard",
+    "emoji": "🛡️",
+    "tagline": "Authenticity is our commitment.",
+    "description": "AUTYVO goes beyond simply organizing documents. Our platform automatically cross-references your information with official SIV data and validates each element of history through an independent engine. Each piece of data is thus authentic, verified and transparent.",
+    "rule": "The rule is simple: Without transparency, don't buy.",
+    "conclusion": "Users know exactly what they are looking at and can rely on reliable information to make their decisions."
+  },
+  "security": {
+    "title": "Your data is secure",
+    "subtitle": "We take the protection of your data very seriously",
+    "items": [
+      {
+        "title": "100% GDPR Compliant",
+        "description": "We strictly comply with the General Data Protection Regulation to guarantee your rights."
+      },
+      {
+        "title": "Hosted in France",
+        "description": "Your data is stored exclusively on secure servers located in France."
+      }
+    ],
+    "transparency": {
+      "title": "Total transparency",
+      "description": "Consult our detailed privacy policy",
+      "cta": "View policy"
+    }
+  },
+  "trust": {
+    "title": "They trust us"
+  },
+  "testimonials": {
+    "title": "They have adopted the AUTYVO transparency standard",
+    "items": [
+      {
+        "name": "Marc D.",
+        "role": "Private Seller",
+        "quote": "Thanks to AUTYVO, I sold my car 15% above market price. Buyers were reassured by the total transparency of the history. No more endless negotiations."
+      },
+      {
+        "name": "Sophie L.",
+        "role": "Buyer",
+        "quote": "I was finally able to buy used with complete peace of mind. Everything was verified, certified. If the seller doesn't have AUTYVO Trace, I move on."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What is AUTYVO Trace?",
+        "answer": "AUTYVO Trace is the system that transforms your daily management into certified value. Every action you document becomes verifiable proof for future buyers."
+      },
+      {
+        "question": "How does the verification engine work?",
+        "answer": "Our engine cross-references your data with official sources (SIV, Histovec) to guarantee the authenticity of your vehicle's history. It's an independent trusted third party."
+      },
+      {
+        "question": "What is Bridge Dev?",
+        "answer": "Bridge Dev is the feature that allows you to generate a complete and verified history report of your vehicle, ready to be shared with potential buyers."
+      },
+      {
+        "question": "Is the app free?",
+        "answer": "Yes, the app is FREE for life! Use all the tools to manage your vehicle and build your complete history without ever paying anything.\n\nAUTYVO Trace Certified is a Premium service. Our verification guarantee is so powerful that it monetizes upon resale. You only pay to transform your history into concrete and tamper-proof proof of value."
+      },
+      {
+        "question": "Is my data secure?",
+        "answer": "Absolutely. We comply with GDPR and your data is encrypted. You keep full control over what you share and with whom."
+      }
+    ]
+  }
+}

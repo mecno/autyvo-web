@@ -1,36 +1,140 @@
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
+import logoImg from '@/assets/images/logo.png';
 
 const Header: React.FC = () => {
-  const headerStyle: React.CSSProperties = {
-    backgroundColor: '#1976d2',
-    color: 'white',
-    padding: '1rem 2rem',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center'
+  const { t } = useTranslation('common');
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleNavigation = (path: string) => {
+    navigate(path);
+    setIsMenuOpen(false);
   };
 
-  const navStyle: React.CSSProperties = {
-    display: 'flex',
-    gap: '1rem',
-    alignItems: 'center'
+  const scrollToFeatures = () => {
+    if (location.pathname === '/') {
+      const element = document.getElementById('gestion-section');
+      element?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById('gestion-section');
+        element?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+    setIsMenuOpen(false);
   };
 
-  const linkStyle: React.CSSProperties = {
-    color: 'white',
-    textDecoration: 'none'
+  const scrollToDownload = () => {
+    if (location.pathname === '/') {
+      const element = document.getElementById('download');
+      element?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById('download');
+        element?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+    setIsMenuOpen(false);
   };
 
   return (
-    <header style={headerStyle}>
-      <h1 style={{ margin: 0, fontSize: '1.5rem' }}>Autyvo</h1>
-      <nav style={navStyle}>
-        <Link to="/" style={linkStyle}>Accueil</Link>
-        <Link to="/contact" style={linkStyle}>Contact</Link>
-        <Link to="/help" style={linkStyle}>Aide</Link>
-        <Link to="/legal/terms" style={linkStyle}>CGU</Link>
-        <Link to="/legal/privacy" style={linkStyle}>Confidentialité</Link>
-      </nav>
+    <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          {/* Logo */}
+          <Link
+            to="/"
+            className="flex items-center"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <img src={logoImg} alt="AUTYVO" className="h-10" />
+          </Link>
+
+          {/* Navigation Desktop */}
+          <nav className="hidden md:flex items-center space-x-8">
+            <button
+              onClick={scrollToFeatures}
+              className="text-[#183755] hover:text-[#02b197] transition-colors"
+            >
+              {t('header.nav.features')}
+            </button>
+            <Link
+              to="/ia"
+              className="text-[#183755] hover:text-[#02b197] transition-colors"
+            >
+              Technologies
+            </Link>
+            <Link
+              to="/pro"
+              className="text-[#183755] hover:text-[#02b197] transition-colors"
+            >
+              Professionnels
+            </Link>
+            <Link
+              to="/contact"
+              className="text-[#183755] hover:text-[#02b197] transition-colors"
+            >
+              {t('header.nav.contact')}
+            </Link>
+            <button
+              onClick={scrollToDownload}
+              className="px-6 py-2 bg-[#02b197] text-white rounded-lg hover:bg-[#029d81] transition-colors"
+            >
+              {t('header.cta.download')}
+            </button>
+          </nav>
+
+          {/* Bouton Menu Mobile */}
+          <button
+            className="md:hidden text-[#183755]"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+
+        {/* Menu Mobile */}
+        {isMenuOpen && (
+          <div className="md:hidden py-4 space-y-4 border-t">
+            <button
+              onClick={scrollToFeatures}
+              className="block w-full text-left text-[#183755] hover:text-[#02b197] py-2"
+            >
+              {t('header.nav.features')}
+            </button>
+            <button
+              onClick={() => handleNavigation('/ia')}
+              className="block w-full text-left text-[#183755] hover:text-[#02b197] py-2"
+            >
+              Technologies
+            </button>
+            <button
+              onClick={() => handleNavigation('/pro')}
+              className="block w-full text-left text-[#183755] hover:text-[#02b197] py-2"
+            >
+              Professionnels
+            </button>
+            <button
+              onClick={() => handleNavigation('/contact')}
+              className="block w-full text-left text-[#183755] hover:text-[#02b197] py-2"
+            >
+              {t('header.nav.contact')}
+            </button>
+            <button
+              onClick={scrollToDownload}
+              className="block w-full text-center px-6 py-2 bg-[#02b197] text-white rounded-lg hover:bg-[#029d81]"
+            >
+              {t('header.cta.download')}
+            </button>
+          </div>
+        )}
+      </div>
     </header>
   );
 };

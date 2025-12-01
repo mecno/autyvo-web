@@ -1,40 +1,109 @@
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { STORE_LINKS } from '@/constants';
+import googlePlayImg from '@/assets/images/stores/google-play.png';
+import appStoreImg from '@/assets/images/stores/apple-store.jpg';
 
 const Footer: React.FC = () => {
-  const footerStyle: React.CSSProperties = {
-    backgroundColor: '#1976d2',
-    color: 'white',
-    padding: '1.5rem 2rem',
-    marginTop: 'auto'
-  };
+  const { t } = useTranslation('common');
+  const currentYear = new Date().getFullYear();
 
-  const containerStyle: React.CSSProperties = {
-    maxWidth: '1200px',
-    margin: '0 auto',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center'
-  };
-
-  const navStyle: React.CSSProperties = {
-    display: 'flex',
-    gap: '1rem'
-  };
-
-  const linkStyle: React.CSSProperties = {
-    color: 'white',
-    textDecoration: 'none'
+  const scrollToFaq = () => {
+    const faqElement = document.getElementById('faq');
+    if (faqElement) {
+      faqElement.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
-    <footer style={footerStyle}>
-      <div style={containerStyle}>
-        <p style={{ margin: 0 }}>© {new Date().getFullYear()} CarDoc - Tous droits réservés</p>
-        <nav style={navStyle}>
-          <Link to="/contact" style={linkStyle}>Contact</Link>
-          <Link to="/legal/terms" style={linkStyle}>CGU</Link>
-          <Link to="/legal/privacy" style={linkStyle}>Confidentialité</Link>
-        </nav>
+    <footer id="download" className="bg-[#183755] text-white py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+          {/* Section À propos */}
+          <div>
+            <h3 className="text-lg font-bold mb-3">{t('footer.about.title')}</h3>
+            <p className="text-gray-300 text-sm">
+              {t('footer.about.description')}
+            </p>
+          </div>
+
+          {/* Section Liens Utiles */}
+          <div>
+            <h4 className="font-semibold mb-3">{t('footer.links.title')}</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <button
+                  onClick={scrollToFaq}
+                  className="text-gray-300 hover:text-[#02b197] transition-colors"
+                >
+                  {t('footer.links.faq')}
+                </button>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="text-gray-300 hover:text-[#02b197] transition-colors"
+                >
+                  {t('footer.links.contact')}
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Section Télécharger */}
+          <div>
+            <h4 className="font-semibold mb-3">{t('footer.download.title')}</h4>
+            <div className="flex flex-col space-y-2">
+              <a
+                href={STORE_LINKS.googlePlay}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+              >
+                <img
+                  src={googlePlayImg}
+                  alt={t('footer.download.googlePlay')}
+                  className="h-10"
+                />
+              </a>
+              <a
+                href={STORE_LINKS.appStore}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+              >
+                <img
+                  src={appStoreImg}
+                  alt={t('footer.download.appStore')}
+                  className="h-10"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Section Légale et Copyright */}
+        <div className="border-t border-gray-700 pt-6">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-gray-300">
+              <Link
+                to="/legal/privacy"
+                className="hover:text-[#02b197] transition-colors"
+              >
+                {t('footer.legal.privacy')}
+              </Link>
+              <Link
+                to="/legal/terms"
+                className="hover:text-[#02b197] transition-colors"
+              >
+                {t('footer.legal.terms')}
+              </Link>
+            </div>
+            <p className="text-sm text-gray-300">
+              {t('footer.copyright', { year: currentYear })}
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
   );
