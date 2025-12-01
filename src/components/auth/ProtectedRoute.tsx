@@ -1,6 +1,11 @@
 import { useEffect, useRef, PropsWithChildren } from 'react';
 import { useAuth } from '@/hooks/useAuth';
-import { Box, CircularProgress } from '@mui/material';
+
+const LoadingSpinner: React.FC = () => (
+  <div className="flex justify-center items-center min-h-screen">
+    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-brand-primary"></div>
+  </div>
+);
 
 /**
  * Composant de protection de routes
@@ -20,34 +25,12 @@ export default function ProtectedRoute({ children }: PropsWithChildren) {
 
   // Afficher un loader pendant la vérification de l'authentification
   if (isLoading) {
-    return (
-      <Box
-        sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          minHeight: '100vh'
-        }}
-      >
-        <CircularProgress />
-      </Box>
-    );
+    return <LoadingSpinner />;
   }
 
   // Si non authentifié, afficher un loader pendant la redirection
   if (!isAuthenticated) {
-    return (
-      <Box
-        sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          minHeight: '100vh'
-        }}
-      >
-        <CircularProgress />
-      </Box>
-    );
+    return <LoadingSpinner />;
   }
 
   // Si authentifié, afficher le contenu protégé

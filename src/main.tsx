@@ -3,25 +3,15 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { AuthProvider, AuthProviderProps } from 'react-oidc-context';
 import { HelmetProvider } from 'react-helmet-async';
-import { ThemeProvider } from '@mui/material/styles';
-import { CssBaseline, CircularProgress, Box } from '@mui/material';
 import App from './App';
-import theme from './theme';
 import './assets/styles/global.css';
 import './i18n/config';
 
 // Composant de chargement pendant le chargement des traductions
-const LoadingFallback = () => (
-  <Box 
-    sx={{ 
-      display: 'flex', 
-      justifyContent: 'center', 
-      alignItems: 'center', 
-      minHeight: '100vh' 
-    }}
-  >
-    <CircularProgress />
-  </Box>
+const LoadingFallback: React.FC = () => (
+  <div className="flex justify-center items-center min-h-screen">
+    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-brand-primary"></div>
+  </div>
 );
 
 // Configuration OIDC pour Keycloak
@@ -56,19 +46,16 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <HelmetProvider>
       <AuthProvider {...oidcConfig}>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <BrowserRouter
-            future={{
-              v7_startTransition: true,
-              v7_relativeSplatPath: true
-            }}
-          >
-            <Suspense fallback={<LoadingFallback />}>
-              <App />
-            </Suspense>
-          </BrowserRouter>
-        </ThemeProvider>
+        <BrowserRouter
+          future={{
+            v7_startTransition: true,
+            v7_relativeSplatPath: true
+          }}
+        >
+          <Suspense fallback={<LoadingFallback />}>
+            <App />
+          </Suspense>
+        </BrowserRouter>
       </AuthProvider>
     </HelmetProvider>
   </React.StrictMode>,
