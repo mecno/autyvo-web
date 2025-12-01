@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 import { Link } from 'react-router-dom';
-import cardocLogo from '../../assets/images/cardoc-logo.png';
+import cardocLogo from '../../assets/images/logo.png';
 
 /**
  * AppLogo - Logo de l'application avec taille standardisée
