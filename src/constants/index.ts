@@ -1,21 +1,21 @@
 /**
- * CarDoc - Constantes de l'application
+ * Autyvo - Constantes de l'application
  * 
  * Ce fichier contient toutes les constantes statiques du projet.
  * Ces valeurs ne changent pas selon l'environnement.
  */
 
-// Contacts CarDoc
-export const CARDOC_CONTACT_EMAIL = 'contact@cardoc.com';
-export const CARDOC_SUPPORT_EMAIL = 'support@cardoc.fr';
+// Contacts 
+export const CONTACT_EMAIL = 'contact@autyvo.com';
+export const SUPPORT_EMAIL = 'support@autyvo.com';
 
-// URLs CarDoc
-export const CARDOC_WEBSITE = 'https://cardoc.fr';
-export const CARDOC_HELP_PAGE = 'https://cardoc.fr/help';
+// URLs 
+export const AUTYVO_WEBSITE = 'https://autyvo.com';
+export const AUTYVO_HELP_PAGE = 'https://autyvo.com/help';
 
 // Informations société
 export const COMPANY_INFO = {
-  name: 'CarDoc',
+  name: 'Autyvo',
   legalForm: 'SAS',
   capital: '12 000 €',
   siren: '992 651 349',
@@ -30,9 +30,9 @@ export const COMPANY_INFO = {
 
 // URLs réseaux sociaux (si nécessaire plus tard)
 export const SOCIAL_LINKS = {
-  // twitter: 'https://twitter.com/cardoc',
-  // linkedin: 'https://linkedin.com/company/cardoc',
-  // facebook: 'https://facebook.com/cardoc',
+  // twitter: 'https://twitter.com/autyvo',
+  // linkedin: 'https://linkedin.com/company/autyvo',
+  // facebook: 'https://facebook.com/autyvo',
 };
 
 // Configuration de l'application

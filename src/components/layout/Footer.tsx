@@ -1,57 +1,42 @@
-import { useTranslation } from 'react-i18next';
-import { Box, Container, Typography, Link as MuiLink } from '@mui/material';
-import { Link as RouterLink } from 'react-router-dom';
-import { FlexBox } from '../ui';
-import { APP_CONFIG } from '../../constants';
+import { Link } from 'react-router-dom';
 
-const Footer = () => {
-  // Utilise uniquement le namespace 'common'
-  const { t } = useTranslation('common');
+const Footer: React.FC = () => {
+  const footerStyle: React.CSSProperties = {
+    backgroundColor: '#1976d2',
+    color: 'white',
+    padding: '1.5rem 2rem',
+    marginTop: 'auto'
+  };
+
+  const containerStyle: React.CSSProperties = {
+    maxWidth: '1200px',
+    margin: '0 auto',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center'
+  };
+
+  const navStyle: React.CSSProperties = {
+    display: 'flex',
+    gap: '1rem'
+  };
+
+  const linkStyle: React.CSSProperties = {
+    color: 'white',
+    textDecoration: 'none'
+  };
 
   return (
-    <Box 
-      component="footer" 
-      sx={{ 
-        bgcolor: 'primary.main', 
-        color: 'white', 
-        py: (theme) => theme.spacing(theme.spacingTokens.medium), 
-        mt: 'auto' 
-      }}
-    >
-      <Container maxWidth="lg">
-        <FlexBox justify="space-between">
-          <Typography variant="body2">
-            © {new Date().getFullYear()} CarDoc Web v{APP_CONFIG.appVersion} - {t('footer.rights')}
-          </Typography>
-          <FlexBox gap="small">
-            <MuiLink 
-              component={RouterLink} 
-              to="/contact" 
-              color="inherit" 
-              underline="hover"
-            >
-              {t('footer.contact')}
-            </MuiLink>
-            <MuiLink 
-              component={RouterLink} 
-              to="/legal/terms" 
-              color="inherit" 
-              underline="hover"
-            >
-              {t('footer.terms')}
-            </MuiLink>
-            <MuiLink 
-              component={RouterLink} 
-              to="/legal/privacy" 
-              color="inherit" 
-              underline="hover"
-            >
-              {t('footer.privacy')}
-            </MuiLink>
-          </FlexBox>
-        </FlexBox>
-      </Container>
-    </Box>
+    <footer style={footerStyle}>
+      <div style={containerStyle}>
+        <p style={{ margin: 0 }}>© {new Date().getFullYear()} CarDoc - Tous droits réservés</p>
+        <nav style={navStyle}>
+          <Link to="/contact" style={linkStyle}>Contact</Link>
+          <Link to="/legal/terms" style={linkStyle}>CGU</Link>
+          <Link to="/legal/privacy" style={linkStyle}>Confidentialité</Link>
+        </nav>
+      </div>
+    </footer>
   );
 };
 

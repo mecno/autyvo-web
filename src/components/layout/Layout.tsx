@@ -1,18 +1,26 @@
 import { Outlet } from 'react-router-dom';
-import { Box } from '@mui/material';
 import Header from './Header';
 import Footer from './Footer';
 
-const Layout = () => {
+const Layout: React.FC = () => {
+  const containerStyle: React.CSSProperties = {
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100vh'
+  };
+
+  const mainStyle: React.CSSProperties = {
+    flexGrow: 1
+  };
+
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+    <div style={containerStyle}>
       <Header />
-      <Box component="main" sx={{ flexGrow: 1 }}>
-        {/* Le contenu de la page active s'affichera ici */}
+      <main style={mainStyle}>
         <Outlet />
-      </Box>
+      </main>
       <Footer />
-    </Box>
+    </div>
   );
 };
 

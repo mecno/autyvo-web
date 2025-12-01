@@ -1,70 +1,37 @@
-import { useTranslation } from 'react-i18next';
-import { AppBar, Toolbar, Typography, Button, ButtonGroup } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { FlexBox, AppLogo } from '../ui';
 
-const Header = () => {
-  // Utilise uniquement le namespace 'common'
-  const { t, i18n } = useTranslation('common');
-
-  const setLanguage = (lang: string) => {
-    i18n.changeLanguage(lang);
+const Header: React.FC = () => {
+  const headerStyle: React.CSSProperties = {
+    backgroundColor: '#1976d2',
+    color: 'white',
+    padding: '1rem 2rem',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center'
   };
 
-  const currentLang = i18n.language.split('-')[0]; // Gère 'fr-FR' -> 'fr'
+  const navStyle: React.CSSProperties = {
+    display: 'flex',
+    gap: '1rem',
+    alignItems: 'center'
+  };
+
+  const linkStyle: React.CSSProperties = {
+    color: 'white',
+    textDecoration: 'none'
+  };
 
   return (
-    <AppBar position="static">
-      <Toolbar>
-        <FlexBox gap="medium" sx={{ flexGrow: 1 }}>
-          <AppLogo size="medium" />
-          <Typography variant="h6" component="div" sx={{ color: 'white' }}>
-            {t('header.title')}
-          </Typography>
-        </FlexBox>
-        
-        <FlexBox gap="small">
-          <Button color="inherit" component={Link} to="/">
-            {t('home')}
-          </Button>
-          <Button color="inherit" component={Link} to="/contact">
-            {t('contact')}
-          </Button>
-          <Button color="inherit" component={Link} to="/help">
-            {t('help')}
-          </Button>
-          <Button color="inherit" component={Link} to="/legal/terms">
-            {t('legal.terms')}
-          </Button>
-          <Button color="inherit" component={Link} to="/legal/privacy">
-            {t('legal.privacy')}
-          </Button>
-          
-          <ButtonGroup variant="outlined" size="small">
-            <Button 
-              onClick={() => setLanguage('fr')}
-              variant={currentLang === 'fr' ? 'contained' : 'outlined'}
-              sx={{ 
-                color: currentLang === 'fr' ? 'primary.contrastText' : 'inherit',
-                borderColor: 'rgba(255, 255, 255, 0.5)'
-              }}
-            >
-              FR
-            </Button>
-            <Button 
-              onClick={() => setLanguage('en')}
-              variant={currentLang === 'en' ? 'contained' : 'outlined'}
-              sx={{ 
-                color: currentLang === 'en' ? 'primary.contrastText' : 'inherit',
-                borderColor: 'rgba(255, 255, 255, 0.5)'
-              }}
-            >
-              EN
-            </Button>
-          </ButtonGroup>
-        </FlexBox>
-      </Toolbar>
-    </AppBar>
+    <header style={headerStyle}>
+      <h1 style={{ margin: 0, fontSize: '1.5rem' }}>CarDoc</h1>
+      <nav style={navStyle}>
+        <Link to="/" style={linkStyle}>Accueil</Link>
+        <Link to="/contact" style={linkStyle}>Contact</Link>
+        <Link to="/help" style={linkStyle}>Aide</Link>
+        <Link to="/legal/terms" style={linkStyle}>CGU</Link>
+        <Link to="/legal/privacy" style={linkStyle}>Confidentialité</Link>
+      </nav>
+    </header>
   );
 };
 

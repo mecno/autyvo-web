@@ -1,6 +1,16 @@
-const LandingPage = () => {
+const LandingPage: React.FC = () => {
+  const containerStyle: React.CSSProperties = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    minHeight: '100vh',
+    padding: '20px'
+  };
+
   return (
-    <div>Home Page</div>
+    <div style={containerStyle}>
+      <h1>Accueil</h1>
+    </div>
   );
 };
 
