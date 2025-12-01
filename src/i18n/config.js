@@ -1,17 +1,45 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import HttpApi from 'i18next-http-backend';
+
+// Import direct des traductions (plus performant que HTTP)
+import commonFr from '../locales/fr/common.json';
+import commonEn from '../locales/en/common.json';
+import cguFr from '../locales/fr/cgu.json';
+import cguEn from '../locales/en/cgu.json';
+import helpFr from '../locales/fr/help.json';
+import helpEn from '../locales/en/help.json';
+import privacyFr from '../locales/fr/privacy.json';
+import privacyEn from '../locales/en/privacy.json';
+import deleteAccountFr from '../locales/fr/delete-account.json';
+import deleteAccountEn from '../locales/en/delete-account.json';
+
+// Ressources de traduction
+const resources = {
+  fr: {
+    common: commonFr,
+    cgu: cguFr,
+    help: helpFr,
+    privacy: privacyFr,
+    'delete-account': deleteAccountFr,
+  },
+  en: {
+    common: commonEn,
+    cgu: cguEn,
+    help: helpEn,
+    privacy: privacyEn,
+    'delete-account': deleteAccountEn,
+  },
+};
 
 i18n
-  // Charge les traductions via HTTP (lazy loading)
-  .use(HttpApi)
   // Détecte la langue du navigateur
   .use(LanguageDetector)
   // Passe l'instance i18n à react-i18next
   .use(initReactI18next)
   // Initialise i18next
   .init({
+    resources, // Traductions importées directement
     fallbackLng: 'fr', // Français par défaut
     debug: false,
     
@@ -39,12 +67,6 @@ i18n
       caches: ['localStorage'],
       lookupLocalStorage: 'i18nextLng'
     },
-    
-    backend: {
-      // Chemin vers les fichiers de traduction par namespace
-      // {{lng}} = langue (fr, en), {{ns}} = namespace (common, cgu, help)
-      loadPath: '/locales/{{lng}}/{{ns}}.json'
-    }
   });
 
 export default i18n;
