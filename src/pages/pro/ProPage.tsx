@@ -71,7 +71,7 @@ function ProPage() {
               </div>
               <div className="flex justify-center">
                 <img
-                  src="/image 5.png"
+                  src="/src/assets/images/illustrations/client-talking-to-professional.png"
                   alt="Client et mécanicien discutant"
                   className="rounded-2xl shadow-2xl w-full max-w-md object-cover"
                 />
@@ -169,7 +169,7 @@ function ProPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white p-8 rounded-xl shadow-lg">
                 <img
-                  src="/image 2.jpeg"
+                  src="/src/assets/images/illustrations/professional-in-showroom.jpg"
                   alt="Professionnelle dans un showroom"
                   className="w-full h-48 object-cover rounded-lg mb-6"
                 />
@@ -182,7 +182,7 @@ function ProPage() {
 
               <div className="bg-white p-8 rounded-xl shadow-lg">
                 <img
-                  src="/image 3.jpeg"
+                  src="/src/assets/images/illustrations/mechanic-at-work.jpg"
                   alt="Mécanicien au travail"
                   className="w-full h-48 object-cover rounded-lg mb-6"
                 />
@@ -195,7 +195,7 @@ function ProPage() {
 
               <div className="bg-white p-8 rounded-xl shadow-lg">
                 <img
-                  src="/image 4.jpeg"
+                  src="/src/assets/images/illustrations/fleet-manager.jpg"
                   alt="Gestionnaire de flotte"
                   className="w-full h-48 object-cover rounded-lg mb-6"
                 />
