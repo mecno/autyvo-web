@@ -18,11 +18,16 @@
  */
 
 import { styled } from '@mui/material/styles';
+import { TypographyProps } from '@mui/material';
 import { BodyText } from './Typography';
 
+interface ParagraphProps extends TypographyProps {
+  noMargin?: boolean;
+}
+
 const Paragraph = styled(BodyText, {
-  shouldForwardProp: (prop) => !['noMargin'].includes(prop),
-})(({ theme, noMargin = false }) => {
+  shouldForwardProp: (prop) => !['noMargin'].includes(prop as string),
+})<ParagraphProps>(({ theme, noMargin = false }) => {
   if (noMargin) {
     return { marginBottom: 0 };
   }

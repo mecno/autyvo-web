@@ -12,13 +12,21 @@
  * Remplace: <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
  */
 
-import { Box } from '@mui/material';
+import { Box, BoxProps } from '@mui/material';
 import { styled } from '@mui/material/styles';
+
+interface FlexBoxProps extends BoxProps {
+  direction?: 'row' | 'column';
+  gap?: 'xs' | 'small' | 'medium' | 'large' | number;
+  align?: 'flex-start' | 'center' | 'flex-end' | 'stretch';
+  justify?: 'flex-start' | 'center' | 'flex-end' | 'space-between' | 'space-around';
+  wrap?: boolean;
+}
 
 const FlexBox = styled(Box, {
   shouldForwardProp: (prop) => 
-    !['direction', 'gap', 'align', 'justify', 'wrap'].includes(prop),
-})(({ 
+    !['direction', 'gap', 'align', 'justify', 'wrap'].includes(prop as string),
+})<FlexBoxProps>(({ 
   theme, 
   direction = 'row', 
   gap = 'small', 

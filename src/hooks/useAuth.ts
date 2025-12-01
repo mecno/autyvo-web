@@ -4,13 +4,82 @@
  * Facilite la migration et permet d'ajouter de la logique métier centralisée
  */
 
-import { useAuth as useOidcAuth } from 'react-oidc-context';
+import { useAuth as useOidcAuth, User } from 'react-oidc-context';
+
+interface AuthOptions {
+  redirect_uri?: string;
+  [key: string]: any;
+}
+
+interface LogoutOptions {
+  post_logout_redirect_uri?: string;
+  [key: string]: any;
+}
+
+export interface AuthState {
+  // ─── État d'authentification ───────────────────────────
+  
+  /** Indique si l'utilisateur est authentifié */
+  isAuthenticated: boolean;
+  
+  /** Indique si l'authentification est en cours de chargement */
+  isLoading: boolean;
+  
+  /** Profil de l'utilisateur authentifié (claims du token ID) */
+  user?: User['profile'];
+  
+  /** Erreur éventuelle lors de l'authentification */
+  error?: Error;
+
+  // ─── Méthodes d'authentification ───────────────────────────
+  
+  /**
+   * Redirige vers la page de login Keycloak
+   */
+  loginWithRedirect: (options?: AuthOptions) => Promise<void>;
+  
+  /**
+   * Déconnecte l'utilisateur et redirige vers la page de logout Keycloak
+   */
+  logout: (options?: LogoutOptions) => Promise<void>;
+  
+  /**
+   * Récupère le token d'accès de manière silencieuse
+   */
+  getAccessTokenSilently: () => Promise<string>;
+
+  /**
+   * Rafraîchit le token silencieusement
+   */
+  refreshToken: () => Promise<void>;
+
+  // ─── Données brutes (au cas où) ────────────────────────────
+  
+  /**
+   * Objet auth complet de react-oidc-context
+   */
+  _raw: ReturnType<typeof useOidcAuth>;
+
+  /**
+   * Token d'accès brut (JWT)
+   */
+  accessToken?: string;
+
+  /**
+   * Token ID brut (JWT)
+   */
+  idToken?: string;
+
+  /**
+   * Scopes accordés
+   */
+  scopes: string[];
+}
 
 /**
  * Hook personnalisé pour l'authentification via Keycloak (OIDC)
- * @returns {Object} Objet contenant l'état et les méthodes d'authentification
  */
-export function useAuth() {
+export function useAuth(): AuthState {
   const auth = useOidcAuth();
 
   return {
@@ -35,7 +104,7 @@ export function useAuth() {
      * @param {Object} options - Options de redirection
      * @returns {Promise<void>}
      */
-    loginWithRedirect: async (options = {}) => {
+    loginWithRedirect: async (options: AuthOptions = {}) => {
       try {
         await auth.signinRedirect(options);
       } catch (error) {
@@ -49,7 +118,7 @@ export function useAuth() {
      * @param {Object} options - Options de déconnexion
      * @returns {Promise<void>}
      */
-    logout: async (options = {}) => {
+    logout: async (options: LogoutOptions = {}) => {
       try {
         await auth.signoutRedirect({
           post_logout_redirect_uri: window.location.origin,

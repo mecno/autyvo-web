@@ -19,12 +19,16 @@
  * ```
  */
 
-import { List } from '@mui/material';
+import { List, ListProps } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
+interface BulletListProps extends ListProps {
+  spacing?: 'none' | 'small' | 'medium';
+}
+
 const BulletList = styled(List, {
-  shouldForwardProp: (prop) => !['spacing'].includes(prop),
-})(({ theme, spacing = 'small' }) => {
+  shouldForwardProp: (prop) => !['spacing'].includes(prop as string),
+})<BulletListProps>(({ theme, spacing = 'small' }) => {
   const spacingMap = {
     none: 0,
     small: 1,    // mt: 1 (8px) - correspond au pattern existant

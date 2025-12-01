@@ -25,11 +25,16 @@
  */
 
 import { styled } from '@mui/material/styles';
+import { ReactNode } from 'react';
 import FlexBox from './FlexBox';
 
+interface StyledFlexBoxProps {
+  spacing?: 'none' | 'small' | 'medium';
+}
+
 const StyledFlexBox = styled(FlexBox, {
-  shouldForwardProp: (prop) => !['spacing'].includes(prop),
-})(({ theme, spacing = 'none' }) => {
+  shouldForwardProp: (prop) => !['spacing'].includes(prop as string),
+})<StyledFlexBoxProps>(({ theme, spacing = 'none' }) => {
   const spacingMap = {
     none: 0,
     small: 1,   // mb: 1 (8px)
@@ -41,7 +46,15 @@ const StyledFlexBox = styled(FlexBox, {
   };
 });
 
-const IconTextRow = ({ icon, children, gap = 'small', spacing = 'none', ...props }) => {
+interface IconTextRowProps {
+  icon: ReactNode;
+  children: ReactNode;
+  gap?: 'xs' | 'small' | 'medium' | 'large' | number;
+  spacing?: 'none' | 'small' | 'medium';
+  [key: string]: any;
+}
+
+const IconTextRow = ({ icon, children, gap = 'small', spacing = 'none', ...props }: IconTextRowProps) => {
   return (
     <StyledFlexBox 
       align="center" 

@@ -10,10 +10,8 @@ const MOCK_MODE = import.meta.env.DEV;
 export const userService = {
   /**
    * Supprimer le compte de l'utilisateur connecté
-   * @param {string} token - Token d'authentification Auth0
-   * @returns {Promise<void>}
    */
-  async deleteAccount(token) {
+  async deleteAccount(token: string): Promise<void> {
     // Mock pour le développement sans backend
     if (MOCK_MODE && token === 'mock-token-for-testing') {
       console.log('UserService [MOCK]: Simulating account deletion...');

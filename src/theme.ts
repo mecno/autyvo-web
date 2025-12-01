@@ -1,5 +1,17 @@
 import { createTheme } from '@mui/material/styles';
 
+// Étendre le type Theme de Material-UI pour inclure nos tokens personnalisés
+declare module '@mui/material/styles' {
+  interface Theme {
+    spacingTokens: typeof SPACING;
+    categories: typeof COLORS.categories;
+  }
+  interface ThemeOptions {
+    spacingTokens?: typeof SPACING;
+    categories?: typeof COLORS.categories;
+  }
+}
+
 // 🎨 Design Tokens - Valeurs sémantiques centralisées
 const SPACING = {
   xs: 1,      // 8px - Espacement minimal

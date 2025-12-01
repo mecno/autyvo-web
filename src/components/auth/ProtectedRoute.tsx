@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, PropsWithChildren } from 'react';
 import { useAuth } from '@/hooks/useAuth';
 import { Box, CircularProgress } from '@mui/material';
 
@@ -6,7 +6,7 @@ import { Box, CircularProgress } from '@mui/material';
  * Composant de protection de routes
  * Redirige automatiquement vers Keycloak si l'utilisateur n'est pas authentifié
  */
-export default function ProtectedRoute({ children }) {
+export default function ProtectedRoute({ children }: PropsWithChildren) {
   const { isAuthenticated, isLoading, loginWithRedirect } = useAuth();
   const hasRedirected = useRef(false);
 

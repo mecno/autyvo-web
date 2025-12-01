@@ -12,10 +12,9 @@ import { styled } from '@mui/material/styles';
  * PageTitle - Titre principal de page
  * Remplace: <Typography variant="h3" component="h1" gutterBottom>
  */
-export const PageTitle = styled(Typography)({});
+export const PageTitle = styled(Typography)(({}) => ({}));
 PageTitle.defaultProps = {
   variant: 'h3',
-  component: 'h1',
   gutterBottom: true,
 };
 

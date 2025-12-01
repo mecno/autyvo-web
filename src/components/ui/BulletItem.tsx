@@ -26,12 +26,17 @@
  * ```
  */
 
-import { ListItem, ListItemText } from '@mui/material';
+import { ListItem, ListItemText, ListItemProps } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { ReactNode } from 'react';
+
+interface StyledListItemProps extends ListItemProps {
+  variant?: 'default' | 'indented';
+}
 
 const StyledListItem = styled(ListItem, {
-  shouldForwardProp: (prop) => !['variant'].includes(prop),
-})(({ variant = 'default' }) => {
+  shouldForwardProp: (prop) => !['variant'].includes(prop as string),
+})<StyledListItemProps>(({ variant = 'default' }) => {
   const variantStyles = {
     default: {
       paddingTop: '0.5rem',
@@ -50,7 +55,13 @@ const StyledListItem = styled(ListItem, {
   return variantStyles[variant] || variantStyles.default;
 });
 
-const BulletItem = ({ children, variant = 'default', noBullet = false, ...props }) => {
+interface BulletItemProps extends Omit<ListItemProps, 'children'> {
+  children: ReactNode;
+  variant?: 'default' | 'indented';
+  noBullet?: boolean;
+}
+
+const BulletItem = ({ children, variant = 'default', noBullet = false, ...props }: BulletItemProps) => {
   // Pour les items indentés, on ajoute le bullet •
   // Pour les items par défaut sans bullet explicite, on passe le texte tel quel
   const displayText = !noBullet && variant === 'indented' 

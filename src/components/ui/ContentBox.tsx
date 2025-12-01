@@ -11,12 +11,20 @@
  * Remplace: <Box sx={{ mt: 3, mb: 4 }}>
  */
 
-import { Box } from '@mui/material';
+import { Box, BoxProps } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
+interface ContentBoxProps extends BoxProps {
+  variant?: 'section' | 'compact' | 'spacious' | 'none';
+  spacing?: {
+    top?: string | number;
+    bottom?: string | number;
+  };
+}
+
 const ContentBox = styled(Box, {
-  shouldForwardProp: (prop) => !['variant', 'spacing'].includes(prop),
-})(({ theme, variant = 'section', spacing }) => {
+  shouldForwardProp: (prop) => !['variant', 'spacing'].includes(prop as string),
+})<ContentBoxProps>(({ theme, variant = 'section', spacing }) => {
   // Si spacing custom est fourni
   if (spacing) {
     return {

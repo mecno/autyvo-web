@@ -1,16 +1,16 @@
-import { Box } from '@mui/material';
+import { Box, BoxProps } from '@mui/material';
 import { Link } from 'react-router-dom';
 import cardocLogo from '../../assets/images/logo.png';
 
+interface AppLogoProps extends Omit<BoxProps, 'size'> {
+  clickable?: boolean;
+  size?: 'small' | 'medium' | 'large';
+}
+
 /**
  * AppLogo - Logo de l'application avec taille standardisée
- * 
- * @param {Object} props
- * @param {boolean} props.clickable - Si true, le logo est cliquable et redirige vers la home (default: true)
- * @param {'small' | 'medium' | 'large'} props.size - Taille du logo (default: 'medium')
- * @param {Object} props.sx - Styles MUI supplémentaires
  */
-const AppLogo = ({ clickable = true, size = 'medium', sx = {}, ...props }) => {
+const AppLogo = ({ clickable = true, size = 'medium', sx = {}, ...props }: AppLogoProps) => {
   const sizeMap = {
     small: 32,
     medium: 40,

@@ -4,13 +4,14 @@
 
 export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
+interface ApiFetchOptions extends RequestInit {
+  headers?: HeadersInit;
+}
+
 /**
  * Helper pour les appels fetch avec gestion des erreurs
- * @param {string} endpoint - Endpoint de l'API (ex: '/v1/cardoc/users/me')
- * @param {object} options - Options fetch (method, headers, body, etc.)
- * @returns {Promise<any>} - Réponse JSON ou void pour 204 No Content
  */
-export async function apiFetch(endpoint, options = {}) {
+export async function apiFetch<T = any>(endpoint: string, options: ApiFetchOptions = {}): Promise<T | void> {
   const url = `${API_BASE_URL}${endpoint}`;
   
   const response = await fetch(url, {
@@ -28,7 +29,7 @@ export async function apiFetch(endpoint, options = {}) {
   
   // Erreur HTTP
   if (!response.ok) {
-    const error = await response.json().catch(() => ({ message: 'Unknown error' }));
+    const error: { message?: string } = await response.json().catch(() => ({ message: 'Unknown error' }));
     throw new Error(error.message || `HTTP ${response.status}`);
   }
   

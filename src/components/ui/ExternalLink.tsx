@@ -24,12 +24,18 @@
  * ```
  */
 
-import { Link } from '@mui/material';
+import { Link, LinkProps } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { ReactNode } from 'react';
+
+interface StyledLinkProps extends LinkProps {
+  variant?: 'primary' | 'secondary' | 'default';
+  weight?: 'normal' | 'medium' | 'bold';
+}
 
 const StyledLink = styled(Link, {
-  shouldForwardProp: (prop) => !['variant', 'weight'].includes(prop),
-})(({ theme, variant = 'primary', weight = 'medium' }) => {
+  shouldForwardProp: (prop) => !['variant', 'weight'].includes(prop as string),
+})<StyledLinkProps>(({ theme, variant = 'primary', weight = 'medium' }) => {
   const variantStyles = {
     primary: {
       color: theme.palette.primary.main,
@@ -58,13 +64,20 @@ const StyledLink = styled(Link, {
   };
 });
 
+interface ExternalLinkProps extends Omit<LinkProps, 'variant'> {
+  href: string;
+  children: ReactNode;
+  variant?: 'primary' | 'secondary' | 'default';
+  weight?: 'normal' | 'medium' | 'bold';
+}
+
 const ExternalLink = ({ 
   href, 
   children, 
   variant = 'primary', 
   weight = 'medium',
   ...props 
-}) => {
+}: ExternalLinkProps) => {
   // Détecte si c'est un lien mailto
   const isMailto = href?.startsWith('mailto:');
   

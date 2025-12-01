@@ -10,12 +10,16 @@
  * Remplace: <Paper elevation={3} sx={{ p: 4 }}>
  */
 
-import { Paper } from '@mui/material';
+import { Paper, PaperProps } from '@mui/material';
 import { styled } from '@mui/material/styles';
+
+interface PagePaperProps extends PaperProps {
+  variant?: 'elevated' | 'flat' | 'outlined';
+}
 
 const PagePaper = styled(Paper, {
   shouldForwardProp: (prop) => prop !== 'variant',
-})(({ theme, variant = 'elevated' }) => {
+})<PagePaperProps>(({ theme, variant = 'elevated' }) => {
   const baseStyles = {
     padding: theme.spacing(theme.spacingTokens.large),
     borderRadius: theme.shape.borderRadius,

@@ -24,12 +24,17 @@
  * ```
  */
 
-import { Box } from '@mui/material';
+import { Box, BoxProps } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { ReactNode } from 'react';
 import { SectionTitle, BodyText } from './Typography';
 import FlexBox from './FlexBox';
 
-const StyledCard = styled(Box)(({ theme, maxWidth = '400px' }) => ({
+interface StyledCardProps extends BoxProps {
+  maxWidth?: string | number;
+}
+
+const StyledCard = styled(Box)<StyledCardProps>(({ theme, maxWidth = '400px' }) => ({
   padding: theme.spacing(2),
   border: `1px solid ${theme.palette.divider}`,
   borderRadius: theme.shape.borderRadius,
@@ -44,7 +49,15 @@ const StyledCard = styled(Box)(({ theme, maxWidth = '400px' }) => ({
   },
 }));
 
-const ContactCard = ({ icon, title, description, action, maxWidth, ...props }) => {
+interface ContactCardProps extends Omit<BoxProps, 'maxWidth'> {
+  icon?: ReactNode;
+  title: string;
+  description?: string;
+  action?: ReactNode;
+  maxWidth?: string | number;
+}
+
+const ContactCard = ({ icon, title, description, action, maxWidth, ...props }: ContactCardProps) => {
   return (
     <StyledCard maxWidth={maxWidth} {...props}>
       {/* Header avec icône + titre */}

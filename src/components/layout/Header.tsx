@@ -7,7 +7,7 @@ const Header = () => {
   // Utilise uniquement le namespace 'common'
   const { t, i18n } = useTranslation('common');
 
-  const setLanguage = (lang) => {
+  const setLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
   };
 
