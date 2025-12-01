@@ -1,9 +1,9 @@
 import { Helmet } from 'react-helmet-async';
 import { Book, Calendar, Download, TrendingUp, Lightbulb, RefreshCw } from 'lucide-react';
 import { useState } from 'react';
-import QuotidienSection from './QuotidienSection';
-import TraceSection from './TraceSection';
-import CalendrierSection from './CalendrierSection';
+import QuotidienSection from '@/components/blog/QuotidienSection';
+import TraceSection from '@/components/blog/TraceSection';
+import CalendrierSection from '@/components/blog/CalendrierSection';
 
 function BlogPage() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
