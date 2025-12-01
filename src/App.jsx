@@ -1,6 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import ProtectedRoute from './components/auth/ProtectedRoute';
+import LandingPage from './pages/LandingPage';
 import ContactPage from './pages/ContactPage';
 import HelpPage from './pages/HelpPage';
 import TermsPage from './pages/legal/TermsPage';
@@ -9,20 +10,15 @@ import DeleteAccountPage from './pages/account/DeleteAccountPage';
 
 const App = () => {
   return (
-    <Router
-      future={{
-        v7_startTransition: true,
-        v7_relativeSplatPath: true
-      }}
-    >
-      <Routes>
+    <Routes>
+      {/* Route wrapper avec Layout - Toutes les routes enfants auront Header/Footer */}
+      <Route element={<Layout />}>
+        
         {/* Page d'accueil */}
-        <Route path="/" element={<Layout><div>Home Page</div></Layout>} />
+        <Route path="/" element={<LandingPage />} />
         
-        {/* Contact */}
+        {/* Pages publiques */}
         <Route path="/contact" element={<ContactPage />} />
-        
-        {/* Aide */}
         <Route path="/help" element={<HelpPage />} />
         
         {/* Pages légales */}
@@ -38,8 +34,12 @@ const App = () => {
             </ProtectedRoute>
           } 
         />
-      </Routes>
-    </Router>
+
+        {/* Gestion 404 - Redirection vers l'accueil */}
+        <Route path="*" element={<Navigate to="/" replace />} />
+        
+      </Route>
+    </Routes>
   );
 };
 

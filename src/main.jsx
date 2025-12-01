@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import { AuthProvider } from 'react-oidc-context';
 import { HelmetProvider } from 'react-helmet-async';
 import { ThemeProvider } from '@mui/material/styles';
@@ -57,9 +58,16 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <AuthProvider {...oidcConfig}>
         <ThemeProvider theme={theme}>
           <CssBaseline />
-          <Suspense fallback={<LoadingFallback />}>
-            <App />
-          </Suspense>
+          <BrowserRouter
+            future={{
+              v7_startTransition: true,
+              v7_relativeSplatPath: true
+            }}
+          >
+            <Suspense fallback={<LoadingFallback />}>
+              <App />
+            </Suspense>
+          </BrowserRouter>
         </ThemeProvider>
       </AuthProvider>
     </HelmetProvider>
