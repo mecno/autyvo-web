@@ -65,6 +65,18 @@ const Header: React.FC = () => {
               {t('header.nav.features')}
             </button>
             <Link
+              to="/ia"
+              className="text-[#183755] hover:text-[#02b197] transition-colors"
+            >
+              Technologies
+            </Link>
+            <Link
+              to="/pro"
+              className="text-[#183755] hover:text-[#02b197] transition-colors"
+            >
+              Professionnels
+            </Link>
+            <Link
               to="/contact"
               className="text-[#183755] hover:text-[#02b197] transition-colors"
             >
@@ -95,6 +107,18 @@ const Header: React.FC = () => {
               className="block w-full text-left text-[#183755] hover:text-[#02b197] py-2"
             >
               {t('header.nav.features')}
+            </button>
+            <button
+              onClick={() => handleNavigation('/ia')}
+              className="block w-full text-left text-[#183755] hover:text-[#02b197] py-2"
+            >
+              Technologies
+            </button>
+            <button
+              onClick={() => handleNavigation('/pro')}
+              className="block w-full text-left text-[#183755] hover:text-[#02b197] py-2"
+            >
+              Professionnels
             </button>
             <button
               onClick={() => handleNavigation('/contact')}
