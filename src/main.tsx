@@ -1,11 +1,11 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import { AuthProvider } from 'react-oidc-context';
+import { AuthProvider, AuthProviderProps } from 'react-oidc-context';
 import { HelmetProvider } from 'react-helmet-async';
 import { ThemeProvider } from '@mui/material/styles';
 import { CssBaseline, CircularProgress, Box } from '@mui/material';
-import App from './App.jsx';
+import App from './App';
 import theme from './theme';
 import './assets/styles/global.css';
 import './i18n/config';
@@ -25,7 +25,7 @@ const LoadingFallback = () => (
 );
 
 // Configuration OIDC pour Keycloak
-const oidcConfig = {
+const oidcConfig: AuthProviderProps = {
   // URL complète de l'authority Keycloak (avec le realm)
   authority: `${import.meta.env.VITE_KEYCLOAK_URL}/realms/${import.meta.env.VITE_KEYCLOAK_REALM}`,
   
@@ -52,7 +52,7 @@ const oidcConfig = {
   loadUserInfo: true, // Charger les infos utilisateur depuis l'endpoint userinfo
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <HelmetProvider>
       <AuthProvider {...oidcConfig}>
