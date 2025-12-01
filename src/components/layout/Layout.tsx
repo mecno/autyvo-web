@@ -3,20 +3,10 @@ import Header from './Header';
 import Footer from './Footer';
 
 const Layout: React.FC = () => {
-  const containerStyle: React.CSSProperties = {
-    display: 'flex',
-    flexDirection: 'column',
-    minHeight: '100vh'
-  };
-
-  const mainStyle: React.CSSProperties = {
-    flexGrow: 1
-  };
-
   return (
-    <div style={containerStyle}>
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <main style={mainStyle}>
+      <main className="flex-grow">
         <Outlet />
       </main>
       <Footer />
