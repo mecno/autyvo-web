@@ -21,7 +21,7 @@ export const userService = {
       return;
     }
 
-    const endpoint = 'v1/cardoc/users/me';
+    const endpoint = 'v1/users/me';
     
     console.log('UserService: Deleting user account at:', `${API_BASE_URL}${endpoint}`);
     

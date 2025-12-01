@@ -5,22 +5,22 @@ import PrivacyPage from './PrivacyPage';
 // Mock des traductions Privacy avec structure complète
 const mockPrivacyTranslations = {
   title: 'Politique de Confidentialité',
-  subtitle: 'Application et Site Web CarDoc',
+  subtitle: 'Application et Site Web Autyvo',
   lastUpdate: 'Date d\'entrée en vigueur : 05/11/2025',
   preamble: {
     title: 'Préambule',
-    content: 'La société CarDoc attache une grande importance...',
+    content: 'La société Autyvo attache une grande importance...',
     rgpd: 'Cette politique est conforme au RGPD.',
   },
   section1: {
     title: '1. Responsable du Traitement',
     intro: 'Le responsable du traitement...',
-    company: 'CarDoc, SAS',
-    contact: 'Pour toute question : contact@cardoc.fr',
+    company: 'Autyvo, SAS',
+    contact: 'Pour toute question : contact@Autyvo.fr',
   },
   section2: {
     title: '2. Données Collectées et Finalités',
-    intro: 'CarDoc s\'engage...',
+    intro: 'Autyvo s\'engage...',
     sectionA: {
       title: 'A. Données collectées lors de l\'inscription',
       intro: 'Selon la méthode...',
@@ -54,7 +54,7 @@ const mockPrivacyTranslations = {
   section3: {
     title: '3. Destinataires et Partage des Données',
     principles: {
-      title: 'CarDoc s\'engage...',
+      title: 'Autyvo s\'engage...',
       noSale: 'Non-vente des Données',
     },
     intro: 'Vos données ne sont partagées...',
@@ -97,7 +97,7 @@ const mockPrivacyTranslations = {
   },
   section7: {
     title: '7. Sécurité',
-    content: 'CarDoc met en œuvre...',
+    content: 'Autyvo met en œuvre...',
   },
   section8: {
     title: '8. Modification de la Politique',
@@ -147,7 +147,7 @@ describe('PrivacyPage', () => {
     render(<PrivacyPage />);
     
     expect(screen.getByRole('heading', { level: 1, name: /Politique de Confidentialité/i })).toBeInTheDocument();
-    expect(screen.getByText(/Application et Site Web CarDoc/i)).toBeInTheDocument();
+    expect(screen.getByText(/Application et Site Web Autyvo/i)).toBeInTheDocument();
     expect(screen.getByText(/Date d'entrée en vigueur/i)).toBeInTheDocument();
   });
 

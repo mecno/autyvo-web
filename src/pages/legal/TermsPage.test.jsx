@@ -5,7 +5,7 @@ import TermsPage from './TermsPage';
 // Mock des traductions CGU avec structure complète
 const mockCguTranslations = {
   title: 'Conditions Générales d\'Utilisation',
-  subtitle: 'Application et Site Web CarDoc',
+  subtitle: 'Application et Site Web Autyvo',
   lastUpdate: 'Dernière mise à jour le 5 novembre 2025',
   section1: {
     title: '1. Objet et acceptation',
@@ -13,8 +13,8 @@ const mockCguTranslations = {
   },
   section2: {
     title: '2. Editeur',
-    content: 'L\'application mobile et le site web CarDoc...',
-    contact: 'Contact : support@cardoc.fr'
+    content: 'L\'application mobile et le site web Autyvo...',
+    contact: 'Contact : support@autyvo.com'
   },
 };
 

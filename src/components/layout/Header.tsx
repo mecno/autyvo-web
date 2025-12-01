@@ -23,7 +23,7 @@ const Header: React.FC = () => {
 
   return (
     <header style={headerStyle}>
-      <h1 style={{ margin: 0, fontSize: '1.5rem' }}>CarDoc</h1>
+      <h1 style={{ margin: 0, fontSize: '1.5rem' }}>Autyvo</h1>
       <nav style={navStyle}>
         <Link to="/" style={linkStyle}>Accueil</Link>
         <Link to="/contact" style={linkStyle}>Contact</Link>
