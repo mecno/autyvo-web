@@ -34,15 +34,15 @@ export default function DeleteAccountPage() {
   const { user, getAccessTokenSilently } = useAuth();
   const navigate = useNavigate();
 
-  const [email, setEmail] = useState('');
-  const [emailError, setEmailError] = useState(false);
-  const [dialogOpen, setDialogOpen] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const [success, setSuccess] = useState(false);
+  const [email, setEmail] = useState<string>('');
+  const [emailError, setEmailError] = useState<boolean>(false);
+  const [dialogOpen, setDialogOpen] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<boolean>(false);
 
   // Validation de l'email
-  const handleEmailChange = (e) => {
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
     setEmailError(false);
     setError(null);
