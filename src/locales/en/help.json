@@ -1,18 +1,3 @@
 {
-  "title": "Help Center",
-  "subtitle": "Our team is here to support you. Feel free to contact us.",
-  "search": "Search in help",
-  "contact": {
-    "website": {
-      "label": "Website",
-      "description": "Visit our website for more information",
-      "url": "{{website}}"
-    },
-    "support": {
-      "label": "Support",
-      "description": "Contact our support team",
-      "email": "{{supportEmail}}"
-    }
-  },
-  "faq": "Frequently Asked Questions"
+  "title": "Help Center"
 }
