@@ -8,7 +8,8 @@
     "cgu": "CarDoc - Terms of Use",
     "help": "CarDoc - Help",
     "privacy": "CarDoc - Privacy Policy",
-    "deleteAccount": "CarDoc - Delete Account"
+    "deleteAccount": "CarDoc - Delete Account",
+    "contact": "CarDoc - Contact"
   },
   "header": {
     "title": "CarDoc Web"
@@ -16,6 +17,23 @@
   "footer": {
     "rights": "All rights reserved",
     "contact": "Contact",
-    "about": "About"
+    "terms": "Terms",
+    "privacy": "Privacy"
+  },
+  "legal": {
+    "terms": "Terms of Use",
+    "privacy": "Privacy Policy"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to help",
+    "website": {
+      "label": "Website",
+      "description": "Visit our website for more information"
+    },
+    "email": {
+      "label": "Email",
+      "description": "Contact our support team"
+    }
   }
 }
