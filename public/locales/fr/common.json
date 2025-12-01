@@ -1,0 +1,21 @@
+{
+  "home": "Accueil",
+  "help": "Aide",
+  "cgu": "CGU",
+  "language": "Langue",
+  "pageTitle": {
+    "home": "CarDoc - Accueil",
+    "cgu": "CarDoc - CGU",
+    "help": "CarDoc - Aide",
+    "privacy": "CarDoc - Politique de Confidentialité",
+    "deleteAccount": "CarDoc - Suppression du compte"
+  },
+  "header": {
+    "title": "CarDoc Web"
+  },
+  "footer": {
+    "rights": "Tous droits réservés",
+    "contact": "Contact",
+    "about": "À propos"
+  }
+}

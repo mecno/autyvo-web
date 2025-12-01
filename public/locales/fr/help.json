@@ -1,0 +1,18 @@
+{
+  "title": "Centre d'aide",
+  "subtitle": "Notre équipe est là pour vous accompagner. N'hésitez pas à nous contacter.",
+  "search": "Rechercher dans l'aide",
+  "contact": {
+    "website": {
+      "label": "Site web",
+      "description": "Visitez notre site web pour plus d'informations",
+      "url": "{{website}}"
+    },
+    "support": {
+      "label": "Support",
+      "description": "Contactez notre équipe support",
+      "email": "{{supportEmail}}"
+    }
+  },
+  "faq": "Questions fréquentes"
+}

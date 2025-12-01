@@ -1,0 +1,130 @@
+{
+  "title": "Politique de Confidentialité",
+  "subtitle": "Application et Site Web CarDoc",
+  "lastUpdate": "Date d'entrée en vigueur : 05/11/2025",
+  
+  "preamble": {
+    "title": "Préambule",
+    "content": "La société CarDoc (ci-après \"CarDoc\", \"nous\", \"notre\") attache une grande importance à la protection de vos données personnelles. La présente Politique de Confidentialité a pour objectif de vous informer de manière transparente sur la manière dont nous collectons, utilisons, protégeons et gérons les données personnelles (ci-après les \"Données\") des utilisateurs (ci-après \"Utilisateur\", \"vous\", \"vos\") de notre application mobile et de notre site web (ci-après les \"Services\").",
+    "rgpd": "Cette politique est conforme au Règlement Général sur la Protection des Données (RGPD) de l'Union Européenne."
+  },
+  
+  "section1": {
+    "title": "1. Responsable du Traitement",
+    "intro": "Le responsable du traitement de vos Données est :",
+    "company": "CarDoc, SAS",
+    "capital": "Société au capital de 12 000 €",
+    "address": "Siège social : 1 rue de la Noé, 44300 Nantes, France",
+    "rcs": "RCS de Nantes : 992 651 349",
+    "contact": "Pour toute question relative à la protection de vos Données, vous pouvez nous contacter à l'adresse e-mail suivante : {{contactEmail}}."
+  },
+  
+  "section2": {
+    "title": "2. Données Collectées et Finalités",
+    "intro": "CarDoc s'engage à ne collecter que les Données strictement nécessaires à la fourniture de ses Services.",
+    "sectionA": {
+      "title": "A. Données collectées lors de l'inscription",
+      "intro": "Selon la méthode d'inscription que vous choisissez, nous collectons :",
+      "email": {
+        "title": "Inscription par E-mail (Obligatoire) :",
+        "data": "Données : Adresse e-mail.",
+        "purpose": "Finalité : Création et gestion de votre Compte, envoi de communications transactionnelles (confirmation de compte, alertes de sécurité), et envoi des rappels d'entretien (conformément à l'Article 8 des CGU).",
+        "legal": "Base légale : Exécution du contrat (CGU)."
+      },
+      "oauth": {
+        "title": "Inscription via un service tiers (Google, Apple) :",
+        "data": "Données : Adresse e-mail, Nom, Prénom, Avatar (selon les permissions que vous accordez au service tiers).",
+        "purpose": "Finalité : Création simplifiée du Compte, authentification et personnalisation de votre profil.",
+        "legal": "Base légale : Exécution du contrat (CGU)."
+      }
+    },
+    "sectionB": {
+      "title": "B. Données collectées lors de l'utilisation des Services",
+      "intro": "Ces Données sont saisies, gérées et stockées par vous. Nous agissons en tant qu'hébergeur pour ces Données :",
+      "vehicles": {
+        "title": "Données relatives aux véhicules :",
+        "data": "Données : Numéros d'immatriculation.",
+        "purpose": "Finalité : Identification des véhicules dans votre Compte et liaison avec les documents correspondants.",
+        "legal": "Base légale : Exécution du contrat (CGU)."
+      },
+      "management": {
+        "title": "Données de gestion du véhicule :",
+        "data": "Données : Documents que vous importez (factures, contrôles techniques, carte grise...), données que vous saisissez manuellement (coûts, notes d'entretien, kilométrage).",
+        "purpose": "Finalité : Fourniture des Services de base : archivage, suivi des coûts, génération de rapports (Art. 5 et 15 des CGU).",
+        "legal": "Base légale : Exécution du contrat (CGU)."
+      }
+    },
+    "sectionC": {
+      "title": "C. Données collectées auprès de partenaires",
+      "intro": "En utilisant nos Services (par exemple, en saisissant un numéro d'immatriculation), nous sommes susceptibles de recevoir des données personnelles vous concernant de la part de nos partenaires (ex. agrégateurs de données).",
+      "data": "Données : Informations administratives et données techniques",
+      "purpose": "Finalité : Enrichir le profil de votre véhicule et fournir un rapport de transparence complet.",
+      "legal": "Base légale : Exécution du contrat (CGU)."
+    }
+  },
+  
+  "section3": {
+    "title": "3. Destinataires et Partage des Données",
+    "principles": {
+      "title": "CarDoc s'engage :",
+      "noSale": "Non-vente des Données : Vos Données personnelles ne sont jamais vendues, louées ou cédées à des tiers à des fins marketing ou commerciales."
+    },
+    "intro": "Vos Données ne sont partagées qu'avec les destinataires suivants, essentiels au bon fonctionnement du Service :",
+    "hosting": {
+      "title": "A. Sous-traitants techniques (Hébergement)",
+      "content": "Vos Données sont stockées chez notre hébergeur en France (détaillé à l'Article 4)."
+    },
+    "sdk": {
+      "title": "B. Fournisseurs de Services et SDK Tiers",
+      "intro": "Nous intégrons des outils tiers (SDK) pour assurer et améliorer les fonctionnalités de l'application. Ces partenaires peuvent collecter certaines données (souvent anonymisées ou techniques) et sont soumis à leurs propres politiques de confidentialité.",
+      "analytics": "Analyse et Performance : Pour comprendre comment nos Services sont utilisés et améliorer leur stabilité (ex: rapports de crash).",
+      "notifications": "Notifications Push : Pour vous envoyer des rappels d'entretien et des alertes importantes.",
+      "support": "Support Utilisateur (le cas échéant) : Pour vous permettre de nous contacter via un chat ou un formulaire d'assistance."
+    },
+    "legal": {
+      "title": "C. Obligations légales",
+      "content": "Nous pouvons être amenés à communiquer vos Données si la loi l'exige ou sur réquisition d'une autorité judiciaire ou administrative."
+    }
+  },
+  
+  "section4": {
+    "title": "4. Propriété, Hébergement et Transferts",
+    "ownership": "Conformément à notre philosophie, les Données que vous saisissez dans CarDoc (documents, informations sur vos véhicules) vous appartiennent.",
+    "hosting": "Vos Données sont hébergées sur des serveurs sécurisés, situés en France."
+  },
+  
+  "section5": {
+    "title": "5. Durée de Conservation et Suppression du Compte",
+    "retention": {
+      "title": "A. Durée de conservation",
+      "content": "Vos Données sont conservées pendant toute la durée d'utilisation active de votre Compte, c'est-à-dire tant que vous utilisez les Services."
+    },
+    "deletion": {
+      "title": "B. Suppression du Compte",
+      "intro": "Vous gardez le contrôle total sur vos Données. Vous pouvez demander la suppression de votre Compte à tout moment, directement depuis l'application via le menu \"Profil > Supprimer le compte\".",
+      "process": "Le processus de suppression se déroule comme suit :",
+      "anonymization": "Anonymisation Immédiate : Dès votre demande, vos Données personnelles identifiantes sont immédiatement anonymisées dans nos bases de données de production. Votre Compte n'est plus accessible.",
+      "permanent": "Suppression Définitive : L'intégralité de vos Données (y compris les documents et les données anonymisées) est définitivement et irréversiblement supprimée de tous nos systèmes, y compris de nos sauvegardes, dans un délai maximum de 30 jours suivant votre demande."
+    }
+  },
+  
+  "section6": {
+    "title": "6. Vos Droits sur vos Données",
+    "intro": "Conformément au RGPD, vous disposez des droits suivants sur vos Données :",
+    "access": "Droit d'accès : Le droit de consulter les Données que nous détenons sur vous.",
+    "rectification": "Droit de rectification : Le droit de modifier vos Données si elles sont inexactes (par exemple, changer votre e-mail ou votre nom via les paramètres du profil).",
+    "erasure": "Droit à l'effacement (Droit à l'oubli) : Le droit de demander la suppression de votre Compte et de vos Données (décrit à l'Article 5).",
+    "portability": "Droit à la portabilité : Vous avez le droit de recevoir les données personnelles structurées que vous nous avez fournies (telles que vos informations de profil ou l'historique de vos saisies).",
+    "exercise": "Pour exercer ces droits, vous pouvez utiliser les outils mis à votre disposition dans l'application ou contacter notre support à {{contactEmail}}."
+  },
+  
+  "section7": {
+    "title": "7. Sécurité",
+    "content": "CarDoc met en œuvre des mesures techniques et organisationnelles appropriées (telles que le chiffrement des communications SSL/TLS, des contrôles d'accès stricts et une infrastructure sécurisée) pour garantir la sécurité, la confidentialité et l'intégrité de vos Données et empêcher toute perte, altération ou accès non autorisé."
+  },
+  
+  "section8": {
+    "title": "8. Modification de la Politique",
+    "content": "Nous nous réservons le droit de modifier la présente Politique de Confidentialité. En cas de modification substantielle, nous vous en informerons par e-mail ou via une notification dans l'application avant l'entrée en vigueur des modifications."
+  }
+}

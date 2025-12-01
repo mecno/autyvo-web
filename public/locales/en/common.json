@@ -1,0 +1,21 @@
+{
+  "home": "Home",
+  "help": "Help",
+  "cgu": "Terms",
+  "language": "Language",
+  "pageTitle": {
+    "home": "CarDoc - Home",
+    "cgu": "CarDoc - Terms of Use",
+    "help": "CarDoc - Help",
+    "privacy": "CarDoc - Privacy Policy",
+    "deleteAccount": "CarDoc - Delete Account"
+  },
+  "header": {
+    "title": "CarDoc Web"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "contact": "Contact",
+    "about": "About"
+  }
+}

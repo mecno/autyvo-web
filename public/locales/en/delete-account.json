@@ -1,0 +1,39 @@
+{
+  "title": "Delete Account",
+  "subtitle": "This action is irreversible",
+  "warning": {
+    "title": "Warning",
+    "content": "Deleting your account will result in permanent loss of all your data.",
+    "consequences": [
+      "Permanent deletion of all your vehicles",
+      "Deletion of all your documents",
+      "Loss of maintenance history",
+      "Deletion of all your personal data"
+    ]
+  },
+  "confirmation": {
+    "title": "Confirmation",
+    "message": "To confirm, please enter your email address",
+    "placeholder": "Your email address",
+    "error": "Email address does not match"
+  },
+  "button": {
+    "cancel": "Cancel",
+    "delete": "Delete my account",
+    "confirm": "Confirm deletion"
+  },
+  "dialog": {
+    "title": "Are you absolutely sure?",
+    "message": "This action is irreversible. All your data will be permanently deleted.",
+    "confirmText": "Yes, delete my account"
+  },
+  "success": {
+    "title": "Account deleted",
+    "message": "Your account has been successfully deleted. You will be redirected."
+  },
+  "error": {
+    "title": "Error",
+    "message": "An error occurred during deletion. Please try again.",
+    "generic": "Oops, an error occurred while deleting your account. Please try again later or contact support."
+  }
+}
