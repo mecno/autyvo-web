@@ -3,6 +3,12 @@ import { Helmet } from 'react-helmet-async';
 import { Shield, Database, FileText, Users, CheckCircle } from 'lucide-react';
 import { CONTACT_EMAIL, LEGAL_ENTITY } from '@/constants';
 
+// Type for privacy policy data items
+interface PrivacyDataItem {
+  title: string;
+  detail: string;
+}
+
 const PrivacyPage: React.FC = () => {
   const { t } = useTranslation('privacy');
 
@@ -90,7 +96,7 @@ const PrivacyPage: React.FC = () => {
                   {t('sections.data.intro')}
                 </p>
                 <div className="space-y-4">
-                  {(t('sections.data.items', { returnObjects: true }) as any[]).map((item, index) => (
+                  {(t('sections.data.items', { returnObjects: true }) as PrivacyDataItem[]).map((item, index) => (
                     <div key={index} className="flex items-start">
                       <CheckCircle className="text-[#02b197] mr-3 mt-1 flex-shrink-0" size={20} />
                       <div>

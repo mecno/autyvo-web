@@ -6,14 +6,12 @@
 
 import { useAuth as useOidcAuth, User } from 'react-oidc-context';
 
-interface AuthOptions {
+interface AuthOptions extends Record<string, unknown> {
   redirect_uri?: string;
-  [key: string]: any;
 }
 
-interface LogoutOptions {
+interface LogoutOptions extends Record<string, unknown> {
   post_logout_redirect_uri?: string;
-  [key: string]: any;
 }
 
 export interface AuthState {

@@ -1,11 +1,30 @@
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 
+// Types for CGU sections from i18n
+interface CGUItem {
+  term?: string;
+  definition?: string;
+}
+
+interface CGUSection {
+  title: string;
+  content?: string | string[];
+  items?: (string | CGUItem)[];
+  intro?: string;
+  report?: {
+    intro: string;
+    items: string[];
+  };
+  objective?: string;
+  disclaimer?: string[];
+}
+
 const TermsPage: React.FC = () => {
   const { t } = useTranslation('cgu');
 
   const renderSection = (sectionKey: string) => {
-    const section = t(`sections.${sectionKey}`, { returnObjects: true }) as any;
+    const section = t(`sections.${sectionKey}`, { returnObjects: true }) as CGUSection;
 
     if (!section) return null;
 
@@ -26,7 +45,7 @@ const TermsPage: React.FC = () => {
         {/* Items list (definitions) */}
         {section.items && Array.isArray(section.items) && (
           <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2">
-            {section.items.map((item: any, idx: number) => (
+            {section.items.map((item: string | CGUItem, idx: number) => (
               <li key={idx}>
                 {item.term && <strong>{item.term}</strong>}
                 {item.definition && <span> {item.definition}</span>}

@@ -11,7 +11,7 @@ interface ApiFetchOptions extends RequestInit {
 /**
  * Helper pour les appels fetch avec gestion des erreurs
  */
-export async function apiFetch<T = any>(endpoint: string, options: ApiFetchOptions = {}): Promise<T | void> {
+export async function apiFetch<T = unknown>(endpoint: string, options: ApiFetchOptions = {}): Promise<T | void> {
   const url = `${API_BASE_URL}${endpoint}`;
   
   const response = await fetch(url, {
