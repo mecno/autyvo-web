@@ -23,7 +23,7 @@ const ContactPage: React.FC = () => {
 
       <div className="pt-16">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-[#183755] to-[#0d2337] text-white py-20">
+        <section className="bg-gradient-to-br from-brand-secondary to-brand-secondary-dark text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               {t('contact.hero.title')}

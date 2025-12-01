@@ -83,6 +83,70 @@
     }
   },
   "pro": {
+    "meta": {
+      "title": "AUTYVO PRO - Solution Professionnelle pour Garages et Concessionnaires",
+      "description": "Optimisez la gestion de votre parc automobile avec AUTYVO PRO. Traçabilité, planification intelligente et fidélisation clients."
+    },
+    "hero": {
+      "title": "AUTYVO PRO : La Transparence qui Valorise Votre Activité",
+      "subtitle": "Optimisez la gestion de votre parc automobile et maximisez votre rentabilité. Une solution complète pour tracer, planifier et valoriser chaque intervention.",
+      "cta": "Demander une Démo"
+    },
+    "pillars": {
+      "title": "3 Piliers pour Transformer Votre Activité",
+      "planning": {
+        "title": "Planification Intelligente",
+        "description": "Automatisez la traçabilité et anticipez chaque entretien avec un agenda prédictif.",
+        "features": [
+          "Saisie rapide et intuitive",
+          "Synchronisation en temps réel",
+          "Historique complet instantané"
+        ]
+      },
+      "transparency": {
+        "title": "Transparence Garantie",
+        "description": "Vérifications officielles SIV et Histovec pour une traçabilité incontestable.",
+        "features": [
+          "Badge AUTYVO Trace",
+          "Données sources officielles",
+          "Rapports professionnels"
+        ]
+      },
+      "loyalty": {
+        "title": "Fidélisation Renforcée",
+        "description": "Créez une relation de confiance durable grâce à une valeur ajoutée concrète et mesurable.",
+        "features": [
+          "Rappels intelligents",
+          "Communication simplifiée",
+          "Valeur mesurable"
+        ]
+      }
+    },
+    "solutions": {
+      "title": "Des Solutions Adaptées à Votre Secteur",
+      "garage": {
+        "title": "Garagistes & Centres de Contrôle Technique",
+        "subtitle": "Fidélisez vos clients et Augmentez votre Valeur Perçue",
+        "description": "Différenciez-vous avec une traçabilité professionnelle vérifiée. Augmentez la valeur perçue de vos services et fidélisez vos clients pour renforcer leur engagement durable."
+      },
+      "dealer": {
+        "title": "Concessionnaires (Véhicules d'Occasion)",
+        "subtitle": "Transformez la Transparence en Avantage Concurrentiel",
+        "description": "Accélérez vos rotations de stock et valorisez chaque véhicule grâce à un historique vérifié. Rassurez vos acheteurs avec des preuves vérifiables et réduisez drastiquement vos délais de vente."
+      },
+      "fleet": {
+        "title": "Solutions Entreprise (Flottes & TCO)",
+        "subtitle": "Maîtrisez les Coûts de Votre Flotte",
+        "description": "Centralisez la gestion de votre flotte et anticipez chaque maintenance. Optimisez votre TCO, éliminez les pannes imprévues et assurez une conformité réglementaire totale grâce à une planification automatisée."
+      }
+    },
+    "contact": {
+      "description": "Remplissez le formulaire et notre équipe vous contactera pour une démonstration personnalisée adaptée à votre secteur"
+    },
+    "footer": {
+      "title": "Rejoignez les Professionnels qui Font de la Transparence leur Force",
+      "subtitle": "Plus de 500 professionnels de l'automobile nous font déjà confiance"
+    },
     "form": {
       "title": "Demandez votre démo PRO personnalisée",
       "name": "Nom Complet *",

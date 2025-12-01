@@ -83,6 +83,70 @@
     }
   },
   "pro": {
+    "meta": {
+      "title": "AUTYVO PRO - Professional Solution for Garages and Dealerships",
+      "description": "Optimize your fleet management with AUTYVO PRO. Traceability, intelligent planning and customer loyalty."
+    },
+    "hero": {
+      "title": "AUTYVO PRO: Transparency That Enhances Your Business",
+      "subtitle": "Optimize your fleet management and maximize your profitability. A complete solution to track, plan and enhance every intervention.",
+      "cta": "Request a Demo"
+    },
+    "pillars": {
+      "title": "3 Pillars to Transform Your Business",
+      "planning": {
+        "title": "Intelligent Planning",
+        "description": "Automate traceability and anticipate every maintenance with a predictive schedule.",
+        "features": [
+          "Fast and intuitive input",
+          "Real-time synchronization",
+          "Instant complete history"
+        ]
+      },
+      "transparency": {
+        "title": "Guaranteed Transparency",
+        "description": "Official SIV and Histovec verifications for undeniable traceability.",
+        "features": [
+          "AUTYVO Trace badge",
+          "Official source data",
+          "Professional reports"
+        ]
+      },
+      "loyalty": {
+        "title": "Enhanced Loyalty",
+        "description": "Create a lasting trust relationship through concrete and measurable added value.",
+        "features": [
+          "Smart reminders",
+          "Simplified communication",
+          "Measurable value"
+        ]
+      }
+    },
+    "solutions": {
+      "title": "Solutions Tailored to Your Sector",
+      "garage": {
+        "title": "Garages & Technical Inspection Centers",
+        "subtitle": "Build Customer Loyalty and Increase Your Perceived Value",
+        "description": "Stand out with verified professional traceability. Increase the perceived value of your services and build customer loyalty to strengthen their long-term commitment."
+      },
+      "dealer": {
+        "title": "Dealerships (Used Vehicles)",
+        "subtitle": "Transform Transparency into a Competitive Advantage",
+        "description": "Accelerate your stock turnover and enhance each vehicle with a verified history. Reassure your buyers with verifiable proof and drastically reduce your sales times."
+      },
+      "fleet": {
+        "title": "Enterprise Solutions (Fleets & TCO)",
+        "subtitle": "Master Your Fleet Costs",
+        "description": "Centralize your fleet management and anticipate every maintenance. Optimize your TCO, eliminate unexpected breakdowns and ensure total regulatory compliance through automated planning."
+      }
+    },
+    "contact": {
+      "description": "Fill out the form and our team will contact you for a personalized demonstration tailored to your sector"
+    },
+    "footer": {
+      "title": "Join the Professionals Who Make Transparency Their Strength",
+      "subtitle": "Over 500 automotive professionals already trust us"
+    },
     "form": {
       "title": "Request your personalized PRO demo",
       "name": "Full Name *",
