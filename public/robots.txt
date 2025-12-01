@@ -1,0 +1,9 @@
+# All Robots
+User-agent: *
+
+Allow: /
+
+Disallow: /account/
+
+
+Sitemap: https://autyvo.com/sitemap.xml
