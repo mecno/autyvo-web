@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import {
   Download,
-  ChevronDown,
-  ChevronUp,
   Shield,
   FileText,
   Database,
@@ -16,15 +14,14 @@ import stickyImage from '@/assets/images/app/dashboard-screen.jpeg';
 import benefitsImage from '@/assets/images/app/agenda-screen.jpg';
 import traceImage from '@/assets/images/report/report-cover-page.jpeg';
 import verificationImage from '@/assets/images/illustrations/autyvo-schema.png';
-import kivoLogo from '@/assets/images/partners/kivo-logo.jpg';
-import frenchTechLogo from '@/assets/images/partners/french-tech-logo.png';
-import backcarLogo from '@/assets/images/partners/backcar-logo.png';
+import TrustSection from '@/components/sections/TrustSection';
+import TestimonialsSection from '@/components/sections/TestimonialsSection';
+import FaqSection from '@/components/sections/FaqSection';
 
 function LandingPage() {
   const { t } = useTranslation('landing');
   const location = useLocation();
   const [showStickyButton, setShowStickyButton] = useState(false);
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   // Gestion du scroll au montage si hash dans l'URL
   useEffect(() => {
@@ -50,10 +47,6 @@ function LandingPage() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleFaq = (index: number) => {
-    setOpenFaq(openFaq === index ? null : index);
-  };
-
   const scrollToDownload = () => {
     const element = document.getElementById('download');
     element?.scrollIntoView({ behavior: 'smooth' });
@@ -68,7 +61,7 @@ function LandingPage() {
 
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section id="hero" className="relative bg-gradient-to-br from-[#183755] via-[#1a4670] to-[#02b197] text-white pt-20 pb-32">
+        <section id="hero" className="relative bg-gradient-to-br from-brand-secondary via-brand-secondary-light to-brand-primary text-white pt-20 pb-32">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-[1fr_2fr] gap-12 items-center">
               <div className="order-2 lg:order-1">
@@ -82,7 +75,7 @@ function LandingPage() {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                   {t('hero.title')}
                 </h1>
-                <p className="text-xl md:text-2xl font-semibold text-[#02b197]">
+                <p className="text-xl md:text-2xl font-semibold text-brand-primary">
                   {t('hero.subtitle')}
                 </p>
                 <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
@@ -90,7 +83,7 @@ function LandingPage() {
                 </p>
                 <button
                   onClick={scrollToDownload}
-                  className="bg-white text-[#183755] px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl flex items-center gap-3"
+                  className="bg-white text-brand-secondary px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl flex items-center gap-3"
                 >
                   <Download size={24} />
                   <span className="hidden md:inline">{t('hero.cta')}</span>
@@ -105,7 +98,7 @@ function LandingPage() {
         {showStickyButton && (
           <button
             onClick={scrollToDownload}
-            className="lg:hidden fixed bottom-6 right-6 z-50 bg-[#02b197] text-white p-4 rounded-full shadow-2xl hover:bg-[#029d81] transition-all transform hover:scale-110"
+            className="lg:hidden fixed bottom-6 right-6 z-50 bg-brand-primary text-white p-4 rounded-full shadow-2xl hover:bg-brand-primary-dark transition-all transform hover:scale-110"
             aria-label={t('hero.ctaShort')}
           >
             <Download size={28} />
@@ -115,7 +108,7 @@ function LandingPage() {
         {/* How It Works Section */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#183755] text-center mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-secondary text-center mb-4">
               {t('howItWorks.title')}
             </h2>
             <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
@@ -124,15 +117,15 @@ function LandingPage() {
 
             <div className="grid lg:grid-cols-[2fr_1fr] gap-12 items-start">
               <div className="space-y-12 relative">
-                <div className="absolute left-6 top-12 bottom-12 w-0.5 bg-gradient-to-b from-[#02b197] via-[#02b197] to-transparent hidden md:block" />
+                <div className="absolute left-6 top-12 bottom-12 w-0.5 bg-gradient-to-b from-brand-primary via-brand-primary to-transparent hidden md:block" />
 
                 {(t('howItWorks.steps', { returnObjects: true }) as Array<{ title: string; description: string }>).map((step, index) => (
                   <div key={index} className="flex gap-6 relative">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#02b197] to-[#029d81] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
+                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-primary to-brand-primary-dark rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
                       {index + 1}
                     </div>
                     <div className="flex-1 pt-2">
-                      <h3 className="text-2xl font-bold text-[#183755] mb-3">{step.title}</h3>
+                      <h3 className="text-2xl font-bold text-brand-secondary mb-3">{step.title}</h3>
                       <p className="text-gray-600 leading-relaxed text-lg">{step.description}</p>
                     </div>
                   </div>
@@ -153,7 +146,7 @@ function LandingPage() {
         {/* Benefits Section */}
         <section id="gestion-section" className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#183755] text-center mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-secondary text-center mb-4">
               {t('benefits.title')}
             </h2>
             <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
@@ -170,7 +163,7 @@ function LandingPage() {
                     }`}
                   >
                     <div className="text-5xl mb-6">{benefit.emoji}</div>
-                    <h3 className="text-2xl font-bold text-[#183755] mb-4">{benefit.title}</h3>
+                    <h3 className="text-2xl font-bold text-brand-secondary mb-4">{benefit.title}</h3>
                     <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
                   </div>
                 ))}
@@ -194,9 +187,9 @@ function LandingPage() {
               <div>
                 <div className="flex items-center mb-6">
                   <div className="text-5xl mr-4">{t('trace.emoji')}</div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-[#183755]">{t('trace.title')}</h2>
+                  <h2 className="text-3xl md:text-4xl font-bold text-brand-secondary">{t('trace.title')}</h2>
                 </div>
-                <p className="text-2xl font-semibold text-[#02b197] mb-8">
+                <p className="text-2xl font-semibold text-brand-primary mb-8">
                   {t('trace.subtitle')}
                 </p>
 
@@ -205,11 +198,11 @@ function LandingPage() {
                   <p>{t('trace.description')}</p>
 
                   <div className="bg-gray-50 p-6 rounded-xl">
-                    <p className="font-semibold text-[#183755] mb-3">{t('trace.benefitsTitle')}</p>
+                    <p className="font-semibold text-brand-secondary mb-3">{t('trace.benefitsTitle')}</p>
                     <ul className="space-y-2">
                       {(t('trace.benefitsItems', { returnObjects: true }) as string[]).map((item, index) => (
                         <li key={index} className="flex items-start">
-                          <span className="text-[#02b197] mr-2 mt-1">✨</span>
+                          <span className="text-brand-primary mr-2 mt-1">✨</span>
                           <span>{item}</span>
                         </li>
                       ))}
@@ -218,11 +211,11 @@ function LandingPage() {
 
                   <p>{t('trace.conclusion')}</p>
 
-                  <p className="text-xl font-semibold text-[#183755] pt-4">
+                  <p className="text-xl font-semibold text-brand-secondary pt-4">
                     {t('trace.tagline')}
                   </p>
 
-                  <div className="bg-gradient-to-r from-[#02b197] to-[#01987f] p-6 rounded-xl mt-8 text-white">
+                  <div className="bg-gradient-to-r from-brand-primary to-brand-primary-dark p-6 rounded-xl mt-8 text-white">
                     <p className="text-2xl font-bold mb-4 flex items-center">
                       <span className="text-3xl mr-3">{t('trace.bonus.emoji')}</span>
                       {t('trace.bonus.title')}
@@ -232,7 +225,7 @@ function LandingPage() {
                       <span className="text-2xl mr-3">{t('trace.bonus.emoji2')}</span>
                       <button
                         onClick={scrollToDownload}
-                        className="bg-white text-[#183755] px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg"
+                        className="bg-white text-brand-secondary px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg"
                       >
                         {t('trace.bonus.cta')}
                       </button>
@@ -258,22 +251,26 @@ function LandingPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="mb-6">
-                  <h2 className="text-3xl md:text-4xl font-bold text-[#183755]">
-                    <div className="flex items-center mb-2">
-                      <span className="text-5xl mr-4">{t('verification.emoji')}</span>
-                      <span>{t('verification.title')}</span>
+                  <div className="flex gap-4 mb-2">
+                    <span className="text-5xl flex-shrink-0">{t('verification.emoji')}</span>
+                    <div className="flex flex-col">
+                      <h2 className="text-3xl md:text-4xl font-bold text-brand-secondary">
+                        {t('verification.title')}
+                      </h2>
+                      <p className="text-2xl md:text-3xl font-bold text-brand-secondary mt-2">
+                        {t('verification.subtitle')}
+                      </p>
                     </div>
-                    <div className="ml-[calc(3.75rem+1rem)]">{t('verification.subtitle')}</div>
-                  </h2>
+                  </div>
                 </div>
-                <p className="text-2xl font-semibold text-[#02b197] mb-8">
+                <p className="text-2xl font-semibold text-brand-primary mb-8">
                   {t('verification.tagline')}
                 </p>
 
                 <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                   <p>{t('verification.description')}</p>
 
-                  <p className="font-semibold text-[#183755] text-xl">
+                  <p className="font-semibold text-brand-secondary text-xl">
                     {t('verification.rule')}
                   </p>
 
@@ -293,11 +290,11 @@ function LandingPage() {
         </section>
 
         {/* Security Section */}
-        <section className="py-16 bg-gradient-to-br from-[#183755] to-[#0d2337]">
+        <section className="py-16 bg-gradient-to-br from-brand-secondary to-brand-secondary-dark">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <div className="flex items-center justify-center mb-6">
-                <Shield size={48} className="text-[#02b197]" />
+                <Shield size={48} className="text-brand-primary" />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                 {t('security.title')}
@@ -311,7 +308,7 @@ function LandingPage() {
               {(t('security.items', { returnObjects: true }) as Array<{ title: string; description: string }>).map((item, index) => (
                 <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-center hover:bg-white/15 transition-all">
                   <div className="flex justify-center mb-4">
-                    {index === 0 ? <Shield size={40} className="text-[#02b197]" /> : <Database size={40} className="text-[#02b197]" />}
+                    {index === 0 ? <Shield size={40} className="text-brand-primary" /> : <Database size={40} className="text-brand-primary" />}
                   </div>
                   <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
                   <p className="text-gray-300 leading-relaxed">{item.description}</p>
@@ -319,119 +316,36 @@ function LandingPage() {
               ))}
             </div>
 
-            <div className="bg-white/5 border-2 border-[#02b197] rounded-xl p-6 max-w-4xl mx-auto">
+            <div className="bg-white/5 border-2 border-brand-primary rounded-xl p-6 max-w-4xl mx-auto">
               <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                 <div className="flex items-center">
-                  <FileText size={32} className="text-[#02b197] mr-4 flex-shrink-0" />
+                  <FileText size={32} className="text-brand-primary mr-4 flex-shrink-0" />
                   <div className="text-white">
                     <p className="font-bold text-lg mb-1">{t('security.transparency.title')}</p>
                     <p className="text-gray-300 text-sm">{t('security.transparency.description')}</p>
                   </div>
                 </div>
-                <button
-                  onClick={() => window.open('/privacy', '_blank')}
-                  className="bg-[#02b197] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#029d81] transition-all whitespace-nowrap"
+                <Link
+                  to="/legal/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-brand-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-primary-dark transition-all whitespace-nowrap inline-block text-center"
                 >
                   {t('security.transparency.cta')}
-                </button>
+                </Link>
               </div>
             </div>
           </div>
         </section>
 
         {/* Trust Section */}
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#183755] text-center mb-16">
-              {t('trust.title')}
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-items-center max-w-5xl mx-auto">
-              <div className="bg-white p-8 rounded-xl shadow-md w-full flex items-center justify-center">
-                <img
-                  src={kivoLogo}
-                  alt="KIVO"
-                  className="w-full h-auto max-h-24 object-contain"
-                />
-              </div>
-              <div className="bg-white p-8 rounded-xl shadow-md w-full flex items-center justify-center">
-                <img
-                  src={frenchTechLogo}
-                  alt="La French Tech Nantes"
-                  className="w-full h-auto max-h-24 object-contain"
-                />
-              </div>
-              <div className="bg-white p-8 rounded-xl shadow-md w-full flex items-center justify-center">
-                <img
-                  src={backcarLogo}
-                  alt="Back Car"
-                  className="w-full h-auto max-h-24 object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+        <TrustSection />
 
         {/* Testimonials Section */}
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#183755] text-center mb-16">
-              {t('testimonials.title')}
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-              {(t('testimonials.items', { returnObjects: true }) as Array<{ name: string; role: string; quote: string }>).map((testimonial, index) => (
-                <div key={index} className="bg-gray-50 p-8 rounded-xl shadow-lg">
-                  <div className="flex items-center mb-6">
-                    <img
-                      src={
-                        index === 0
-                          ? 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop'
-                          : 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop'
-                      }
-                      alt={testimonial.name}
-                      className="w-16 h-16 rounded-full object-cover mr-4"
-                    />
-                    <div>
-                      <p className="font-bold text-[#183755] text-lg">{testimonial.name}</p>
-                      <p className="text-gray-600">{testimonial.role}</p>
-                    </div>
-                  </div>
-                  <p className="text-gray-700 leading-relaxed italic">"{testimonial.quote}"</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <TestimonialsSection />
 
         {/* FAQ Section */}
-        <section id="faq" className="py-20 bg-gray-50">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#183755] text-center mb-12">
-              {t('faq.title')}
-            </h2>
-            <div className="space-y-4">
-              {(t('faq.items', { returnObjects: true }) as Array<{ question: string; answer: string }>).map((faq, index) => (
-                <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-                  <button
-                    onClick={() => toggleFaq(index)}
-                    className="w-full px-6 py-5 flex justify-between items-center hover:bg-gray-50 transition-colors"
-                  >
-                    <span className="font-semibold text-[#183755] text-left">{faq.question}</span>
-                    {openFaq === index ? (
-                      <ChevronUp className="text-[#02b197] flex-shrink-0" size={24} />
-                    ) : (
-                      <ChevronDown className="text-[#02b197] flex-shrink-0" size={24} />
-                    )}
-                  </button>
-                  {openFaq === index && (
-                    <div className="px-6 pb-5">
-                      <p className="text-gray-700 leading-relaxed whitespace-pre-line">{faq.answer}</p>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <FaqSection />
       </div>
     </>
   );
