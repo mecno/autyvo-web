@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 import {
   Download,
   ChevronDown,
@@ -21,8 +22,20 @@ import backcarLogo from '@/assets/images/partners/backcar-logo.png';
 
 function LandingPage() {
   const { t } = useTranslation('landing');
+  const location = useLocation();
   const [showStickyButton, setShowStickyButton] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  // Gestion du scroll au montage si hash dans l'URL
+  useEffect(() => {
+    const hash = location.hash.slice(1); // Retire le #
+    if (hash) {
+      setTimeout(() => {
+        const element = document.getElementById(hash);
+        element?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+  }, [location.hash]);
 
   useEffect(() => {
     const handleScroll = () => {

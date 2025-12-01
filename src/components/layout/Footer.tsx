@@ -1,22 +1,22 @@
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { STORE_LINKS } from '@/constants';
 import googlePlayImg from '@/assets/images/stores/google-play.png';
 import appStoreImg from '@/assets/images/stores/apple-store.jpg';
+import { scrollToElement } from '@/utils/navigation';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation('common');
+  const navigate = useNavigate();
+  const location = useLocation();
   const currentYear = new Date().getFullYear();
 
   const scrollToFaq = () => {
-    const faqElement = document.getElementById('faq');
-    if (faqElement) {
-      faqElement.scrollIntoView({ behavior: 'smooth' });
-    }
+    scrollToElement('faq', navigate, location.pathname);
   };
 
   return (
-    <footer id="download" className="bg-[#183755] text-white py-8">
+    <footer id="download" className="bg-brand-secondary text-white py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           {/* Section À propos */}
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={scrollToFaq}
-                  className="text-gray-300 hover:text-[#02b197] transition-colors"
+                  className="text-gray-300 hover:text-brand-primary transition-colors"
                 >
                   {t('footer.links.faq')}
                 </button>
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="text-gray-300 hover:text-[#02b197] transition-colors"
+                  className="text-gray-300 hover:text-brand-primary transition-colors"
                 >
                   {t('footer.links.contact')}
                 </Link>
@@ -88,13 +88,13 @@ const Footer: React.FC = () => {
             <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-gray-300">
               <Link
                 to="/legal/privacy"
-                className="hover:text-[#02b197] transition-colors"
+                className="hover:text-brand-primary transition-colors"
               >
                 {t('footer.legal.privacy')}
               </Link>
               <Link
                 to="/legal/terms"
-                className="hover:text-[#02b197] transition-colors"
+                className="hover:text-brand-primary transition-colors"
               >
                 {t('footer.legal.terms')}
               </Link>

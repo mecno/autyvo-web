@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import logoImg from '@/assets/images/logo.png';
+import { scrollToElement } from '@/utils/navigation';
 
 const Header: React.FC = () => {
   const { t } = useTranslation('common');
@@ -16,30 +17,12 @@ const Header: React.FC = () => {
   };
 
   const scrollToFeatures = () => {
-    if (location.pathname === '/') {
-      const element = document.getElementById('gestion-section');
-      element?.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      navigate('/');
-      setTimeout(() => {
-        const element = document.getElementById('gestion-section');
-        element?.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    }
+    scrollToElement('gestion-section', navigate, location.pathname);
     setIsMenuOpen(false);
   };
 
   const scrollToDownload = () => {
-    if (location.pathname === '/') {
-      const element = document.getElementById('download');
-      element?.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      navigate('/');
-      setTimeout(() => {
-        const element = document.getElementById('download');
-        element?.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    }
+    scrollToElement('download', navigate, location.pathname);
     setIsMenuOpen(false);
   };
 
@@ -60,31 +43,31 @@ const Header: React.FC = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <button
               onClick={scrollToFeatures}
-              className="text-[#183755] hover:text-[#02b197] transition-colors"
+              className="text-brand-secondary hover:text-brand-primary transition-colors"
             >
               {t('header.nav.features')}
             </button>
             <Link
               to="/ia"
-              className="text-[#183755] hover:text-[#02b197] transition-colors"
+              className="text-brand-secondary hover:text-brand-primary transition-colors"
             >
               Technologies
             </Link>
             <Link
               to="/pro"
-              className="text-[#183755] hover:text-[#02b197] transition-colors"
+              className="text-brand-secondary hover:text-brand-primary transition-colors"
             >
               Professionnels
             </Link>
             <Link
               to="/contact"
-              className="text-[#183755] hover:text-[#02b197] transition-colors"
+              className="text-brand-secondary hover:text-brand-primary transition-colors"
             >
               {t('header.nav.contact')}
             </Link>
             <button
               onClick={scrollToDownload}
-              className="px-6 py-2 bg-[#02b197] text-white rounded-lg hover:bg-[#029d81] transition-colors"
+              className="px-6 py-2 bg-brand-primary text-white rounded-lg hover:bg-brand-primary-dark transition-colors"
             >
               {t('header.cta.download')}
             </button>
@@ -92,7 +75,7 @@ const Header: React.FC = () => {
 
           {/* Bouton Menu Mobile */}
           <button
-            className="md:hidden text-[#183755]"
+            className="md:hidden text-brand-secondary"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -104,31 +87,31 @@ const Header: React.FC = () => {
           <div className="md:hidden py-4 space-y-4 border-t">
             <button
               onClick={scrollToFeatures}
-              className="block w-full text-left text-[#183755] hover:text-[#02b197] py-2"
+              className="block w-full text-left text-brand-secondary hover:text-brand-primary py-2"
             >
               {t('header.nav.features')}
             </button>
             <button
               onClick={() => handleNavigation('/ia')}
-              className="block w-full text-left text-[#183755] hover:text-[#02b197] py-2"
+              className="block w-full text-left text-brand-secondary hover:text-brand-primary py-2"
             >
               Technologies
             </button>
             <button
               onClick={() => handleNavigation('/pro')}
-              className="block w-full text-left text-[#183755] hover:text-[#02b197] py-2"
+              className="block w-full text-left text-brand-secondary hover:text-brand-primary py-2"
             >
               Professionnels
             </button>
             <button
               onClick={() => handleNavigation('/contact')}
-              className="block w-full text-left text-[#183755] hover:text-[#02b197] py-2"
+              className="block w-full text-left text-brand-secondary hover:text-brand-primary py-2"
             >
               {t('header.nav.contact')}
             </button>
             <button
               onClick={scrollToDownload}
-              className="block w-full text-center px-6 py-2 bg-[#02b197] text-white rounded-lg hover:bg-[#029d81]"
+              className="block w-full text-center px-6 py-2 bg-brand-primary text-white rounded-lg hover:bg-brand-primary-dark"
             >
               {t('header.cta.download')}
             </button>
