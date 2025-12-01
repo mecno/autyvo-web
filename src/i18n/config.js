@@ -24,9 +24,18 @@ i18n
     },
     
     detection: {
-      // Ordre de détection de la langue
-      order: ['localStorage', 'navigator'],
-      // Cache la langue sélectionnée
+      // L'ORDRE EST CRUCIAL :
+      // 1. 'querystring' : Regarde l'URL en premier (?lng=en ou ?hl=en)
+      // 2. 'localStorage' : Si rien dans l'URL, regarde la mémoire
+      // 3. 'navigator' : Sinon, utilise la langue du navigateur
+      order: ['querystring', 'localStorage', 'navigator'],
+      
+      // Paramètres acceptés dans l'URL pour définir la langue
+      // 'lng' est le standard i18next, 'hl' est utilisé par Google/mobiles
+      lookupQuerystring: 'lng',
+      
+      // Cache la langue détectée pour les prochaines pages
+      // Si l'user arrive avec ?lng=en, on met à jour le localStorage immédiatement
       caches: ['localStorage'],
       lookupLocalStorage: 'i18nextLng'
     },

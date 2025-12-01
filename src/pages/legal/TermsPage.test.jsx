@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
 import { ThemeProvider } from '@mui/material/styles';
-import theme from '../theme';
-import CGUPage from './CGUPage';
+import theme from '../../theme';
+import TermsPage from './TermsPage';
 
 // Mock des traductions CGU avec structure complète
 const mockCguTranslations = {
@@ -45,9 +45,9 @@ const renderWithTheme = (ui) => {
   return render(<ThemeProvider theme={theme}>{ui}</ThemeProvider>);
 };
 
-describe('CGUPage', () => {
+describe('TermsPage', () => {
   it('affiche le titre principal et sous-titre', () => {
-    renderWithTheme(<CGUPage />);
+    renderWithTheme(<TermsPage />);
     
     expect(screen.getByRole('heading', { level: 1, name: /Conditions Générales/i })).toBeInTheDocument();
     expect(screen.getByText(/Application et Site Web CarDoc/i)).toBeInTheDocument();
@@ -55,7 +55,7 @@ describe('CGUPage', () => {
   });
 
   it('utilise les composants sémantiques corrects', () => {
-    const { container } = renderWithTheme(<CGUPage />);
+    const { container } = renderWithTheme(<TermsPage />);
     
     // Vérifie la structure avec les composants sémantiques
     const paper = container.querySelector('.MuiPaper-root');
@@ -66,7 +66,7 @@ describe('CGUPage', () => {
   });
 
   it('affiche les sections structurées', () => {
-    renderWithTheme(<CGUPage />);
+    renderWithTheme(<TermsPage />);
     
     // Vérifie que les titres de sections sont présents
     expect(screen.getByText('1. Objet et acceptation')).toBeInTheDocument();
@@ -74,7 +74,7 @@ describe('CGUPage', () => {
   });
 
   it('affiche le contenu des sections', () => {
-    renderWithTheme(<CGUPage />);
+    renderWithTheme(<TermsPage />);
     
     // Vérifie que le contenu est affiché
     expect(screen.getByText(/Les présentes CGU régissent/i)).toBeInTheDocument();

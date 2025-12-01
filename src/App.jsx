@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import ProtectedRoute from './components/auth/ProtectedRoute';
-import CGUPage from './pages/CGUPage';
+import ContactPage from './pages/ContactPage';
 import HelpPage from './pages/HelpPage';
-import PrivacyPage from './pages/PrivacyPage';
-import DeleteAccountPage from './pages/DeleteAccountPage';
+import TermsPage from './pages/legal/TermsPage';
+import PrivacyPage from './pages/legal/PrivacyPage';
+import DeleteAccountPage from './pages/account/DeleteAccountPage';
 
 const App = () => {
   return (
@@ -15,17 +16,22 @@ const App = () => {
       }}
     >
       <Routes>
-        {/* Routes publiques sans Header/Footer */}
-        <Route path="/cgu" element={<CGUPage />} />
-        <Route path="/help" element={<HelpPage />} />
-        <Route path="/privacy" element={<PrivacyPage />} />
-        
-        {/* Routes publiques avec Header/Footer */}
+        {/* Page d'accueil */}
         <Route path="/" element={<Layout><div>Home Page</div></Layout>} />
         
-        {/* Routes protégées - Redirection automatique vers Auth0 si non authentifié */}
+        {/* Contact */}
+        <Route path="/contact" element={<ContactPage />} />
+        
+        {/* Aide */}
+        <Route path="/help" element={<HelpPage />} />
+        
+        {/* Pages légales */}
+        <Route path="/legal/terms" element={<TermsPage />} />
+        <Route path="/legal/privacy" element={<PrivacyPage />} />
+        
+        {/* Routes protégées - Compte utilisateur */}
         <Route 
-          path="/delete-account" 
+          path="/account/delete" 
           element={
             <ProtectedRoute>
               <DeleteAccountPage />

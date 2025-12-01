@@ -27,11 +27,17 @@ const Header = () => {
           <Button color="inherit" component={Link} to="/">
             {t('home')}
           </Button>
+          <Button color="inherit" component={Link} to="/contact">
+            {t('contact')}
+          </Button>
           <Button color="inherit" component={Link} to="/help">
             {t('help')}
           </Button>
-          <Button color="inherit" component={Link} to="/cgu">
-            {t('cgu')}
+          <Button color="inherit" component={Link} to="/legal/terms">
+            {t('legal.terms')}
+          </Button>
+          <Button color="inherit" component={Link} to="/legal/privacy">
+            {t('legal.privacy')}
           </Button>
           
           <ButtonGroup variant="outlined" size="small">

@@ -10,8 +10,8 @@ import {
   SectionTitle,
   BodyText,
   SecondaryText
-} from '../components/ui';
-import { CARDOC_CONTACT_EMAIL, CARDOC_SUPPORT_EMAIL } from '../constants';
+} from '@/components/ui';
+import { CARDOC_CONTACT_EMAIL, CARDOC_SUPPORT_EMAIL } from '@/constants';
 
 const CGUPage = () => {
   const { t } = useTranslation(['cgu', 'common']);

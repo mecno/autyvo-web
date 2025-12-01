@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
 import { ThemeProvider } from '@mui/material/styles';
-import theme from '../theme';
+import theme from '../../theme';
 import PrivacyPage from './PrivacyPage';
 
 // Mock des traductions Privacy avec structure complète

@@ -26,19 +26,27 @@ const Footer = () => {
           <FlexBox gap="small">
             <MuiLink 
               component={RouterLink} 
-              to="/about" 
-              color="inherit" 
-              underline="hover"
-            >
-              {t('footer.about')}
-            </MuiLink>
-            <MuiLink 
-              component={RouterLink} 
               to="/contact" 
               color="inherit" 
               underline="hover"
             >
               {t('footer.contact')}
+            </MuiLink>
+            <MuiLink 
+              component={RouterLink} 
+              to="/legal/terms" 
+              color="inherit" 
+              underline="hover"
+            >
+              {t('footer.terms')}
+            </MuiLink>
+            <MuiLink 
+              component={RouterLink} 
+              to="/legal/privacy" 
+              color="inherit" 
+              underline="hover"
+            >
+              {t('footer.privacy')}
             </MuiLink>
           </FlexBox>
         </FlexBox>
