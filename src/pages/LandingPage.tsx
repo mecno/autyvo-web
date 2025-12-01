@@ -10,14 +10,14 @@ import {
   Database,
 } from 'lucide-react';
 
-import heroImage from '@/assets/images/other/image 1.jpeg';
-import stickyImage from '@/assets/images/other/6.jpeg';
-import benefitsImage from '@/assets/images/other/7.jpg';
-import traceImage from '@/assets/images/other/9.jpeg';
-import verificationImage from '@/assets/images/other/image 10 copy.png';
-import kivoLogo from '@/assets/images/other/KIVO_LOGO_DARKBLUE_RVB_0.jpg';
-import frenchTechLogo from '@/assets/images/other/logo_french_tech.png';
-import backcarLogo from '@/assets/images/other/backcar.png';
+import heroImage from '@/assets/images/illustrations/transaction.jpeg';
+import stickyImage from '@/assets/images/app/dashboard-screen.jpeg';
+import benefitsImage from '@/assets/images/app/agenda-screen.jpg';
+import traceImage from '@/assets/images/report/report-cover-page.jpeg';
+import verificationImage from '@/assets/images/illustrations/autyvo-schema.png';
+import kivoLogo from '@/assets/images/partners/kivo-logo.jpg';
+import frenchTechLogo from '@/assets/images/partners/french-tech-logo.png';
+import backcarLogo from '@/assets/images/partners/backcar-logo.png';
 
 function LandingPage() {
   const { t } = useTranslation('landing');

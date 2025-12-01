@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { STORE_LINKS } from '@/constants';
-import googlePlayImg from '@/assets/images/other/Google_play.png';
-import appStoreImg from '@/assets/images/other/App-Store-Symbole.jpg';
+import googlePlayImg from '@/assets/images/stores/google-play.png';
+import appStoreImg from '@/assets/images/stores/apple-store.jpg';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation('common');

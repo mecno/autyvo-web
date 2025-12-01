@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import logoImg from '@/assets/images/other/logo.svg';
+import logoImg from '@/assets/images/logo.png';
 
 const Header: React.FC = () => {
   const { t } = useTranslation('common');
