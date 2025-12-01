@@ -13,6 +13,8 @@ import deleteAccountFr from '../locales/fr/delete-account.json';
 import deleteAccountEn from '../locales/en/delete-account.json';
 import landingFr from '../locales/fr/landing.json';
 import landingEn from '../locales/en/landing.json';
+import iaFr from '../locales/fr/ia.json';
+import iaEn from '../locales/en/ia.json';
 
 // Ressources de traduction
 const resources = {
@@ -22,6 +24,7 @@ const resources = {
     privacy: privacyFr,
     'delete-account': deleteAccountFr,
     landing: landingFr,
+    ia: iaFr,
   },
   en: {
     common: commonEn,
@@ -29,6 +32,7 @@ const resources = {
     privacy: privacyEn,
     'delete-account': deleteAccountEn,
     landing: landingEn,
+    ia: iaEn,
   },
 };
 
@@ -44,7 +48,7 @@ i18n
     debug: false,
     
     // Définition des namespaces
-    ns: ['common', 'cgu', 'privacy', 'delete-account', 'landing'], // Liste des namespaces disponibles
+    ns: ['common', 'cgu', 'privacy', 'delete-account', 'landing', 'ia'], // Liste des namespaces disponibles
     defaultNS: 'common', // Namespace par défaut
     
     interpolation: {

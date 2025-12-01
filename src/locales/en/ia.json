@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "title": "Automotive Artificial Intelligence - AUTYVO AI",
+    "description": "Discover how AUTYVO's artificial intelligence transforms your vehicle management: predictive analysis, smart notifications, cost optimization."
+  },
+  "hero": {
+    "title": "Intelligence at the Service of Your Vehicle",
+    "subtitle": "AUTYVO uses artificial intelligence to transform your vehicle management into a simple, predictive, and optimized experience."
+  },
+  "features": {
+    "title": "How AUTYVO's AI Works For You",
+    "subtitle": "Four technological pillars for intelligent automotive management",
+    "items": [
+      {
+        "title": "Predictive Analysis",
+        "description": "Anticipating maintenance needs",
+        "details": "Our system analyzes your vehicle's mileage and usage conditions to remind you of necessary interventions at the right time, in accordance with manufacturer recommendations."
+      },
+      {
+        "title": "Automatic Planning",
+        "description": "Smart agenda for your vehicle",
+        "details": "The system automatically generates a maintenance calendar based on your vehicle's characteristics and manufacturer recommendations."
+      },
+      {
+        "title": "Smart Notifications",
+        "description": "Alerts at the right time",
+        "details": "Receive reminders perfectly adapted to your situation: personal calendar, weather conditions, and key deadlines such as technical inspection or insurance."
+      },
+      {
+        "title": "Cost Optimization",
+        "description": "Master your maintenance budget",
+        "details": "The system helps you anticipate and organize all your vehicle-related expenses — maintenance, fuel, upcoming interventions — and indicates the most relevant times to act."
+      }
+    ]
+  },
+  "capabilities": {
+    "title": "Our AI's Capabilities",
+    "subtitle": "Cutting-edge technology to simplify your automotive daily life",
+    "items": [
+      {
+        "title": "Document Recognition",
+        "description": "Scan your invoices and our algorithms automatically extract all key information: date, amount, type of intervention, replaced parts."
+      },
+      {
+        "title": "Establishment Verification",
+        "description": "The system automatically verifies garages, maintenance centers, and technical inspection centers to validate the authenticity of your maintenance documents."
+      },
+      {
+        "title": "Recommendation Engine",
+        "description": "Based on millions of vehicle data points, our engine suggests the best maintenance actions according to your specific situation."
+      },
+      {
+        "title": "Evolution Tracking",
+        "description": "Visualize the evolution of your vehicle's condition and track your maintenance history to make better decisions."
+      },
+      {
+        "title": "Anomaly Detection",
+        "description": "The system relies on data from similar vehicles in the automotive fleet to interpret your vehicle's information and alert you as soon as an anomaly or potential risk is detected."
+      },
+      {
+        "title": "Lifespan Prediction",
+        "description": "The system estimates the remaining lifespan of your main components (battery, brakes, timing, and other essential elements) based on mileage and manufacturer recommendations."
+      }
+    ]
+  },
+  "useCases": {
+    "title": "AI in Action: Practical Cases",
+    "subtitle": "Discover how artificial intelligence intervenes concretely in daily life",
+    "items": [
+      {
+        "title": "Winter Approaching",
+        "icon": "❄️",
+        "scenario": "Mid-October, temperature dropping",
+        "aiAction": "AI detects the approach of winter and sends you a notification to check your tires, battery, and antifreeze fluid levels.",
+        "benefit": "You're ready before the first frost"
+      },
+      {
+        "title": "Technical Inspection",
+        "icon": "🔧",
+        "scenario": "In 2 months, your inspection is due",
+        "aiAction": "The system alerts you 8 weeks in advance and suggests a pre-inspection to correct potential problem points.",
+        "benefit": "Pass inspection on the first try"
+      },
+      {
+        "title": "Oil Change Mileage",
+        "icon": "🛢️",
+        "scenario": "You're approaching 15,000 km",
+        "aiAction": "AI calculates that at your current pace, you'll reach the threshold in 3 weeks and suggests booking an appointment.",
+        "benefit": "Engine always at its best"
+      },
+      {
+        "title": "Establishment Verification",
+        "icon": "✅",
+        "scenario": "You add an invoice from a garage",
+        "aiAction": "The system automatically verifies the establishment, confirms it's an approved center, and certifies the document's authenticity to strengthen your history's value.",
+        "benefit": "Certified history and maximum trust"
+      }
+    ]
+  },
+  "differentiators": {
+    "title": "Why Our AI is Different",
+    "subtitle": "A unique approach focused on your real needs",
+    "items": [
+      {
+        "title": "Real-Time",
+        "description": "Recommendations are calculated instantly based on your vehicle's current condition"
+      },
+      {
+        "title": "Automotive Big Data",
+        "description": "Our algorithms rely on millions of vehicle data points to advise you"
+      },
+      {
+        "title": "Ultra-Personalized",
+        "description": "Each vehicle is unique, AI adapts its advice to your model's specificities"
+      },
+      {
+        "title": "Continuous Improvement",
+        "description": "The system continuously enriches itself with community feedback to offer better recommendations"
+      },
+      {
+        "title": "Transparency",
+        "description": "You always understand why a recommendation is made to you"
+      },
+      {
+        "title": "Proven Reliability",
+        "description": "Thousands of users trust us every day"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Experience Automotive AI?",
+    "subtitle": "Join the thousands of users who have already adopted intelligent vehicle management",
+    "button": "Download AUTYVO for Free"
+  },
+  "disclaimer": {
+    "title": "AI does not replace your mechanic",
+    "content": "AUTYVO is a decision support tool. Our recommendations are based on proven data and algorithms, but they never replace the expertise of a qualified professional. When in doubt, always consult your mechanic."
+  }
+}

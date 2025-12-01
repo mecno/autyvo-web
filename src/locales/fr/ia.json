@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "title": "Intelligence Artificielle Automobile - AUTYVO IA",
+    "description": "Découvrez comment l'intelligence artificielle d'AUTYVO transforme la gestion de votre véhicule : analyse prédictive, notifications intelligentes, optimisation des coûts."
+  },
+  "hero": {
+    "title": "L'Intelligence au Service de Votre Véhicule",
+    "subtitle": "AUTYVO utilise l'intelligence artificielle pour transformer la gestion de votre véhicule en une expérience simple, prédictive et optimisée."
+  },
+  "features": {
+    "title": "Comment l'IA d'AUTYVO Fonctionne Pour Vous",
+    "subtitle": "Quatre piliers technologiques pour une gestion automobile intelligente",
+    "items": [
+      {
+        "title": "Analyse Prédictive",
+        "description": "Anticipation des besoins d'entretien",
+        "details": "Notre système analyse le kilométrage et les conditions d'utilisation de votre véhicule pour vous rappeler les interventions nécessaires au bon moment, conformément aux recommandations du constructeur."
+      },
+      {
+        "title": "Planification Automatique",
+        "description": "Agenda intelligent pour votre véhicule",
+        "details": "Le système génère automatiquement un calendrier d'entretien basé sur les caractéristiques de votre véhicule et les recommandations du constructeur."
+      },
+      {
+        "title": "Notifications Intelligentes",
+        "description": "Alertes au bon moment",
+        "details": "Recevez des rappels parfaitement adaptés à votre situation : calendrier personnel, conditions météo et échéances clés comme le contrôle technique ou l'assurance."
+      },
+      {
+        "title": "Optimisation des Coûts",
+        "description": "Maîtrisez votre budget entretien",
+        "details": "Le système vous aide à anticiper et organiser l'ensemble de vos dépenses liées au véhicule — entretien, carburant, interventions à venir — et vous indique les moments les plus pertinents pour agir."
+      }
+    ]
+  },
+  "capabilities": {
+    "title": "Les Capacités de Notre IA",
+    "subtitle": "Une technologie de pointe pour simplifier votre quotidien automobile",
+    "items": [
+      {
+        "title": "Reconnaissance de Documents",
+        "description": "Scannez vos factures et nos algorithmes extraient automatiquement toutes les informations clés : date, montant, type d'intervention, pièces changées."
+      },
+      {
+        "title": "Vérification des Établissements",
+        "description": "Le système vérifie automatiquement les garages, centres de maintenance et centres de contrôle technique pour valider l'authenticité de vos documents d'entretien."
+      },
+      {
+        "title": "Moteur de Recommandations",
+        "description": "Basé sur des millions de données véhicules, notre moteur vous suggère les meilleures actions d'entretien selon votre situation spécifique."
+      },
+      {
+        "title": "Suivi de l'Évolution",
+        "description": "Visualisez l'évolution de l'état de votre véhicule et suivez votre historique d'entretien pour prendre de meilleures décisions."
+      },
+      {
+        "title": "Détection d'Anomalies",
+        "description": "Le système s'appuie sur les données de véhicules similaires dans le parc automobile pour interpréter les informations de votre véhicule et vous avertir dès qu'une anomalie ou un risque potentiel est détecté."
+      },
+      {
+        "title": "Prévision de Durée de Vie",
+        "description": "Le système estime la durée de vie restante de vos principaux composants (batterie, freins, distribution, et autres éléments essentiels) en se basant sur le kilométrage et les recommandations constructeur."
+      }
+    ]
+  },
+  "useCases": {
+    "title": "L'IA en Action : Cas Pratiques",
+    "subtitle": "Découvrez comment l'intelligence artificielle intervient concrètement au quotidien",
+    "items": [
+      {
+        "title": "Hiver Approche",
+        "icon": "❄️",
+        "scenario": "Mi-octobre, température en baisse",
+        "aiAction": "L'IA détecte l'approche de l'hiver et vous envoie une notification pour vérifier vos pneus, votre batterie et vos niveaux de liquide antigel.",
+        "benefit": "Vous êtes prêt avant les premières gelées"
+      },
+      {
+        "title": "Contrôle Technique",
+        "icon": "🔧",
+        "scenario": "Dans 2 mois, votre CT arrive",
+        "aiAction": "Le système vous alerte 8 semaines à l'avance et vous suggère une pré-visite pour corriger les points susceptibles de poser problème.",
+        "benefit": "Passage du CT du premier coup"
+      },
+      {
+        "title": "Kilométrage Vidange",
+        "icon": "🛢️",
+        "scenario": "Vous approchez des 15 000 km",
+        "aiAction": "L'IA calcule qu'à votre rythme actuel, vous atteindrez le seuil dans 3 semaines et vous propose de prendre rendez-vous.",
+        "benefit": "Moteur toujours au top"
+      },
+      {
+        "title": "Vérification d'Établissement",
+        "icon": "✅",
+        "scenario": "Vous ajoutez une facture d'un garage",
+        "aiAction": "Le système vérifie automatiquement l'établissement, confirme qu'il s'agit d'un centre agréé et certifie l'authenticité du document pour renforcer la valeur de votre historique.",
+        "benefit": "Historique certifié et confiance maximale"
+      }
+    ]
+  },
+  "differentiators": {
+    "title": "Pourquoi Notre IA est Différente",
+    "subtitle": "Une approche unique centrée sur vos besoins réels",
+    "items": [
+      {
+        "title": "Temps Réel",
+        "description": "Les recommandations sont calculées instantanément en fonction de l'état actuel de votre véhicule"
+      },
+      {
+        "title": "Big Data Automobile",
+        "description": "Nos algorithmes s'appuient sur des millions de données véhicules pour vous conseiller"
+      },
+      {
+        "title": "Ultra-Personnalisé",
+        "description": "Chaque véhicule est unique, l'IA adapte ses conseils aux spécificités de votre modèle"
+      },
+      {
+        "title": "Amélioration Continue",
+        "description": "Le système s'enrichit continuellement avec les retours de la communauté pour offrir de meilleures recommandations"
+      },
+      {
+        "title": "Transparence",
+        "description": "Vous comprenez toujours pourquoi une recommandation vous est faite"
+      },
+      {
+        "title": "Fiabilité Prouvée",
+        "description": "Des milliers d'utilisateurs nous font confiance chaque jour"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Prêt à Vivre l'Expérience de l'IA Automobile ?",
+    "subtitle": "Rejoignez les milliers d'utilisateurs qui ont déjà adopté la gestion intelligente de leur véhicule",
+    "button": "Télécharger AUTYVO Gratuitement"
+  },
+  "disclaimer": {
+    "title": "L'IA ne remplace pas votre mécanicien",
+    "content": "AUTYVO est un outil d'aide à la décision. Nos recommandations sont basées sur des données et des algorithmes éprouvés, mais elles ne remplacent jamais l'expertise d'un professionnel qualifié. En cas de doute, consultez toujours votre garagiste."
+  }
+}

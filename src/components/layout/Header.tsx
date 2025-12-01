@@ -60,6 +60,12 @@ const Header: React.FC = () => {
               {t('header.nav.professionals')}
             </Link>
             <Link
+              to="/blog"
+              className="text-brand-secondary hover:text-brand-primary transition-colors"
+            >
+              {t('header.nav.blog')}
+            </Link>
+            <Link
               to="/contact"
               className="text-brand-secondary hover:text-brand-primary transition-colors"
             >
@@ -102,6 +108,12 @@ const Header: React.FC = () => {
               className="block w-full text-left text-brand-secondary hover:text-brand-primary py-2"
             >
               {t('header.nav.professionals')}
+            </button>
+            <button
+              onClick={() => handleNavigation('/blog')}
+              className="block w-full text-left text-brand-secondary hover:text-brand-primary py-2"
+            >
+              {t('header.nav.blog')}
             </button>
             <button
               onClick={() => handleNavigation('/contact')}
