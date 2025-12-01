@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "title": "Daily Vehicle Management - Autyvo Blog",
+    "description": "Daily maintenance tips to preserve your car's value and performance."
+  },
+  "hero": {
+    "backButton": "← Back to categories",
+    "title": "Daily Vehicle Management: Preserving Value and Performance",
+    "description": "Master essential maintenance tasks to ensure safety, efficiency and maintain your automobile's resale value (according to automotive manufacturer and safety organization guidelines)."
+  },
+  "essentials": {
+    "title": "The 3 Pillars of Regular Maintenance",
+    "subtitle": "Preventive maintenance is structured by frequency and importance of inspections.",
+    "items": [
+      {
+        "title": "Weekly Checks",
+        "description": "Active Safety and Energy Efficiency",
+        "frequency": "Every week",
+        "points": [
+          "Tire Pressure: Cold check (including spare tire)",
+          "Engine Oil Level: Check with cold engine on flat surface",
+          "Lights and Signals: Turn signals, brake lights, low and high beams (Road Safety)"
+        ]
+      },
+      {
+        "title": "Monthly Maintenance",
+        "description": "Visibility and System Reliability",
+        "frequency": "Every month",
+        "points": [
+          "Fluid Levels: Coolant and Windshield Washer Fluid",
+          "Wipers: Rubber condition and wiping efficiency",
+          "Braking: Visual inspection of discs and pads (wear)",
+          "Battery: Cleanliness and terminal tightness"
+        ]
+      },
+      {
+        "title": "Preventive Maintenance",
+        "description": "Mechanical Longevity and Warranty Preservation",
+        "frequency": "By Mileage/Annually",
+        "points": [
+          "Service Book: Strictly follow manufacturer-prescribed intervals",
+          "Wear Part Replacement: Belt, spark plugs, filters, etc. (prevention of costly breakdowns)",
+          "Traceability: Document each intervention to maintain warranty"
+        ]
+      }
+    ]
+  },
+  "tips": {
+    "title": "Practical Optimization Tips",
+    "subtitle": "Based on ADEME, ACEA and automotive manufacturer expertise",
+    "items": [
+      {
+        "icon": "📉",
+        "title": "Eco-driving and Fuel Consumption Control",
+        "subtitle": "Consumption Reduction (ADEME)",
+        "content": "Adopt smooth driving, without sudden acceleration or braking, and maintain a constant speed. Anticipating slowdowns is the key to eco-driving.",
+        "detail": "Under-inflated tires increase consumption by up to 2.4% and reduce road holding (ACEA). Check pressure regularly when cold, referring to the manufacturer's label.",
+        "impact": "Up to 2.4% savings"
+      },
+      {
+        "icon": "⚙️",
+        "title": "Engine Longevity and Lubrication",
+        "subtitle": "Cold Start",
+        "content": "Let the engine idle for a few moments before driving and avoid high revs until the oil has reached its optimal operating temperature (usually after 5 to 10 minutes).",
+        "detail": "Use only the approved engine oil specified in the vehicle manual. Respecting oil change intervals is the number one factor for engine preservation.",
+        "impact": "Optimal engine longevity"
+      },
+      {
+        "icon": "✨",
+        "title": "Bodywork Protection and Resale Value",
+        "subtitle": "Corrosion Prevention",
+        "content": "Wash the vehicle regularly to remove salt (winter) and pollution. Apply biannual protective wax to seal the varnish against external aggressions (UV, chemicals).",
+        "detail": "Repair paint chips or gravel impacts without excessive delay. Exposure of bare metal to moisture very quickly leads to rust formation and spread.",
+        "impact": "Preserved value"
+      },
+      {
+        "icon": "📱",
+        "title": "The AUTYVO Advantage: Traceability",
+        "subtitle": "Total Transparency",
+        "content": "By recording each fill-up, each wash, and each intervention, you build a complete and certified digital maintenance history.",
+        "detail": "This detailed traceability increases buyer confidence and can justify a higher resale price (a complete history is often a major negotiation argument).",
+        "impact": "Higher resale price"
+      }
+    ]
+  },
+  "checklist": {
+    "title": "Your Synthetic Maintenance Checklist",
+    "subtitle": "A simple and effective calendar to remember everything",
+    "daily": {
+      "title": "Daily",
+      "items": [
+        "Visual inspection (tires, leaks)",
+        "Lights check"
+      ]
+    },
+    "weekly": {
+      "title": "Weekly",
+      "items": [
+        "Engine oil levels",
+        "Tire pressure",
+        "Windshield washer fluid"
+      ]
+    },
+    "monthly": {
+      "title": "Monthly",
+      "items": [
+        "Coolant",
+        "Wiper and brake condition"
+      ]
+    },
+    "seasonal": {
+      "title": "Seasonal",
+      "items": [
+        "Summer/winter tire change",
+        "Air conditioning inspection and recharge",
+        "Antifreeze check"
+      ]
+    }
+  },
+  "cta": {
+    "title": "Track Every Maintenance with AUTYVO",
+    "subtitle": "The app that helps you remember everything and increase your vehicle's value",
+    "button": "Download for FREE"
+  }
+}

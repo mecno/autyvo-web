@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Blog Autyvo - Conseils et Actualités Automobile",
+    "description": "Découvrez nos guides complets sur l'entretien automobile, la traçabilité, et la valorisation de votre véhicule."
+  },
+  "hero": {
+    "title": "Blog Autyvo",
+    "subtitle": "Conseils d'experts, guides pratiques et actualités pour prendre soin de votre véhicule et optimiser sa valeur"
+  },
+  "categories": {
+    "title": "Explorez nos Catégories",
+    "subtitle": "Trouvez les informations qui vous intéressent",
+    "explore": "Explorer →",
+    "items": [
+      {
+        "name": "Quotidien",
+        "description": "Conseils pratiques pour gérer votre véhicule au quotidien"
+      },
+      {
+        "name": "Trace",
+        "description": "Comprendre la valeur de la traçabilité"
+      },
+      {
+        "name": "Calendrier d'Entretien",
+        "description": "Entretien saisonnier et recommandations par période"
+      },
+      {
+        "name": "Intelligence",
+        "description": "Technologies et innovations automobiles"
+      },
+      {
+        "name": "Transmission",
+        "description": "Acheter et vendre en toute confiance"
+      }
+    ]
+  },
+  "articles": {
+    "title": "Articles Récents",
+    "subtitle": "Les dernières publications de nos experts",
+    "readMore": "Lire la suite →",
+    "items": [
+      {
+        "title": "Comment l'AUTYVO Trace augmente la valeur de votre véhicule",
+        "category": "Trace",
+        "date": "15 Nov 2025",
+        "excerpt": "Découvrez comment la transparence documentée peut augmenter la valeur de revente de votre véhicule jusqu'à 20%.",
+        "image": "https://images.pexels.com/photos/3846205/pexels-photo-3846205.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": "Les 5 entretiens essentiels à ne jamais oublier",
+        "category": "Quotidien",
+        "date": "12 Nov 2025",
+        "excerpt": "Un guide complet des entretiens indispensables pour maintenir votre véhicule en parfait état.",
+        "image": "https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": "Préparer sa voiture pour l'hiver : le checklist complet",
+        "category": "Calendrier d'Entretien",
+        "date": "08 Nov 2025",
+        "excerpt": "Tous les points à vérifier avant l'arrivée du froid pour rouler en toute sécurité.",
+        "image": "https://images.pexels.com/photos/3136673/pexels-photo-3136673.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": "La révolution de la vérification automatique des véhicules",
+        "category": "Intelligence",
+        "date": "05 Nov 2025",
+        "excerpt": "Comment l'IA et les données officielles transforment le marché de l'occasion.",
+        "image": "https://images.pexels.com/photos/2882674/pexels-photo-2882674.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": "Vendre sa voiture : les 7 erreurs fatales à éviter",
+        "category": "Transmission",
+        "date": "01 Nov 2025",
+        "excerpt": "Les pièges les plus courants lors de la vente d'un véhicule et comment les éviter.",
+        "image": "https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": "Contrôle technique : tout comprendre en 5 minutes",
+        "category": "Quotidien",
+        "date": "28 Oct 2025",
+        "excerpt": "Les nouvelles normes, les points de contrôle et comment bien préparer votre véhicule.",
+        "image": "https://images.pexels.com/photos/4489750/pexels-photo-4489750.jpeg?auto=compress&cs=tinysrgb&w=800"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Essayez AUTYVO Gratuitement",
+    "subtitle": "Gérez votre véhicule en toute transparence et construisez sa valeur jour après jour",
+    "button": "Télécharger GRATUITEMENT AUTYVO"
+  }
+}

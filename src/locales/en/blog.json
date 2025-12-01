@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Autyvo Blog - Automotive Advice and News",
+    "description": "Discover our comprehensive guides on car maintenance, traceability, and vehicle value optimization."
+  },
+  "hero": {
+    "title": "Autyvo Blog",
+    "subtitle": "Expert advice, practical guides and news to take care of your vehicle and optimize its value"
+  },
+  "categories": {
+    "title": "Explore Our Categories",
+    "subtitle": "Find the information you're interested in",
+    "explore": "Explore →",
+    "items": [
+      {
+        "name": "Daily",
+        "description": "Practical tips for managing your vehicle daily"
+      },
+      {
+        "name": "Trace",
+        "description": "Understanding the value of traceability"
+      },
+      {
+        "name": "Maintenance Calendar",
+        "description": "Seasonal maintenance and period-specific recommendations"
+      },
+      {
+        "name": "Intelligence",
+        "description": "Automotive technologies and innovations"
+      },
+      {
+        "name": "Transfer",
+        "description": "Buy and sell with confidence"
+      }
+    ]
+  },
+  "articles": {
+    "title": "Recent Articles",
+    "subtitle": "Latest publications from our experts",
+    "readMore": "Read more →",
+    "items": [
+      {
+        "title": "How AUTYVO Trace increases your vehicle's value",
+        "category": "Trace",
+        "date": "Nov 15, 2025",
+        "excerpt": "Discover how documented transparency can increase your vehicle's resale value by up to 20%.",
+        "image": "https://images.pexels.com/photos/3846205/pexels-photo-3846205.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": "The 5 essential maintenance tasks never to forget",
+        "category": "Daily",
+        "date": "Nov 12, 2025",
+        "excerpt": "A complete guide to essential maintenance to keep your vehicle in perfect condition.",
+        "image": "https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": "Preparing your car for winter: the complete checklist",
+        "category": "Maintenance Calendar",
+        "date": "Nov 08, 2025",
+        "excerpt": "All the points to check before cold weather arrives to drive safely.",
+        "image": "https://images.pexels.com/photos/3136673/pexels-photo-3136673.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": "The revolution of automatic vehicle verification",
+        "category": "Intelligence",
+        "date": "Nov 05, 2025",
+        "excerpt": "How AI and official data are transforming the used car market.",
+        "image": "https://images.pexels.com/photos/2882674/pexels-photo-2882674.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": "Selling your car: 7 fatal mistakes to avoid",
+        "category": "Transfer",
+        "date": "Nov 01, 2025",
+        "excerpt": "The most common pitfalls when selling a vehicle and how to avoid them.",
+        "image": "https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "title": "Technical inspection: understand everything in 5 minutes",
+        "category": "Daily",
+        "date": "Oct 28, 2025",
+        "excerpt": "New standards, inspection points and how to properly prepare your vehicle.",
+        "image": "https://images.pexels.com/photos/4489750/pexels-photo-4489750.jpeg?auto=compress&cs=tinysrgb&w=800"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Try AUTYVO for Free",
+    "subtitle": "Manage your vehicle transparently and build its value day by day",
+    "button": "Download AUTYVO for FREE"
+  }
+}

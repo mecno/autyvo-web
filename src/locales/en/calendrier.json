@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "title": "Seasonal Maintenance Calendar - Autyvo Blog",
+    "description": "Complete guide to automotive maintenance by season: winter, spring, summer, fall."
+  },
+  "hero": {
+    "title": "Seasonal Automotive Maintenance Calendar",
+    "description": "Each season requires specific care to ensure the performance, safety, and longevity of your vehicle. Discover best practices validated by automotive and institutional experts (Cerema, TCS, ADAC, INC...).",
+    "backButton": "← Back to categories"
+  },
+  "seasons": {
+    "title": "Maintenance by Season",
+    "subtitle": "Discover priority actions for each period of the year",
+    "items": [
+      {
+        "name": "Winter",
+        "period": "December - February",
+        "subtitle": "❄️ Extreme Cold & Salted Roads · 2024 Regulation: Mandatory equipment in 48 departments (Decree n° 2020-1264)",
+        "priorities": [
+          {
+            "defi": "Extreme temperatures",
+            "action": "Battery: charge test (→ 30-50% efficiency drop at −10°C) · Antifreeze level and quality (−25°C min)",
+            "priority": "Essentiel"
+          },
+          {
+            "defi": "Frost & poor visibility",
+            "action": "Antifreeze washer fluid (−20°C) · Winter wipers · Window defrosting",
+            "priority": "Essentiel"
+          },
+          {
+            "defi": "Snow, black ice",
+            "action": "Winter tires or chains (depending on zone) · Check pressure (cold adjustment)",
+            "priority": "Essentiel"
+          },
+          {
+            "defi": "De-icing salt",
+            "action": "Regular washing of chassis and wheel wells (rust prevention)",
+            "priority": "Important"
+          },
+          {
+            "defi": "Electric vehicles",
+            "action": "Reduced range (up to −40%): battery preheating recommended (TCS, Auto-Touring, AMAG, NREL studies)",
+            "priority": "Important"
+          }
+        ]
+      },
+      {
+        "name": "Spring",
+        "period": "March - May",
+        "subtitle": "🌸 Transition & Cleaning · Post-winter and preparation for the warm season",
+        "priorities": [
+          {
+            "defi": "Winter traces (salt, mud)",
+            "action": "Complete chassis wash to prevent corrosion",
+            "priority": "Important"
+          },
+          {
+            "defi": "Pollen & allergies",
+            "action": "Replace cabin filter (recommended 1×/year)",
+            "priority": "Essentiel"
+          },
+          {
+            "defi": "Humidity",
+            "action": "Brake system inspection (post-winter oxidation risk)",
+            "priority": "Recommandé"
+          },
+          {
+            "defi": "Tire change",
+            "action": "Switch to summer tires once temperatures are consistently above 7°C",
+            "priority": "Essentiel"
+          },
+          {
+            "defi": "Fluid check",
+            "action": "Engine oil, coolant, brake fluid",
+            "priority": "Important"
+          }
+        ]
+      },
+      {
+        "name": "Summer",
+        "period": "June - August",
+        "subtitle": "☀️ Heat Wave & Long Trips · Intense heat, overheating risk",
+        "priorities": [
+          {
+            "defi": "Extreme heat",
+            "action": "Check cooling system (radiator, hoses, level)",
+            "priority": "Essentiel"
+          },
+          {
+            "defi": "Air conditioning",
+            "action": "Test and recharge if necessary (efficiency and comfort)",
+            "priority": "Important"
+          },
+          {
+            "defi": "Tire pressure",
+            "action": "Regular check (inflation with hot air) · Blowout risk",
+            "priority": "Essentiel"
+          },
+          {
+            "defi": "UV exposure",
+            "action": "Body protection (wax) · Rubber seal inspection",
+            "priority": "Recommandé"
+          },
+          {
+            "defi": "Long vacation trips",
+            "action": "Complete pre-departure inspection (service if due soon)",
+            "priority": "Important"
+          }
+        ]
+      },
+      {
+        "name": "Fall",
+        "period": "September - November",
+        "subtitle": "🍂 Winter Preparation · Rain, falling leaves, decreasing temperatures",
+        "priorities": [
+          {
+            "defi": "Reduced visibility (rain, fog)",
+            "action": "Check lights, wipers, washer fluid",
+            "priority": "Essentiel"
+          },
+          {
+            "defi": "Wet roads (aquaplaning risk)",
+            "action": "Check tire tread depth (min. 1.6 mm legal · 3 mm recommended TCS)",
+            "priority": "Essentiel"
+          },
+          {
+            "defi": "Humidity & progressive cold",
+            "action": "Battery test (charge decreases with cold)",
+            "priority": "Important"
+          },
+          {
+            "defi": "Heating system",
+            "action": "Check operation before winter",
+            "priority": "Important"
+          },
+          {
+            "defi": "Water & leaf drainage",
+            "action": "Clean drains (windshield base, door bottoms)",
+            "priority": "Recommandé"
+          }
+        ]
+      }
+    ],
+    "tableHeaders": {
+      "defis": "Challenges",
+      "actions": "Essential Actions",
+      "priorite": "Priority"
+    },
+    "priorityLabels": {
+      "essentiel": "⭐ Essential",
+      "important": "🔶 Important",
+      "recommande": "🔹 Recommended"
+    }
+  },
+  "monthlyCalendar": {
+    "title": "Monthly Maintenance Calendar",
+    "subtitle": "A month-by-month guide to never forget anything",
+    "months": [
+      { "month": "January", "focus": "Battery and antifreeze monitoring", "checks": ["Battery", "Fluids", "Heating"] },
+      { "month": "February", "focus": "Winter exit preparation", "checks": ["Winter tire condition", "Body", "Brakes"] },
+      { "month": "March", "focus": "Summer tire change", "checks": ["Summer tire installation", "Alignment", "Shock absorbers"] },
+      { "month": "April", "focus": "Spring service", "checks": ["Complete service", "Filters", "Cleaning"] },
+      { "month": "May", "focus": "Air conditioning and long trips", "checks": ["A/C", "Fluids", "Lighting"] },
+      { "month": "June", "focus": "Heat wave preparation", "checks": ["Cooling", "Tires", "UV protection"] },
+      { "month": "July", "focus": "Heat monitoring", "checks": ["Tire pressure", "Levels", "Ventilation"] },
+      { "month": "August", "focus": "Mid-summer maintenance", "checks": ["Brakes", "Suspension", "Steering"] },
+      { "month": "September", "focus": "Fall preparation", "checks": ["Lighting", "Wipers", "Drainage"] },
+      { "month": "October", "focus": "Pre-winter check-up", "checks": ["Battery", "Antifreeze", "Heating"] },
+      { "month": "November", "focus": "Winter tire change", "checks": ["Winter tire installation", "Winter equipment"] },
+      { "month": "December", "focus": "Extreme cold vigilance", "checks": ["Battery", "Starting", "Visibility"] }
+    ]
+  },
+  "recommendations": {
+    "title": "General Recommendations",
+    "items": [
+      {
+        "title": "Anticipate Changes",
+        "description": "Don't wait for extreme weather. Prepare your vehicle 2-3 weeks before the season change."
+      },
+      {
+        "title": "Track Every Service",
+        "description": "With AUTYVO, document each seasonal maintenance to prove the care given to your vehicle."
+      },
+      {
+        "title": "Consult Your Manual",
+        "description": "Manufacturer recommendations are tailored to your specific model. Follow them carefully."
+      },
+      {
+        "title": "Prioritize Prevention",
+        "description": "Regular seasonal maintenance costs less than emergency repairs in the middle of winter."
+      }
+    ]
+  },
+  "sources": {
+    "title": "Technical & Official Sources",
+    "categories": [
+      {
+        "category": "Regulations",
+        "links": [
+          { "name": "Decree n° 2020-1264 - Winter Equipment", "url": "https://www.cerema.fr" },
+          { "name": "INC - Snow Tires, Winter Regulation 2024-2025", "url": "https://www.inc-conso.fr" }
+        ]
+      },
+      {
+        "category": "Technical Tests & Battery Performance",
+        "links": [
+          { "name": "Auto-Touring - ADAC Electric Vehicle Winter Test", "url": "https://www.autotouring.be" },
+          { "name": "TCS - Electric Vehicle Winter Range Test", "url": "https://www.tcs.ch" },
+          { "name": "AMAG - Cold Effects on Electric Car Battery", "url": "https://www.amag-group.ch" },
+          { "name": "TCS - Tire and Braking Tests on Wet Roads", "url": "https://www.tcs.ch" }
+        ]
+      },
+      {
+        "category": "Winter Range & Optimization",
+        "links": [
+          { "name": "TCS - Winter Range Test", "url": "https://www.tcs.ch" },
+          { "name": "Auto Journal - Optimize Range and Charging in Winter", "url": "https://www.autojournal.fr" },
+          { "name": "Frandroid - EV Ranking by Winter Range", "url": "https://www.frandroid.com" },
+          { "name": "Frandroid - Heat Pump and Range Gain", "url": "https://www.frandroid.com" },
+          { "name": "SuisseEnergie - Electric Vehicle Consumption in Winter", "url": "https://www.suisseenergie.ch" },
+          { "name": "Auto Journal - Why Range Drops Up to –40%", "url": "https://www.autojournal.fr" }
+        ]
+      },
+      {
+        "category": "Scientific Research",
+        "links": [
+          { "name": "NREL - Battery Thermal Study in Extreme Conditions", "url": "https://docs.nrel.gov" }
+        ]
+      }
+    ]
+  },
+  "cta": {
+    "title": "Track Your Calendar with AUTYVO",
+    "subtitle": "Record each seasonal maintenance in AUTYVO and receive reminders to never miss an important deadline",
+    "button": "Download AUTYVO"
+  }
+}

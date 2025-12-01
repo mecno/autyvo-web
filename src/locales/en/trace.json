@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "title": "AUTYVO Trace - Automotive Traceability - Autyvo Blog",
+    "description": "Discover how traceability increases your vehicle's value and facilitates its resale."
+  },
+  "hero": {
+    "backButton": "← Back to categories",
+    "title": "AUTYVO Trace: Traceability That Strengthens Your Vehicle's Value",
+    "description": "A clear and complete history increases buyer confidence and simplifies resale. All major market players (Argus, AAA Data, La Centrale, Mobilians) emphasize that documented maintenance is an essential valuation criterion.",
+    "carnetTitle": "Your Digital Service Book, Always Accessible",
+    "carnetDescription": "No need to keep invoices in a glove box. AUTYVO centralizes your information, timestamps it, and facilitates verification when data comes from reliable sources.",
+    "carnetNote": "These practices are recommended by DGCCRF, which advises keeping a complete history during an automotive transaction."
+  },
+  "benefits": {
+    "title": "The 3 Major Benefits of Traceability",
+    "subtitle": "Why documenting your vehicle's maintenance changes everything",
+    "items": [
+      {
+        "title": "1. Vehicle Valuation",
+        "description": "Used car market guides and experts (Argus, La Centrale) emphasize that:",
+        "details": [
+          "A complete maintenance history strengthens perceived value",
+          "It's a key argument during negotiation",
+          "It helps accelerate the sale"
+        ]
+      },
+      {
+        "title": "2. Protection & Security",
+        "description": "Keeping history reduces uncertainty and simplifies procedures",
+        "details": [
+          "Timestamping of interventions",
+          "Verification when data comes from reliable documents (invoices, inspection...)",
+          "Building a structured file for all your exchanges",
+          "Recommended by UFC-Que Choisir and DGCCRF"
+        ]
+      },
+      {
+        "title": "3. Buyer Confidence",
+        "description": "According to used car market studies (L'Argus, OVE, AAA Data):",
+        "details": [
+          "Transparency is a priority criterion for buyers",
+          "Lack of history generates mistrust",
+          "A documented vehicle sells more easily",
+          "AUTYVO facilitates this transparency"
+        ]
+      }
+    ]
+  },
+  "statistics": {
+    "title": "Observed Trends in the Used Car Market",
+    "subtitle": "Trends noted by institutional players",
+    "items": [
+      {
+        "icon": "📈",
+        "label": "Better valuation",
+        "description": "when history is complete"
+      },
+      {
+        "icon": "⚡",
+        "label": "Sales process",
+        "description": "smoother"
+      },
+      {
+        "icon": "📱",
+        "label": "Growing demand",
+        "description": "for digital tracking tools"
+      },
+      {
+        "icon": "✅",
+        "label": "Importance for buyer",
+        "description": "of knowing actual maintenance"
+      }
+    ]
+  },
+  "whatToTrace": {
+    "title": "What Should You Track?",
+    "subtitle": "Document your vehicle's entire life for maximum value",
+    "items": [
+      {
+        "category": "Mechanical Maintenance",
+        "items": [
+          "Periodic services",
+          "Oil changes / filters",
+          "Wear parts (belt, brakes...)",
+          "Diagnostics / repairs",
+          "Technical inspections"
+        ]
+      },
+      {
+        "category": "Daily Tracking",
+        "items": [
+          "Tires",
+          "Washes",
+          "A/C",
+          "Consumption",
+          "Minor interventions"
+        ]
+      },
+      {
+        "category": "Important Events",
+        "items": [
+          "Accident repairs",
+          "Owner change",
+          "Modifications",
+          "Recalls",
+          "Warranty"
+        ]
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "How Does It Work?",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Record",
+        "description": "Capture your invoices, notes, photos or interventions directly in the app."
+      },
+      {
+        "step": "2",
+        "title": "AUTYVO verifies and timestamps",
+        "description": "Data is recorded at the actual date and can be verified if it comes from reliable sources."
+      },
+      {
+        "step": "3",
+        "title": "Share",
+        "description": "Generate a clear file to transmit to a professional or buyer."
+      },
+      {
+        "step": "4",
+        "title": "Add Value",
+        "description": "A structured history strengthens confidence and facilitates the transaction."
+      }
+    ]
+  },
+  "sources": {
+    "title": "Official sources and references",
+    "items": [
+      {
+        "name": "L'Argus",
+        "description": "How the rating is calculated",
+        "url": "https://www.largus.fr",
+        "linkText": "Visit site →"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start Tracking Today",
+    "subtitle": "Download AUTYVO for free and build the history that adds value to your vehicle",
+    "button": "Download for FREE"
+  }
+}

@@ -15,6 +15,14 @@ import landingFr from '../locales/fr/landing.json';
 import landingEn from '../locales/en/landing.json';
 import iaFr from '../locales/fr/ia.json';
 import iaEn from '../locales/en/ia.json';
+import blogFr from '../locales/fr/blog.json';
+import blogEn from '../locales/en/blog.json';
+import quotidienFr from '../locales/fr/quotidien.json';
+import quotidienEn from '../locales/en/quotidien.json';
+import traceFr from '../locales/fr/trace.json';
+import traceEn from '../locales/en/trace.json';
+import calendrierFr from '../locales/fr/calendrier.json';
+import calendrierEn from '../locales/en/calendrier.json';
 
 // Ressources de traduction
 const resources = {
@@ -25,6 +33,10 @@ const resources = {
     'delete-account': deleteAccountFr,
     landing: landingFr,
     ia: iaFr,
+    blog: blogFr,
+    quotidien: quotidienFr,
+    trace: traceFr,
+    calendrier: calendrierFr,
   },
   en: {
     common: commonEn,
@@ -33,6 +45,10 @@ const resources = {
     'delete-account': deleteAccountEn,
     landing: landingEn,
     ia: iaEn,
+    blog: blogEn,
+    quotidien: quotidienEn,
+    trace: traceEn,
+    calendrier: calendrierEn,
   },
 };
 
@@ -48,7 +64,7 @@ i18n
     debug: false,
     
     // Définition des namespaces
-    ns: ['common', 'cgu', 'privacy', 'delete-account', 'landing', 'ia'], // Liste des namespaces disponibles
+    ns: ['common', 'cgu', 'privacy', 'delete-account', 'landing', 'ia', 'blog', 'quotidien', 'trace', 'calendrier'], // Liste des namespaces disponibles
     defaultNS: 'common', // Namespace par défaut
     
     interpolation: {

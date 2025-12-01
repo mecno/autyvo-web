@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "title": "Gestion Quotidienne de Votre Véhicule - Blog Autyvo",
+    "description": "Conseils d'entretien quotidien pour préserver la valeur et les performances de votre automobile."
+  },
+  "hero": {
+    "backButton": "← Retour aux catégories",
+    "title": "Gestion Quotidienne de Votre Véhicule : Préserver Valeur et Performance",
+    "description": "Maîtrisez les gestes essentiels d'entretien pour garantir la sécurité, l'efficacité et maintenir la valeur de revente de votre automobile (selon les directives des constructeurs automobiles et organismes de sécurité)."
+  },
+  "essentials": {
+    "title": "Les 3 Piliers de l'Entretien Régulier",
+    "subtitle": "L'entretien préventif est structuré par la fréquence et l'importance des contrôles.",
+    "items": [
+      {
+        "title": "Contrôles Hebdomadaires",
+        "description": "Sécurité Active et Efficacité énergétique",
+        "frequency": "Chaque semaine",
+        "points": [
+          "Pression des Pneus : Vérification à froid (y compris la roue de secours)",
+          "Niveau d'Huile Moteur : À contrôler moteur froid sur sol plat",
+          "Feux et Signalisation : Clignotants, feux de stop, feux de croisement et de route (Sécurité Routière)"
+        ]
+      },
+      {
+        "title": "Entretien Mensuel",
+        "description": "Visibilité et Fiabilité des Systèmes",
+        "frequency": "Chaque mois",
+        "points": [
+          "Niveaux de Fluides : Liquide de refroidissement et Liquide Lave-glace",
+          "Essuie-glaces : État du caoutchouc et efficacité de balayage",
+          "Freinage : Inspection visuelle des disques et plaquettes (usure)",
+          "Batterie : Propreté et serrage des cosses"
+        ]
+      },
+      {
+        "title": "Maintenance Préventive",
+        "description": "Longévité Mécanique et Maintien de la Garantie",
+        "frequency": "Au Kilométrage/Annuellement",
+        "points": [
+          "Suivi du Carnet : Respecter scrupuleusement les intervalles prescrits par le constructeur",
+          "Remplacement des Pièces d'Usure : Courroie, bougies, filtres, etc. (prévention des pannes coûteuses)",
+          "Traçabilité : Documenter chaque intervention pour maintenir la garantie"
+        ]
+      }
+    ]
+  },
+  "tips": {
+    "title": "Conseils d'Optimisation Pratiques",
+    "subtitle": "Basés sur l'expertise ADEME, ACEA et constructeurs automobiles",
+    "items": [
+      {
+        "icon": "📉",
+        "title": "Éco-conduite et Maîtrise de la Consommation",
+        "subtitle": "Réduction de Consommation (ADEME)",
+        "content": "Adoptez une conduite souple, sans accélérations ni freinages brusques, et maintenez une vitesse constante. L'anticipation des ralentissements est la clé de l'éco-conduite.",
+        "detail": "Des pneus sous-gonflés augmentent la consommation jusqu'à 2,4% et réduisent la tenue de route (ACEA). Vérifiez la pression régulièrement à froid en vous référant à l'étiquette constructeur.",
+        "impact": "Jusqu'à 2,4% d'économie"
+      },
+      {
+        "icon": "⚙️",
+        "title": "Longévité du Moteur et Lubrification",
+        "subtitle": "Démarrage à Froid",
+        "content": "Laissez le moteur tourner au ralenti quelques instants avant de partir et évitez les régimes élevés tant que l'huile n'a pas atteint sa température de fonctionnement optimale (généralement après 5 à 10 minutes).",
+        "detail": "Utilisez impérativement l'huile moteur homologuée spécifiée dans le manuel du véhicule. Le respect des intervalles de vidange est le facteur numéro un pour la préservation du moteur.",
+        "impact": "Longévité moteur optimale"
+      },
+      {
+        "icon": "✨",
+        "title": "Protection de la Carrosserie et Valeur de Revente",
+        "subtitle": "Prévention de la Corrosion",
+        "content": "Lavez régulièrement le véhicule pour éliminer le sel (hiver) et la pollution. Appliquez une cire protectrice biannuelle pour sceller le vernis contre les agressions extérieures (UV, produits chimiques).",
+        "detail": "Réparez les éclats de peinture ou les impacts de gravillons sans délai excessif. L'exposition du métal nu à l'humidité conduit très rapidement à la formation et à la propagation de la rouille.",
+        "impact": "Valeur préservée"
+      },
+      {
+        "icon": "📱",
+        "title": "L'Atout AUTYVO : La Traçabilité",
+        "subtitle": "Transparence Totale",
+        "content": "En enregistrant chaque plein, chaque lavage, et chaque intervention, vous construisez un historique d'entretien numérique complet et certifié.",
+        "detail": "Cette traçabilité détaillée augmente la confiance de l'acheteur et peut justifier un prix de revente supérieur (un historique complet est souvent un argument de négociation majeur).",
+        "impact": "Prix de revente supérieur"
+      }
+    ]
+  },
+  "checklist": {
+    "title": "Votre Checklist Synthétique d'Entretien",
+    "subtitle": "Un calendrier simple et efficace pour ne rien oublier",
+    "daily": {
+      "title": "Quotidien",
+      "items": [
+        "Vérification visuelle (pneus, fuites)",
+        "Contrôle des feux"
+      ]
+    },
+    "weekly": {
+      "title": "Hebdomadaire",
+      "items": [
+        "Niveaux d'huile moteur",
+        "Pression des pneus",
+        "Liquide lave-glace"
+      ]
+    },
+    "monthly": {
+      "title": "Mensuel",
+      "items": [
+        "Liquide de refroidissement",
+        "État des essuie-glaces et du freinage"
+      ]
+    },
+    "seasonal": {
+      "title": "Saisonnier",
+      "items": [
+        "Changement de pneus été/hiver",
+        "Inspection et recharge de la climatisation",
+        "Contrôle de l'antigel"
+      ]
+    }
+  },
+  "cta": {
+    "title": "Tracez Chaque Entretien avec AUTYVO",
+    "subtitle": "L'application qui vous aide à ne rien oublier et à valoriser votre véhicule",
+    "button": "Télécharger GRATUITEMENT"
+  }
+}
