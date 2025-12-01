@@ -1,3 +1,104 @@
 {
-  "home": "Home"
+  "home": "Home",
+  "header": {
+    "nav": {
+      "features": "Features",
+      "contact": "Contact"
+    },
+    "cta": {
+      "download": "Download App"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact Us - Autyvo",
+      "description": "Need technical help or information? Contact the Autyvo team"
+    },
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "Need technical help or information? Choose the right service for a tailored response"
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone number",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send message",
+      "subjects": {
+        "select": "Select a subject",
+        "support": "Technical support",
+        "question": "General question",
+        "partnership": "Partnership",
+        "feedback": "Feedback / Suggestion",
+        "other": "Other"
+      },
+      "placeholders": {
+        "name": "Your name",
+        "email": "your@email.com",
+        "phone": "06 12 34 56 78",
+        "message": "Describe your request..."
+      }
+    },
+    "support": {
+      "title": "Technical Support",
+      "description": "Problem with the app? Bug or malfunction?",
+      "email": "Support Email",
+      "hours": "Available Monday to Friday from 9am to 6pm"
+    },
+    "general": {
+      "title": "General Contact",
+      "description": "Questions, partnerships, general information",
+      "email": "Contact Email",
+      "address": "Address"
+    },
+    "help": {
+      "title": "Need help?",
+      "description": "Check our FAQ or online help center for quick answers.",
+      "cta": "Help Center"
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "question": "What are the support hours?",
+          "answer": "Our support team is available Monday to Friday from 9am to 6pm. We usually respond within 24 hours."
+        },
+        {
+          "question": "How can I modify my information?",
+          "answer": "You can modify your information directly in the app, in the \"Account Settings\" section."
+        },
+        {
+          "question": "Is the app available on Android and iOS?",
+          "answer": "Yes, AUTYVO is available for free on iOS and Android."
+        },
+        {
+          "question": "How do I report a technical issue?",
+          "answer": "Use the form above and select \"Technical support\" as the subject, or contact us directly by email."
+        }
+      ]
+    }
+  },
+  "footer": {
+    "about": {
+      "title": "AUTYVO",
+      "description": "Solution developed in France."
+    },
+    "links": {
+      "title": "Useful Links",
+      "faq": "FAQ",
+      "contact": "Contact"
+    },
+    "download": {
+      "title": "Download",
+      "googlePlay": "Get it on Google Play",
+      "appStore": "Download on the App Store"
+    },
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "copyright": "© {{year}} AUTYVO. All rights reserved."
+  }
 }

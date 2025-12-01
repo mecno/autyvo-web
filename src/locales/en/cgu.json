@@ -1,4 +1,22 @@
 {
-  "title": "Terms of Use"
-  
+  "meta": {
+    "title": "Terms of Service - Autyvo",
+    "description": "Terms of Service for Autyvo application and website published by CarDoc SAS"
+  },
+  "header": {
+    "title": "Terms of Service for AUTYVO Application and Website (Individuals)"
+  },
+  "sections": {
+    "1": {
+      "title": "1. Purpose and Acceptance",
+      "content": "These Terms of Service (ToS) govern access to and use of services offered by the AUTYVO mobile application and website. Any use implies complete and unreserved acceptance of these ToS. In case of disagreement, the user agrees not to use the services."
+    },
+    "2": {
+      "title": "2. Publisher",
+      "content": [
+        "The AUTYVO mobile application and website are published by <strong>CarDoc</strong>, a French simplified joint-stock company (SAS) registered with the Nantes Trade and Companies Register under SIREN number 992 651 349, with its registered office at 1 rue de la Noé, 44300 Nantes, France.",
+        "Contact: contact@autyvo.com"
+      ]
+    }
+  }
 }

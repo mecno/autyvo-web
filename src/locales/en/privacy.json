@@ -1,4 +1,32 @@
 {
-  "title": "Privacy Policy"
-  
+  "meta": {
+    "title": "Privacy Policy - Autyvo",
+    "description": "Privacy policy for Autyvo services published by CarDoc SAS"
+  },
+  "header": {
+    "title": "Privacy Policy",
+    "subtitle": "CarDoc for Autyvo Services",
+    "version": "Version 1 - Effective date: November 5, 2025"
+  },
+  "sections": {
+    "introduction": {
+      "title": "1. Introduction",
+      "content": [
+        "The company <strong>CarDoc</strong> (hereinafter \"CarDoc\", \"we\") publishes and operates the digital services <strong>Autyvo</strong> (mobile application and website). We are fully committed to protecting your personal data and complying with applicable regulations, including the General Data Protection Regulation (GDPR).",
+        "This policy transparently informs you about the collection, use, storage, security and your rights regarding personal data processed through Autyvo."
+      ]
+    },
+    "controller": {
+      "title": "2. Data Controller",
+      "intro": "The data controller is:",
+      "company": "CarDoc",
+      "address": "Registered office: 1 rue de la Noé, 44300 Nantes, France",
+      "contact": "Contact:",
+      "dpo": "The Data Protection Officer (DPO) can be reached at:"
+    },
+    "conclusion": {
+      "title": "Your data is valuable",
+      "content": "We are committed to protecting it with the highest level of security and transparency. For any questions regarding this policy, please feel free to contact us."
+    }
+  }
 }

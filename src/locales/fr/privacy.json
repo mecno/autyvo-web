@@ -1,3 +1,147 @@
 {
-  "title": "Politique de Confidentialité"
+  "meta": {
+    "title": "Politique de Confidentialité - Autyvo",
+    "description": "Politique de confidentialité des services Autyvo édités par CarDoc SAS"
+  },
+  "header": {
+    "title": "Politique de Confidentialité",
+    "subtitle": "CarDoc pour les Services Autyvo",
+    "version": "Version 1 - Date d'entrée en vigueur : 05/11/2025"
+  },
+  "sections": {
+    "introduction": {
+      "title": "1. Introduction",
+      "content": [
+        "La société <strong>CarDoc</strong> (ci-après \"CarDoc\", \"nous\") édite et exploite les services numériques <strong>Autyvo</strong> (application mobile et site web). Nous sommes pleinement engagés à protéger vos données personnelles et à respecter la réglementation en vigueur, notamment le Règlement Général sur la Protection des Données (RGPD).",
+        "Cette politique vous informe de manière transparente sur la collecte, l'utilisation, la conservation, la sécurité et vos droits vis-à-vis des données personnelles traitées via Autyvo."
+      ]
+    },
+    "controller": {
+      "title": "2. Responsable du traitement",
+      "intro": "Le responsable du traitement des données est :",
+      "company": "CarDoc",
+      "address": "Siège social : 1 rue de la Noé, 44300 Nantes, France",
+      "contact": "Contact :",
+      "dpo": "Le Délégué à la Protection des Données (DPO) est joignable à :"
+    },
+    "data": {
+      "title": "3. Données collectées",
+      "intro": "Nous collectons uniquement les données strictement nécessaires à la fourniture et à l'amélioration de nos services :",
+      "items": [
+        {
+          "title": "Données d'identification et de contact",
+          "detail": "nom, prénom, adresse email, téléphone (le cas échéant)"
+        },
+        {
+          "title": "Données liées aux véhicules",
+          "detail": "numéro d'immatriculation, VIN, historique, factures, contrôles techniques"
+        },
+        {
+          "title": "Données de connexion, navigation et d'utilisation",
+          "detail": "cookies, logs, données anonymisées"
+        },
+        {
+          "title": "Données de paiement",
+          "detail": "uniquement si service payant souscrit"
+        }
+      ]
+    },
+    "purpose": {
+      "title": "4. Finalités du traitement et bases légales",
+      "intro": "Vos données sont traitées dans les buts suivants :",
+      "table": {
+        "headers": ["Finalité", "Base légale"],
+        "rows": [
+          ["Création et gestion de votre compte", "Exécution du contrat"],
+          ["Fourniture des services Autyvo", "Exécution du contrat"],
+          ["Communication commerciale et marketing", "Consentement (rétractable)"],
+          ["Amélioration, sécurité et prévention", "Intérêt légitime"],
+          ["Conformité à la législation", "Obligations légales"]
+        ]
+      }
+    },
+    "recipients": {
+      "title": "5. Destinataires des données",
+      "intro": "Les données personnelles sont accessibles uniquement à :",
+      "items": [
+        "CarDoc et ses sous-traitants certifiés en France (hébergement, maintenance, analyses)",
+        "Partenaires strictement nécessaires au fonctionnement du service (ex : outils de notification)",
+        "Tiers que vous avez expressément autorisés à accéder à vos données",
+        "Autorités administratives dans le cadre de leurs compétences légales"
+      ],
+      "note": "Nous ne vendons ni ne louons jamais vos données personnelles."
+    },
+    "cookies": {
+      "title": "6. Cookies et traceurs",
+      "content": "Nous utilisons des cookies pour améliorer votre expérience. Vous pouvez gérer vos préférences via la gestion des cookies disponible sur l'application et le site."
+    },
+    "retention": {
+      "title": "7. Conservation des données",
+      "intro": "Les données sont conservées selon la durée suivante :",
+      "items": [
+        {
+          "type": "Données du compte et identification :",
+          "duration": "durée de vie du compte + 3 ans après inactivité"
+        },
+        {
+          "type": "Données liées aux véhicules :",
+          "duration": "conformément aux obligations légales ou jusqu'à demande de suppression"
+        },
+        {
+          "type": "Données issues du paiement :",
+          "duration": "durée légale fiscale requise"
+        },
+        {
+          "type": "Cookies :",
+          "duration": "stockage limité à 13 mois avec consentement"
+        }
+      ]
+    },
+    "security": {
+      "title": "8. Sécurité et hébergement",
+      "intro": "CarDoc assure la sécurité de vos données grâce à :",
+      "items": [
+        {
+          "title": "Hébergement sécurisé",
+          "detail": "Exclusivement en France"
+        },
+        {
+          "title": "Chiffrement SSL/TLS",
+          "detail": "Protocoles de sécurité avancés"
+        },
+        {
+          "title": "Contrôle d'accès strict",
+          "detail": "Authentification renforcée"
+        },
+        {
+          "title": "Surveillance continue",
+          "detail": "Audits réguliers de sécurité"
+        }
+      ]
+    },
+    "breach": {
+      "title": "9. Gestion des violations de données",
+      "content": "CarDoc dispose d'un protocole de gestion des incidents de sécurité garantissant la notification rapide en cas de violation affectant vos données personnelles, conformément au RGPD."
+    },
+    "rights": {
+      "title": "10. Droits des utilisateurs",
+      "intro": "Conformément à la réglementation, vous disposez de :",
+      "items": [
+        "Droit d'accès, de rectification, d'effacement, de limitation de traitement",
+        "Droit d'opposition et de retrait de consentement",
+        "Droit à la portabilité des données",
+        "Droit de définir des instructions post-mortem"
+      ],
+      "exercise": "Ces droits peuvent être exercés via votre espace utilisateur ou par contact à :",
+      "cnil": "Vous pouvez également adresser une réclamation à la CNIL."
+    },
+    "updates": {
+      "title": "11. Mise à jour de la politique",
+      "content": "Toute modification substantielle de cette politique sera communiquée au préalable par notifications au sein de Autyvo ou par courrier électronique avant son application."
+    },
+    "conclusion": {
+      "title": "Vos données sont précieuses",
+      "content": "Nous nous engageons à les protéger avec le plus haut niveau de sécurité et de transparence. Pour toute question concernant cette politique, n'hésitez pas à nous contacter."
+    }
+  }
 }

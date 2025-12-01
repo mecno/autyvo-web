@@ -7,28 +7,28 @@ import commonFr from '../locales/fr/common.json';
 import commonEn from '../locales/en/common.json';
 import cguFr from '../locales/fr/cgu.json';
 import cguEn from '../locales/en/cgu.json';
-import helpFr from '../locales/fr/help.json';
-import helpEn from '../locales/en/help.json';
 import privacyFr from '../locales/fr/privacy.json';
 import privacyEn from '../locales/en/privacy.json';
 import deleteAccountFr from '../locales/fr/delete-account.json';
 import deleteAccountEn from '../locales/en/delete-account.json';
+import landingFr from '../locales/fr/landing.json';
+import landingEn from '../locales/en/landing.json';
 
 // Ressources de traduction
 const resources = {
   fr: {
     common: commonFr,
     cgu: cguFr,
-    help: helpFr,
     privacy: privacyFr,
     'delete-account': deleteAccountFr,
+    landing: landingFr,
   },
   en: {
     common: commonEn,
     cgu: cguEn,
-    help: helpEn,
     privacy: privacyEn,
     'delete-account': deleteAccountEn,
+    landing: landingEn,
   },
 };
 
@@ -44,7 +44,7 @@ i18n
     debug: false,
     
     // Définition des namespaces
-    ns: ['common', 'cgu', 'help', 'privacy', 'delete-account'], // Liste des namespaces disponibles
+    ns: ['common', 'cgu', 'privacy', 'delete-account', 'landing'], // Liste des namespaces disponibles
     defaultNS: 'common', // Namespace par défaut
     
     interpolation: {

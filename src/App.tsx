@@ -3,7 +3,6 @@ import Layout from './components/layout/Layout';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import LandingPage from './pages/LandingPage';
 import ContactPage from './pages/ContactPage';
-import HelpPage from './pages/HelpPage';
 import TermsPage from './pages/legal/TermsPage';
 import PrivacyPage from './pages/legal/PrivacyPage';
 import DeleteAccountPage from './pages/account/DeleteAccountPage';
@@ -19,7 +18,6 @@ const App = () => {
         
         {/* Pages publiques */}
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/help" element={<HelpPage />} />
         
         {/* Pages légales */}
         <Route path="/legal/terms" element={<TermsPage />} />

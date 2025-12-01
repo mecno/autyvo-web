@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "title": "Autyvo - Gérez et valorisez votre véhicule",
+    "description": "Application gratuite de gestion automobile. Suivez l'entretien, organisez vos documents et prouvez la valeur de votre véhicule."
+  },
+  "hero": {
+    "title": "Suivez l'entretien de votre véhicule au quotidien et partagez son histoire en toute transparence.",
+    "subtitle": "AUTYVO Trace : la traçabilité complète pour prouver l'état réel et l'histoire de votre véhicule.",
+    "description": "Documentez chaque intervention, construisez un historique complet et prouvez la valeur réelle de votre véhicule.",
+    "cta": "Télécharger AUTYVO GRATUITEMENT et bâtissez votre Histoire Certifiée",
+    "ctaShort": "Télécharger"
+  },
+  "howItWorks": {
+    "title": "Comment ça Marche ?",
+    "subtitle": "Cinq étapes simples pour gérer votre véhicule et valoriser son historique",
+    "steps": [
+      {
+        "title": "Ajoutez votre véhicule",
+        "description": "Saisissez simplement votre plaque d'immatriculation pour l'enregistrer."
+      },
+      {
+        "title": "Scannez vos documents",
+        "description": "Importez ou scannez facilement vos factures, contrôles techniques, assurances, dépenses de carburant, etc."
+      },
+      {
+        "title": "Planification intelligente",
+        "description": "Notre moteur analyse vos informations et génère automatiquement un plan de maintenance avec un agenda et des notifications pour vos échéances importantes."
+      },
+      {
+        "title": "Vos documents organisés",
+        "description": "Accédez en un clin d'œil à tous les documents liés à votre véhicule, classés et centralisés."
+      },
+      {
+        "title": "Partage simple et sécurisé",
+        "description": "Générez votre AUTYVO Trace et partagez l'historique complet de votre véhicule en toute sécurité."
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Les Bénéfices AUTYVO",
+    "subtitle": "Une solution complète pour gérer, entretenir et valoriser votre véhicule",
+    "items": [
+      {
+        "emoji": "🚗",
+        "title": "Simplifiez la gestion de votre véhicule",
+        "description": "AUTYVO centralise automatiquement tous vos documents, pour en finir avec les papiers perdus et les oubliés."
+      },
+      {
+        "emoji": "🔍",
+        "title": "Organisez tout en quelques secondes",
+        "description": "Scannez votre plaque et vos documents : factures, assurances, contrôles techniques… tout est classé et accessible."
+      },
+      {
+        "emoji": "🧠",
+        "title": "Planification intelligente",
+        "description": "Notre moteur intelligent crée un plan de maintenance automatique et vous envoie des rappels pour ne rien oublier."
+      },
+      {
+        "emoji": "🔧",
+        "title": "Un véhicule plus fiable et mieux entretenu",
+        "description": "Anticipez les pannes et maximisez la longévité de votre véhicule grâce à un suivi rigoureux."
+      },
+      {
+        "emoji": "🔐",
+        "title": "Valorisez votre voiture avec l'AUTYVO Trace",
+        "description": "Partagez un historique complet, sécurisé et professionnel : les acheteurs gagnent confiance, et vous vendez mieux."
+      }
+    ]
+  },
+  "trace": {
+    "title": "AUTYVO Trace",
+    "emoji": "🔐",
+    "subtitle": "Donnez à votre véhicule l'histoire qu'il mérite. Partagez-la avec fierté.",
+    "intro": "Votre voiture a une histoire. Chaque entretien, chaque facture, chaque contrôle… ce sont des preuves de soin, d'attention et de sérieux. Avec AUTYVO Trace, cette histoire devient enfin lisible, valorisée et incontestable.",
+    "description": "Ce rapport complet réunit tout : vos documents soigneusement organisés, mais aussi les données officielles du SIV, pour offrir un dossier transparent, digne d'un véhicule irréprochable.",
+    "benefitsTitle": "Quand vous partagez votre AUTYVO Trace, vous transmettez bien plus que des informations :",
+    "benefitsItems": [
+      "Vous montrez que vous avez pris soin de votre voiture.",
+      "Vous inspirez immédiatement confiance.",
+      "Vous donnez à votre véhicule la valeur qu'il mérite vraiment."
+    ],
+    "conclusion": "Et au moment de la vente, cet atout fait toute la différence : votre voiture se démarque, rassure et se vend plus vite — souvent mieux.",
+    "tagline": "AUTYVO Trace : parce qu'un véhicule bien entretenu mérite d'être reconnu.",
+    "bonus": {
+      "title": "Bonus Exclusif",
+      "emoji": "🎁",
+      "description": "Téléchargez l'application aujourd'hui et générez votre premier rapport AUTYVO Trace gratuitement !",
+      "cta": "Télécharger l'Appli AUTYVO",
+      "emoji2": "👉"
+    }
+  },
+  "verification": {
+    "title": "Vérification et Transparence",
+    "subtitle": "Un Standard Clair",
+    "emoji": "🛡️",
+    "tagline": "L'authenticité est notre engagement.",
+    "description": "AUTYVO va au-delà de la simple organisation de documents. Notre plateforme croise automatiquement vos informations avec les données officielles du SIV et valide chaque élément de l'historique grâce à un moteur indépendant. Chaque donnée est ainsi authentique, vérifiée et transparente.",
+    "rule": "La règle est simple : Sans transparence, n'achetez pas.",
+    "conclusion": "Les utilisateurs savent exactement ce qu'ils consultent et peuvent s'appuyer sur des informations fiables pour prendre leurs décisions."
+  },
+  "security": {
+    "title": "Vos données en sécurité",
+    "subtitle": "Nous prenons la protection de vos données très au sérieux",
+    "items": [
+      {
+        "title": "100% Conforme RGPD",
+        "description": "Nous respectons strictement le Règlement Général sur la Protection des Données pour garantir vos droits."
+      },
+      {
+        "title": "Hébergement en France",
+        "description": "Vos données sont stockées exclusivement sur des serveurs sécurisés situés en France."
+      }
+    ],
+    "transparency": {
+      "title": "Transparence totale",
+      "description": "Consultez notre politique de confidentialité détaillée",
+      "cta": "Voir la politique"
+    }
+  },
+  "trust": {
+    "title": "Ils nous font confiance"
+  },
+  "testimonials": {
+    "title": "Ils ont adopté le standard de transparence AUTYVO",
+    "items": [
+      {
+        "name": "Marc D.",
+        "role": "Vendeur Particulier",
+        "quote": "Grâce à AUTYVO, j'ai vendu ma voiture 15% plus cher que le marché. Les acheteurs ont été rassurés par la transparence totale de l'historique. Plus de négociations interminables."
+      },
+      {
+        "name": "Sophie L.",
+        "role": "Acheteuse",
+        "quote": "J'ai enfin pu acheter d'occasion en toute sérénité. Tout était vérifié, certifié. Si le vendeur n'a pas d'AUTYVO Trace, je passe mon chemin."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions Fréquentes",
+    "items": [
+      {
+        "question": "Qu'est-ce que l'AUTYVO Trace ?",
+        "answer": "L'AUTYVO Trace est le système qui transforme votre gestion quotidienne en valeur certifiée. Chaque action que vous documentez devient une preuve vérifiable pour les futurs acheteurs."
+      },
+      {
+        "question": "Comment fonctionne le moteur de vérification ?",
+        "answer": "Notre moteur croise vos données avec les sources officielles (SIV, Histovec) pour garantir l'authenticité de l'historique de votre véhicule. C'est un tiers de confiance indépendant."
+      },
+      {
+        "question": "Qu'est-ce que le Bridge Dev ?",
+        "answer": "Le Bridge Dev est la fonctionnalité qui permet de générer un rapport d'historique complet et vérifié de votre véhicule, prêt à être partagé avec les acheteurs potentiels."
+      },
+      {
+        "question": "L'application est-elle gratuite ?",
+        "answer": "Oui, l'application est GRATUITE à vie ! Utilisez tous les outils pour gérer votre véhicule et bâtir votre historique complet sans jamais rien payer.\n\nL'AUTYVO Trace Certifiée est un service Premium. Notre garantie de vérification est si puissante qu'elle se monétise lors de la revente. Vous ne payez que pour transformer votre historique en une preuve de valeur concrète et infalsifiable."
+      },
+      {
+        "question": "Mes données sont-elles sécurisées ?",
+        "answer": "Absolument. Nous respectons le RGPD et vos données sont chiffrées. Vous gardez le contrôle total sur ce que vous partagez et avec qui."
+      }
+    ]
+  }
+}
