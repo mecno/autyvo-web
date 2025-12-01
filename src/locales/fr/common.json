@@ -82,6 +82,36 @@
       ]
     }
   },
+  "pro": {
+    "form": {
+      "title": "Demandez votre démo PRO personnalisée",
+      "name": "Nom Complet *",
+      "company": "Entreprise *",
+      "sector": "Secteur d'activité *",
+      "email": "Email Professionnel *",
+      "phone": "Numéro de téléphone *",
+      "submit": "Je Demande Ma Démo PRO Personnalisée",
+      "sectors": {
+        "select": "Sélectionnez votre secteur",
+        "garage": "Garage indépendant",
+        "dealer": "Concession / Réseau",
+        "fleet": "Gestionnaire de flotte",
+        "other": "Autre professionnel de l'automobile"
+      },
+      "placeholders": {
+        "name": "Jean Dupont",
+        "company": "Nom de votre entreprise",
+        "email": "jean.dupont@entreprise.fr",
+        "phone": "06 12 34 56 78"
+      },
+      "disclaimer": "En soumettant ce formulaire, vous acceptez d'être contacté par notre équipe concernant la version PRO d'AUTYVO."
+    },
+    "success": {
+      "title": "Merci !",
+      "message": "Votre demande de démo PRO a bien été reçue. Notre équipe vous contactera sous 24-48h pour organiser une présentation personnalisée.",
+      "back": "Retour"
+    }
+  },
   "footer": {
     "about": {
       "title": "AUTYVO",

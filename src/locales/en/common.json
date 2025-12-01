@@ -82,6 +82,36 @@
       ]
     }
   },
+  "pro": {
+    "form": {
+      "title": "Request your personalized PRO demo",
+      "name": "Full Name *",
+      "company": "Company *",
+      "sector": "Business Sector *",
+      "email": "Professional Email *",
+      "phone": "Phone Number *",
+      "submit": "Request My Personalized PRO Demo",
+      "sectors": {
+        "select": "Select your sector",
+        "garage": "Independent garage",
+        "dealer": "Dealership / Network",
+        "fleet": "Fleet manager",
+        "other": "Other automotive professional"
+      },
+      "placeholders": {
+        "name": "John Doe",
+        "company": "Your company name",
+        "email": "john.doe@company.com",
+        "phone": "06 12 34 56 78"
+      },
+      "disclaimer": "By submitting this form, you agree to be contacted by our team regarding the PRO version of AUTYVO."
+    },
+    "success": {
+      "title": "Thank you!",
+      "message": "Your PRO demo request has been received. Our team will contact you within 24-48 hours to arrange a personalized presentation.",
+      "back": "Back"
+    }
+  },
   "footer": {
     "about": {
       "title": "AUTYVO",
