@@ -51,13 +51,13 @@ const Header: React.FC = () => {
               to="/ia"
               className="text-brand-secondary hover:text-brand-primary transition-colors"
             >
-              Technologies
+              {t('header.nav.technologies')}
             </Link>
             <Link
               to="/pro"
               className="text-brand-secondary hover:text-brand-primary transition-colors"
             >
-              Professionnels
+              {t('header.nav.professionals')}
             </Link>
             <Link
               to="/contact"
@@ -95,13 +95,13 @@ const Header: React.FC = () => {
               onClick={() => handleNavigation('/ia')}
               className="block w-full text-left text-brand-secondary hover:text-brand-primary py-2"
             >
-              Technologies
+              {t('header.nav.technologies')}
             </button>
             <button
               onClick={() => handleNavigation('/pro')}
               className="block w-full text-left text-brand-secondary hover:text-brand-primary py-2"
             >
-              Professionnels
+              {t('header.nav.professionals')}
             </button>
             <button
               onClick={() => handleNavigation('/contact')}

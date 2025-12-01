@@ -3,6 +3,8 @@
   "header": {
     "nav": {
       "features": "Features",
+      "technologies": "Technologies",
+      "professionals": "Professionals",
       "contact": "Contact"
     },
     "cta": {

@@ -3,6 +3,8 @@
   "header": {
     "nav": {
       "features": "Avantages",
+      "technologies": "Technologies",
+      "professionals": "Professionnels",
       "contact": "Contact"
     },
     "cta": {
