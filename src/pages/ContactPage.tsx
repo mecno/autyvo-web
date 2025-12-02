@@ -28,16 +28,10 @@ const ContactPage: React.FC = () => {
       });
 
       setSubmitStatus('success');
-      
-      // Reset to idle after 5 seconds
-      setTimeout(() => setSubmitStatus('idle'), 5000);
     } catch (error) {
       console.error('Error submitting contact form:', error);
       setSubmitStatus('error');
-      setErrorMessage(error instanceof Error ? error.message : 'Une erreur est survenue');
-      
-      // Reset to idle after 5 seconds
-      setTimeout(() => setSubmitStatus('idle'), 5000);
+      setErrorMessage('Nous n\'avons pas pu transmettre votre demande. Veuillez réessayer ultérieurement.');
     }
   };
 
@@ -92,9 +86,9 @@ const ContactPage: React.FC = () => {
                     <AlertCircle className="text-red-600 mr-3 flex-shrink-0 mt-0.5" size={20} />
                     <div>
                       <h3 className="font-semibold text-red-800 mb-1">Erreur lors de l'envoi</h3>
-                      <p className="text-sm text-red-700">
-                        {errorMessage || 'Une erreur est survenue. Veuillez réessayer.'}
-                      </p>
+                    <p className="text-sm text-red-700">
+                      {errorMessage}
+                    </p>
                     </div>
                   </div>
                 )}
@@ -129,6 +123,10 @@ const ContactPage: React.FC = () => {
                     consent: {
                       label: t('contact.form.consent.label'),
                       required: t('contact.form.consent.required'),
+                    },
+                    validation: {
+                      required: t('contact.form.validation.required'),
+                      email: t('contact.form.validation.email'),
                     },
                   }}
                 />

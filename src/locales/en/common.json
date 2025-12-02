@@ -46,6 +46,10 @@
       "consent": {
         "label": "By submitting this form, I agree to be contacted by Autyvo by phone or email and I accept your Privacy Policy.",
         "required": "You must agree to be contacted and accept the privacy policy"
+      },
+      "validation": {
+        "required": "This field is required",
+        "email": "Please enter a valid email address"
       }
     },
     "support": {

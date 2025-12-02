@@ -40,10 +40,7 @@ function ProPage() {
     } catch (error) {
       console.error('Error submitting demo request:', error);
       setSubmitStatus('error');
-      setErrorMessage(error instanceof Error ? error.message : 'Une erreur est survenue');
-      
-      // Reset to idle after 5 seconds
-      setTimeout(() => setSubmitStatus('idle'), 5000);
+      setErrorMessage('Nous n\'avons pas pu transmettre votre demande. Veuillez réessayer ultérieurement.');
     }
   };
 
@@ -239,7 +236,7 @@ function ProPage() {
                   <div>
                     <h3 className="font-semibold text-red-800 mb-1">Erreur lors de l'envoi</h3>
                     <p className="text-sm text-red-700">
-                      {errorMessage || 'Une erreur est survenue. Veuillez réessayer.'}
+                      {errorMessage}
                     </p>
                   </div>
                 </div>
@@ -275,6 +272,10 @@ function ProPage() {
                   consent: {
                     label: t('contact.form.consent.label'),
                     required: t('contact.form.consent.required'),
+                  },
+                  validation: {
+                    required: t('contact.form.validation.required'),
+                    email: t('contact.form.validation.email'),
                   },
                 }}
               />

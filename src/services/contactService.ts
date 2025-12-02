@@ -18,8 +18,8 @@ export interface ContactFormData {
   website?: string; // honeypot field
 }
 
-// Mode développement : mock l'appel API
-const MOCK_MODE = import.meta.env.DEV;
+// Mode développement : mock l'appel API seulement si API_BASE_URL n'est pas définie
+const MOCK_MODE = import.meta.env.DEV && !import.meta.env.VITE_API_BASE_URL;
 
 export const contactService = {
   /**

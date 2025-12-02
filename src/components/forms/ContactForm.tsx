@@ -57,6 +57,10 @@ interface ContactFormProps {
       label: string;
       required: string;
     };
+    validation?: {
+      required: string;
+      email: string;
+    };
   };
 }
 
@@ -135,6 +139,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ variant, onSubmit, isLoading 
             value={formData.name}
             onChange={handleChange}
             required
+            title={translations.validation?.required || ''}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition-all"
             placeholder={translations.placeholders.name}
           />
@@ -153,6 +158,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ variant, onSubmit, isLoading 
               value={formData.company || ''}
               onChange={handleChange}
               required
+              title={translations.validation?.required || ''}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition-all"
               placeholder={translations.placeholders.company}
             />
@@ -172,6 +178,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ variant, onSubmit, isLoading 
               value={formData.email}
               onChange={handleChange}
               required
+              title={translations.validation?.email || ''}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition-all"
               placeholder={translations.placeholders.email}
             />
@@ -191,6 +198,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ variant, onSubmit, isLoading 
             value={formData.sector || ''}
             onChange={handleChange}
             required
+            title={translations.validation?.required || ''}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition-all"
           >
             <option value="">{translations.sectors.select}</option>
@@ -231,6 +239,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ variant, onSubmit, isLoading 
               value={formData.subject || ''}
               onChange={handleChange}
               required
+              title={translations.validation?.required || ''}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition-all"
             >
               <option value="">{translations.subjects.select}</option>
@@ -256,6 +265,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ variant, onSubmit, isLoading 
               value={formData.email}
               onChange={handleChange}
               required
+              title={translations.validation?.email || ''}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition-all"
               placeholder={translations.placeholders.email}
             />
@@ -282,6 +292,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ variant, onSubmit, isLoading 
             required
             maxLength={3000}
             rows={6}
+            title={translations.validation?.required || ''}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition-all resize-none"
             placeholder={translations.placeholders.message}
           />
