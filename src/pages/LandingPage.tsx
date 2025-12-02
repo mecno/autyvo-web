@@ -61,7 +61,7 @@ function LandingPage() {
 
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section id="hero" className="relative bg-gradient-to-br from-brand-secondary via-brand-secondary-light to-brand-primary text-white pt-20 pb-32">
+        <section id="hero" className="relative bg-gradient-to-br from-brand-secondary to-brand-secondary-dark text-white pt-20 pb-32">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-[1fr_2fr] gap-12 items-center">
               <div className="order-2 lg:order-1">
