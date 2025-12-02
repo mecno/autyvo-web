@@ -4,7 +4,7 @@
  * Facilite la migration et permet d'ajouter de la logique métier centralisée
  */
 
-import { useAuth as useOidcAuth, User } from 'react-oidc-context';
+import { useAuth as useOidcAuth } from 'react-oidc-context';
 
 interface AuthOptions extends Record<string, unknown> {
   redirect_uri?: string;
@@ -24,7 +24,12 @@ export interface AuthState {
   isLoading: boolean;
   
   /** Profil de l'utilisateur authentifié (claims du token ID) */
-  user?: User['profile'];
+  user?: {
+    email?: string;
+    name?: string;
+    preferred_username?: string;
+    [key: string]: unknown;
+  };
   
   /** Erreur éventuelle lors de l'authentification */
   error?: Error;
@@ -45,6 +50,11 @@ export interface AuthState {
    * Récupère le token d'accès de manière silencieuse
    */
   getAccessTokenSilently: () => Promise<string>;
+
+  /**
+   * Alias pour getAccessTokenSilently (compatibilité)
+   */
+  getAccessToken: () => Promise<string>;
 
   /**
    * Rafraîchit le token silencieusement
@@ -153,6 +163,14 @@ export function useAuth(): AuthState {
         console.error('Erreur lors de la récupération du token:', error);
         throw error;
       }
+    },
+
+    /**
+     * Alias pour getAccessTokenSilently (compatibilité)
+     * @returns {Promise<string>} Le token d'accès JWT
+     */
+    getAccessToken: async () => {
+      return await auth.user?.access_token || '';
     },
 
     /**

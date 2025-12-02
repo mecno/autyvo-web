@@ -5,9 +5,11 @@ import {
   Clock,
   Shield,
   TrendingUp,
-  CheckCircle
+  CheckCircle,
+  AlertCircle
 } from 'lucide-react';
 import ContactForm, { ContactFormData } from '../../components/forms/ContactForm';
+import { contactService } from '@/services/contactService';
 import clientTalkingImg from '../../assets/images/illustrations/client-talking-to-professional.png';
 import professionalShowroomImg from '../../assets/images/illustrations/professional-in-showroom.jpg';
 import mechanicWorkingImg from '../../assets/images/illustrations/mechanic-at-work.jpg';
@@ -15,14 +17,34 @@ import fleetManagerImg from '../../assets/images/illustrations/fleet-manager.jpg
 
 function ProPage() {
   const { t } = useTranslation('common');
-  const [submitted, setSubmitted] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState<string>('');
 
-  const handleSubmit = (data: ContactFormData) => {
-    console.log('PRO demo request:', data);
-    setSubmitted(true);
+  const handleSubmit = async (data: ContactFormData) => {
+    setSubmitStatus('loading');
+    setErrorMessage('');
+
+    try {
+      await contactService.submitContactRequest({
+        variant: 'demo',
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        company: data.company,
+        sector: data.sector,
+        consent: data.consent,
+        website: data.website, // honeypot field
+      });
+
+      setSubmitStatus('success');
+    } catch (error) {
+      console.error('Error submitting demo request:', error);
+      setSubmitStatus('error');
+      setErrorMessage('Nous n\'avons pas pu transmettre votre demande. Veuillez réessayer ultérieurement.');
+    }
   };
 
-  if (submitted) {
+  if (submitStatus === 'success') {
     return (
       <>
         <Helmet>
@@ -38,7 +60,7 @@ function ProPage() {
               {t('pro.success.message')}
             </p>
             <button
-              onClick={() => setSubmitted(false)}
+              onClick={() => setSubmitStatus('idle')}
               className="px-8 py-3 bg-brand-primary text-white rounded-lg hover:bg-brand-primary-dark transition-colors"
             >
               {t('pro.success.back')}
@@ -207,9 +229,23 @@ function ProPage() {
             </div>
 
             <div className="bg-gray-50 p-8 md:p-12 rounded-xl shadow-lg">
+              {/* Error Message */}
+              {submitStatus === 'error' && (
+                <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-start">
+                  <AlertCircle className="text-red-600 mr-3 flex-shrink-0 mt-0.5" size={20} />
+                  <div>
+                    <h3 className="font-semibold text-red-800 mb-1">Erreur lors de l'envoi</h3>
+                    <p className="text-sm text-red-700">
+                      {errorMessage}
+                    </p>
+                  </div>
+                </div>
+              )}
+
               <ContactForm
                 variant="demo"
                 onSubmit={handleSubmit}
+                isLoading={submitStatus === 'loading'}
                 translations={{
                   fields: {
                     name: t('pro.form.name'),
@@ -233,6 +269,14 @@ function ProPage() {
                   },
                   submitButton: t('pro.form.submit'),
                   disclaimer: t('pro.form.disclaimer'),
+                  consent: {
+                    label: t('contact.form.consent.label'),
+                    required: t('contact.form.consent.required'),
+                  },
+                  validation: {
+                    required: t('contact.form.validation.required'),
+                    email: t('contact.form.validation.email'),
+                  },
                 }}
               />
             </div>

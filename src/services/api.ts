@@ -22,8 +22,8 @@ export async function apiFetch<T = unknown>(endpoint: string, options: ApiFetchO
     },
   });
   
-  // 204 No Content = succès sans body
-  if (response.status === 204) {
+  // Succès sans body (204 No Content, 201 Created)
+  if (response.status === 204 || response.status === 201) {
     return;
   }
   
@@ -33,6 +33,6 @@ export async function apiFetch<T = unknown>(endpoint: string, options: ApiFetchO
     throw new Error(error.message || `HTTP ${response.status}`);
   }
   
-  // Succès avec body JSON
+  // Succès avec body JSON (200, etc.)
   return response.json();
 }
