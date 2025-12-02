@@ -1,15 +1,44 @@
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
-import { Mail, MapPin, MessageSquare, HelpCircle, Wrench } from 'lucide-react';
+import { Mail, MapPin, MessageSquare, HelpCircle, Wrench, CheckCircle, AlertCircle } from 'lucide-react';
 import { CONTACT_EMAIL, SUPPORT_EMAIL, LEGAL_ENTITY } from '@/constants';
 import ContactForm, { ContactFormData } from '../components/forms/ContactForm';
+import { contactService } from '@/services/contactService';
 
 const ContactPage: React.FC = () => {
   const { t } = useTranslation('common');
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState<string>('');
 
-  const handleSubmit = (data: ContactFormData) => {
-    console.log('Form submitted:', data);
-    // TODO: Implémenter l'envoi du formulaire
+  const handleSubmit = async (data: ContactFormData) => {
+    setSubmitStatus('loading');
+    setErrorMessage('');
+
+    try {
+      await contactService.submitContactRequest({
+        variant: 'contact',
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        subject: data.subject,
+        message: data.message,
+        consent: data.consent,
+        website: data.website, // honeypot field
+      });
+
+      setSubmitStatus('success');
+      
+      // Reset to idle after 5 seconds
+      setTimeout(() => setSubmitStatus('idle'), 5000);
+    } catch (error) {
+      console.error('Error submitting contact form:', error);
+      setSubmitStatus('error');
+      setErrorMessage(error instanceof Error ? error.message : 'Une erreur est survenue');
+      
+      // Reset to idle after 5 seconds
+      setTimeout(() => setSubmitStatus('idle'), 5000);
+    }
   };
 
   const faqItems = t('contact.faq.items', { returnObjects: true }) as Array<{ question: string; answer: string }>;
@@ -43,9 +72,37 @@ const ContactPage: React.FC = () => {
                 <h2 className="text-3xl font-bold text-brand-secondary mb-8">
                   {t('contact.form.title')}
                 </h2>
+
+                {/* Success Message */}
+                {submitStatus === 'success' && (
+                  <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-start">
+                    <CheckCircle className="text-green-600 mr-3 flex-shrink-0 mt-0.5" size={20} />
+                    <div>
+                      <h3 className="font-semibold text-green-800 mb-1">Message envoyé avec succès !</h3>
+                      <p className="text-sm text-green-700">
+                        Nous avons bien reçu votre message et vous répondrons dans les plus brefs délais.
+                      </p>
+                    </div>
+                  </div>
+                )}
+
+                {/* Error Message */}
+                {submitStatus === 'error' && (
+                  <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-start">
+                    <AlertCircle className="text-red-600 mr-3 flex-shrink-0 mt-0.5" size={20} />
+                    <div>
+                      <h3 className="font-semibold text-red-800 mb-1">Erreur lors de l'envoi</h3>
+                      <p className="text-sm text-red-700">
+                        {errorMessage || 'Une erreur est survenue. Veuillez réessayer.'}
+                      </p>
+                    </div>
+                  </div>
+                )}
+
                 <ContactForm
                   variant="contact"
                   onSubmit={handleSubmit}
+                  isLoading={submitStatus === 'loading'}
                   translations={{
                     fields: {
                       name: t('contact.form.name'),
@@ -69,6 +126,10 @@ const ContactPage: React.FC = () => {
                       other: t('contact.form.subjects.other'),
                     },
                     submitButton: t('contact.form.submit'),
+                    consent: {
+                      label: t('contact.form.consent.label'),
+                      required: t('contact.form.consent.required'),
+                    },
                   }}
                 />
               </div>

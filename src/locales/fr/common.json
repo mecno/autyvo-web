@@ -42,6 +42,10 @@
         "email": "votre@email.com",
         "phone": "06 12 34 56 78",
         "message": "Décrivez votre demande..."
+      },
+      "consent": {
+        "label": "En soumettant ce formulaire, j'accepte d'être contacté par Autyvo par téléphone ou e-mail et j'accepte votre Politique de confidentialité.",
+        "required": "Vous devez accepter d'être contacté et la politique de confidentialité"
       }
     },
     "support": {
