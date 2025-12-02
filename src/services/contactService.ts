@@ -15,7 +15,7 @@ export interface ContactFormData {
   subject?: string;
   message?: string;
   consent: boolean;
-  website?: string; // honeypot field
+  website?: string; 
 }
 
 // Mode développement : mock l'appel API seulement si API_BASE_URL n'est pas définie
