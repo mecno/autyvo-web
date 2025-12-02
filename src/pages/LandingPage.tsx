@@ -61,17 +61,18 @@ function LandingPage() {
 
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section id="hero" className="relative bg-gradient-to-br from-brand-secondary to-brand-secondary-dark text-white pt-20 pb-32">
+        <section id="hero" className="relative bg-gradient-to-br from-brand-secondary to-brand-secondary-dark text-white py-40">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Ligne 1 : Photo à gauche, Titre à droite */}
             <div className="grid lg:grid-cols-[1fr_2fr] gap-12 items-center">
-              <div className="order-2 lg:order-1">
+              <div className="flex justify-center lg:justify-start">
                 <img
                   src={heroImage}
                   alt={t('hero.title')}
-                  className="rounded-xl shadow-2xl w-full object-cover"
+                  className="rounded-xl shadow-2xl w-96 h-96 object-cover"
                 />
               </div>
-              <div className="order-1 lg:order-2 space-y-8">
+              <div className="flex flex-col justify-center space-y-8">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                   {t('hero.title')}
                 </h1>
@@ -81,14 +82,6 @@ function LandingPage() {
                 <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
                   {t('hero.description')}
                 </p>
-                <button
-                  onClick={scrollToDownload}
-                  className="bg-white text-brand-secondary px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl flex items-center gap-3"
-                >
-                  <Download size={24} />
-                  <span className="hidden md:inline">{t('hero.cta')}</span>
-                  <span className="md:hidden">{t('hero.ctaShort')}</span>
-                </button>
               </div>
             </div>
           </div>
