@@ -10,6 +10,7 @@ const LoadingSpinner: React.FC = () => (
 /**
  * Composant de protection de routes
  * Redirige automatiquement vers Keycloak si l'utilisateur n'est pas authentifié
+ * Conserve l'URL de destination pour y retourner après l'authentification
  */
 export default function ProtectedRoute({ children }: PropsWithChildren) {
   const { isAuthenticated, isLoading, loginWithRedirect } = useAuth();
@@ -18,6 +19,11 @@ export default function ProtectedRoute({ children }: PropsWithChildren) {
   useEffect(() => {
     if (!isLoading && !isAuthenticated && !hasRedirected.current) {
       hasRedirected.current = true;
+      
+      // Sauvegarder l'URL actuelle (destination souhaitée) avant la redirection
+      const returnUrl = window.location.pathname + window.location.search + window.location.hash;
+      sessionStorage.setItem('auth_return_url', returnUrl);
+      
       // Redirection automatique vers Keycloak si non authentifié
       loginWithRedirect();
     }

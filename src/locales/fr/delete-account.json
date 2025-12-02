@@ -1,3 +1,37 @@
 {
-  "title": "Suppression du compte"
+  "title": "Suppression du compte",
+  "subtitle": "Cette action est irréversible. Veuillez lire attentivement les conséquences avant de continuer.",
+  "warning": {
+    "title": "⚠️ Attention",
+    "content": "La suppression de votre compte entraînera les conséquences suivantes :",
+    "consequences": [
+      "Toutes vos données personnelles seront définitivement supprimées",
+      "Vos fichiers et documents seront perdus",
+      "Votre historique et vos paramètres seront effacés",
+      "Cette action ne peut pas être annulée"
+    ]
+  },
+  "confirmation": {
+    "title": "Confirmation par email",
+    "message": "Pour confirmer la suppression, veuillez entrer votre adresse email :",
+    "placeholder": "votre@email.com",
+    "error": "L'adresse email ne correspond pas à celle de votre compte"
+  },
+  "button": {
+    "cancel": "Annuler",
+    "delete": "Supprimer mon compte"
+  },
+  "dialog": {
+    "title": "Confirmation finale",
+    "message": "Êtes-vous absolument sûr(e) de vouloir supprimer votre compte ? Cette action est irréversible.",
+    "confirmText": "Oui, supprimer définitivement"
+  },
+  "success": {
+    "title": "Compte supprimé",
+    "message": "Votre compte a été supprimé avec succès. Vous allez être redirigé vers la page d'accueil..."
+  },
+  "error": {
+    "title": "Erreur",
+    "generic": "Nous n'avons pas pu supprimer votre compte. Veuillez réessayer ultérieurement ou contacter le support."
+  }
 }

@@ -33,8 +33,17 @@ const oidcConfig: AuthProviderProps = {
   
   // Callback après authentification
   onSigninCallback: () => {
-    // Nettoyer l'URL des paramètres OIDC après redirection
-    window.history.replaceState({}, document.title, window.location.pathname);
+    // Récupérer l'URL de destination sauvegardée avant la redirection
+    const returnUrl = sessionStorage.getItem('auth_return_url');
+    sessionStorage.removeItem('auth_return_url');
+    
+    // Rediriger vers l'URL d'origine ou nettoyer l'URL actuelle
+    if (returnUrl && returnUrl !== '/') {
+      window.location.href = returnUrl;
+    } else {
+      // Nettoyer l'URL des paramètres OIDC après redirection
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
   },
   
   // Options supplémentaires

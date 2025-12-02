@@ -1,3 +1,37 @@
 {
-  "title": "Delete Account"
+  "title": "Delete Account",
+  "subtitle": "This action is irreversible. Please read the consequences carefully before proceeding.",
+  "warning": {
+    "title": "⚠️ Warning",
+    "content": "Deleting your account will result in the following consequences:",
+    "consequences": [
+      "All your personal data will be permanently deleted",
+      "Your files and documents will be lost",
+      "Your history and settings will be erased",
+      "This action cannot be undone"
+    ]
+  },
+  "confirmation": {
+    "title": "Email Confirmation",
+    "message": "To confirm deletion, please enter your email address:",
+    "placeholder": "your@email.com",
+    "error": "The email address does not match your account"
+  },
+  "button": {
+    "cancel": "Cancel",
+    "delete": "Delete my account"
+  },
+  "dialog": {
+    "title": "Final Confirmation",
+    "message": "Are you absolutely sure you want to delete your account? This action is irreversible.",
+    "confirmText": "Yes, delete permanently"
+  },
+  "success": {
+    "title": "Account Deleted",
+    "message": "Your account has been successfully deleted. You will be redirected to the homepage..."
+  },
+  "error": {
+    "title": "Error",
+    "generic": "We were unable to delete your account. Please try again later or contact support."
+  }
 }
